@@ -1,5 +1,15 @@
 {
   "dependencies": {
     "sass": "^1.63.6"
-  }
+  },
+  "name": "spdan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch --no-source-map ./src/scss/style.scss ./src/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

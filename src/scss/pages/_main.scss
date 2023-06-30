@@ -82,8 +82,8 @@
               width: 100%;
             }
             @include mobile-landscape {
-              top: 25vh;
-              top: 25svh;
+              top: 15vh;
+              top: 15svh;
               transform: translateY(0);
               width: 100%;
             }
@@ -116,7 +116,7 @@
               text-align: center;
             }
             @include tablet-portrait {
-              font-size: 6.1rem;
+              font-size: 6vw;
               text-align: center;
             }
             @include tablet-landscape {
@@ -138,6 +138,9 @@
             @include mobile-fold {
               font-size: 12vw;
               text-align: center;
+            }
+            @include mobile-min {
+              font-size: 3.36rem;
             }
             &-text {
               display: block;
@@ -184,7 +187,7 @@
             }
             @include mobile-mini {
               display: flex;
-              font-size: 3rem;
+              font-size: 2.5rem;
             }
             @include mobile-fold {
               display: flex;
@@ -193,6 +196,10 @@
           }
           &-icon {
             img {
+              @include mobile-mini {
+                width: 8rem;
+                max-width: 100%;
+              }
               @include mobile-fold {
                 width: 8rem;
                 max-width: 100%;
@@ -220,7 +227,7 @@
               font-size: 4rem;
             }
             @include mobile-mini {
-              font-size: 3rem;
+              font-size: 2.4rem;
             }
             @include mobile-fold {
               font-size: 2.4rem;
@@ -238,9 +245,10 @@
           }
 
           @include tablet-pro-portrait {
-            width: 100%;
+            width: 80rem;
             max-width: 100%;
-            right: 0;
+            right: 50%;
+            transform: translateX(50%);
           }
 
           @include tablet-pro-landscape {
@@ -255,23 +263,26 @@
             right: 0;
           }
           @include tablet-portrait {
-            width: 100%;
+            width: 50rem;
             max-width: 100%;
-            right: 0;
+            right: 50%;
+            transform: translateX(50%);
           }
           @include tablet-landscape {
-            width: 90%;
+            width: 70rem;
             max-width: 100%;
             right: 50%;
             transform: translateX(50%);
           }
           @include mobile-portrait {
+            width: 50rem;
             max-width: 100%;
             right: 50%;
             transform: translateX(50%);
             bottom: 13rem;
           }
           @include mobile-landscape {
+            width: 50rem;
             max-width: 100%;
             right: 50%;
             transform: translateX(50%);
@@ -339,34 +350,34 @@
           right: 50%;
           transform: translateX(50%);
           width: 34rem;
-          height: 10rem;
+          height: 8rem;
           border-radius: 5rem;
-          font-size: 3rem;
+          font-size: 2.4rem;
         }
         @include tablet-landscape {
           bottom: 4rem;
           right: 50%;
           transform: translateX(50%);
           width: 34rem;
-          height: 10rem;
+          height: 8rem;
           border-radius: 5rem;
-          font-size: 3rem;
+          font-size: 2.4rem;
         }
         @include mobile-portrait {
-          bottom: 4rem;
+          bottom: 6rem;
           right: 50%;
           transform: translateX(50%);
           width: 90%;
-          height: 9rem;
+          height: 7rem;
           border-radius: 5rem;
-          font-size: 3rem;
+          font-size: 2.4rem;
         }
         @include mobile-landscape {
           bottom: 4rem;
           right: 50%;
           transform: translateX(50%);
           width: 34rem;
-          height: 10rem;
+          height: 8rem;
           border-radius: 5rem;
           font-size: 3rem;
         }
@@ -375,9 +386,9 @@
           right: 50%;
           transform: translateX(50%);
           width: 90%;
-          height: 7rem;
+          height: 6rem;
           border-radius: 5rem;
-          font-size: 3rem;
+          font-size: 2.2rem;
         }
         @include mobile-fold {
           bottom: 1rem;

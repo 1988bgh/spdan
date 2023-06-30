@@ -389,7 +389,7 @@ http://scripts.sil.org/OFL
 .contents__main-visual .main__typo-sub2 {
   display: block;
   margin-top: 4rem;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 @media only screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1439px) {

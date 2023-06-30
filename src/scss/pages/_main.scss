@@ -7,37 +7,31 @@
         height: 60rem;
       }
       @include tablet-pro-portrait {
-        height: 100vh;
-        height: 100svh;
+        height: calc(var(--vh, 1vh) * 100);
       }
       @include tablet-pro-landscape {
         height: 102.4rem;
       }
       @include tablet-air-portrait {
-        height: 100vh;
-        height: 100svh;
+        height: calc(var(--vh, 1vh) * 100);
       }
       @include tablet-portrait {
-        height: 100vh;
-        height: 100svh;
+        height: calc(var(--vh, 1vh) * 100);
       }
       @include tablet-landscape {
         height: 102.4rem;
       }
       @include mobile-portrait {
-        height: 100vh;
-        height: 100svh;
+        height: calc(var(--vh, 1vh) * 100);
       }
       @include mobile-landscape {
         height: 102.4rem;
       }
       @include mobile-mini {
-        height: 100vh;
-        height: 100svh;
+        height: calc(var(--vh, 1vh) * 100);
       }
       @include mobile-fold {
-        height: 100vh;
-        height: 100svh;
+        height: calc(var(--vh, 1vh) * 100);
       }
       .main__ {
         &typo {

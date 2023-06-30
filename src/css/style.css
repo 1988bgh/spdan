@@ -109,8 +109,7 @@ http://scripts.sil.org/OFL
 }
 @media only screen and (orientation: portrait) and (min-device-width: 1024px) and (max-device-width: 1439px) {
   .contents__main-visual {
-    height: 100vh;
-    height: 100svh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 @media only screen and (orientation: landscape) and (min-device-width: 1024px) and (max-device-width: 1439px) {
@@ -120,14 +119,12 @@ http://scripts.sil.org/OFL
 }
 @media only screen and (orientation: portrait) and (min-device-width: 820px) and (max-device-width: 1023px) {
   .contents__main-visual {
-    height: 100vh;
-    height: 100svh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 @media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1023px) {
   .contents__main-visual {
-    height: 100vh;
-    height: 100svh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 @media only screen and (orientation: landscape) and (min-device-width: 768px) and (max-device-width: 1023px) {
@@ -137,8 +134,7 @@ http://scripts.sil.org/OFL
 }
 @media only screen and (min-device-width: 376px) and (max-device-width: 479px) {
   .contents__main-visual {
-    height: 100vh;
-    height: 100svh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 @media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
@@ -148,14 +144,12 @@ http://scripts.sil.org/OFL
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
   .contents__main-visual {
-    height: 100vh;
-    height: 100svh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 @media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
   .contents__main-visual {
-    height: 100vh;
-    height: 100svh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 .contents__main-visual .main__typo-wrap {

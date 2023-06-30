@@ -212,8 +212,8 @@ http://scripts.sil.org/OFL
 }
 @media only screen and (min-width: 376px) and (max-width: 479px) {
   .contents__main-visual .main__typo-wrap {
-    top: 10vh;
-    top: 10svh;
+    top: 9vh;
+    top: 9svh;
     transform: translateY(0);
     width: 100%;
   }
@@ -266,7 +266,7 @@ http://scripts.sil.org/OFL
 }
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
   .contents__main-visual .main__typo-normal {
-    font-size: 6vw;
+    font-size: 9vw;
     text-align: center;
   }
 }
@@ -362,6 +362,12 @@ http://scripts.sil.org/OFL
     font-size: 4rem;
   }
 }
+@media only screen and (min-width: 376px) and (max-width: 479px) {
+  .contents__main-visual .main__typo-sub1 {
+    display: flex;
+    font-size: 3rem;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .contents__main-visual .main__typo-sub1 {
     display: flex;
@@ -372,6 +378,11 @@ http://scripts.sil.org/OFL
   .contents__main-visual .main__typo-sub1 {
     display: flex;
     font-size: 2.7rem;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 479px) {
+  .contents__main-visual .main__typo-icon img {
+    width: 8rem;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 375px) {
@@ -409,7 +420,7 @@ http://scripts.sil.org/OFL
 }
 @media only screen and (min-width: 376px) and (max-width: 479px) {
   .contents__main-visual .main__typo-sub2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -479,7 +490,7 @@ http://scripts.sil.org/OFL
 }
 @media only screen and (min-width: 376px) and (max-width: 479px) {
   .contents__main-visual .main__image {
-    width: 50rem;
+    width: 25rem;
     max-width: 100%;
     right: 50%;
     transform: translateX(50%);

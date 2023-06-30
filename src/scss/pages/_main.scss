@@ -76,8 +76,8 @@
               width: 100%;
             }
             @include mobile-portrait {
-              top: 10vh;
-              top: 10svh;
+              top: 9vh;
+              top: 9svh;
               transform: translateY(0);
               width: 100%;
             }
@@ -116,7 +116,7 @@
               text-align: center;
             }
             @include tablet-portrait {
-              font-size: 6vw;
+              font-size: 9vw;
               text-align: center;
             }
             @include tablet-landscape {
@@ -185,6 +185,10 @@
               display: flex;
               font-size: 4rem;
             }
+            @include mobile-portrait {
+              display: flex;
+              font-size: 3rem;
+            }
             @include mobile-mini {
               display: flex;
               font-size: 2.5rem;
@@ -196,6 +200,9 @@
           }
           &-icon {
             img {
+              @include mobile-portrait {
+                width: 8rem;
+              }
               @include mobile-mini {
                 width: 8rem;
                 max-width: 100%;
@@ -221,7 +228,7 @@
               font-size: 4rem;
             }
             @include mobile-portrait {
-              font-size: 3rem;
+              font-size: 2.4rem;
             }
             @include mobile-landscape {
               font-size: 4rem;
@@ -275,7 +282,7 @@
             transform: translateX(50%);
           }
           @include mobile-portrait {
-            width: 50rem;
+            width: 25rem;
             max-width: 100%;
             right: 50%;
             transform: translateX(50%);

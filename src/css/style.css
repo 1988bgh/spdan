@@ -1,1 +1,609 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+html,
+body {
+  font-family: "Pretendard";
+  font-weight: 400;
+  letter-spacing: -0.04rem;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 900;
+  font-display: swap;
+  src: local("Pretendard Black"), url("../font/woff2/Pretendard-Black.woff2") format("woff2"), url("../font/woff/Pretendard-Black.woff") format("woff"), url("../font/woff2-subset/Pretendard-Black.subset.woff2") format("woff2"), url("../font/woff-subset/Pretendard-Black.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-display: swap;
+  src: local("Pretendard ExtraBold"), url("../font/woff2/Pretendard-ExtraBold.woff2") format("woff2"), url("../font/woff/Pretendard-ExtraBold.woff") format("woff"), url("../font/woff2-subset/Pretendard-ExtraBold.subset.woff2") format("woff2"), url("../font/woff-subset/Pretendard-ExtraBold.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url("../font/woff2/Pretendard-Bold.woff2") format("woff2"), url("../font/woff/Pretendard-Bold.woff") format("woff"), url("../font/woff2-subset/Pretendard-Bold.subset.woff2") format("woff2"), url("../font/woff-subset/Pretendard-Bold.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url("../font/woff2/Pretendard-SemiBold.woff2") format("woff2"), url("../font/woff/Pretendard-SemiBold.woff") format("woff"), url("../font/woff2-subset/Pretendard-SemiBold.subset.woff2") format("woff2"), url("../font/woff-subset/Pretendard-SemiBold.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-display: swap;
+  src: local("Pretendard Medium"), url("../font/woff2/Pretendard-Medium.woff2") format("woff2"), url("../font/woff/Pretendard-Medium.woff") format("woff"), url("../font/woff2-subset/Pretendard-Medium.subset.woff2") format("woff2"), url("../font/woff-subset/Pretendard-Medium.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url("../font/woff2/Pretendard-Regular.woff2") format("woff2"), url("../font/woff/Pretendard-Regular.woff") format("woff"), url("../font/woff2-subset/Pretendard-Regular.subset.woff2") format("woff2"), url("../font/woff-subset/Pretendard-Regular.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-display: swap;
+  src: local("Pretendard Light"), url("../font/woff2/Pretendard-Light.woff2") format("woff2"), url("../font/woff/Pretendard-Light.woff") format("woff"), url("../font/woff2-subset/Pretendard-Light.subset.woff2") format("woff2"), url("../font/woff-subset/Pretendard-Light.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  font-display: swap;
+  src: local("Pretendard ExtraLight"), url("../font/woff2/Pretendard-ExtraLight.woff2") format("woff2"), url("../font/woff/Pretendard-ExtraLight.woff") format("woff"), url("../font/woff2-subset/Pretendard-ExtraLight.subset.woff2") format("woff2"), url("../font/woff-subset/Pretendard-ExtraLight.subset.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  font-display: swap;
+  src: local("Pretendard Thin"), url("../font/woff2/Pretendard-Thin.woff2") format("woff2"), url("../font/woff/Pretendard-Thin.woff") format("woff"), url("../font/woff2-subset/Pretendard-Thin.subset.woff2") format("woff2"), url("../font/woff-subset/Pretendard-Thin.subset.woff") format("woff");
+}
+.inner {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.inner-12 {
+  max-width: 120rem;
+}
+.inner-10 {
+  max-width: 100rem;
+}
+
+.contents__main-visual {
+  height: 70rem;
+  background-color: #ebebeb;
+}
+@media only screen and (min-device-width: 1440px) and (max-device-width: 1600px) {
+  .contents__main-visual {
+    height: 60rem;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual {
+    height: 100vh;
+    height: 100svh;
+  }
+}
+@media only screen and (orientation: landscape) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual {
+    height: 102.4rem;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 820px) and (max-device-width: 1023px) {
+  .contents__main-visual {
+    height: 100vh;
+    height: 100svh;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual {
+    height: 100vh;
+    height: 100svh;
+  }
+}
+@media only screen and (orientation: landscape) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual {
+    height: 102.4rem;
+  }
+}
+@media only screen and (min-device-width: 376px) and (max-device-width: 479px) {
+  .contents__main-visual {
+    height: 100vh;
+    height: 100svh;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+  .contents__main-visual {
+    height: 102.4rem;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  .contents__main-visual {
+    height: 100vh;
+    height: 100svh;
+  }
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
+  .contents__main-visual {
+    height: 100vh;
+    height: 100svh;
+  }
+}
+.contents__main-visual .main__typo-wrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media only screen and (orientation: portrait) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual .main__typo-wrap {
+    top: 10vh;
+    top: 10svh;
+    transform: translateY(0);
+    width: 100%;
+  }
+}
+@media only screen and (orientation: landscape) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual .main__typo-wrap {
+    top: 10vh;
+    top: 10svh;
+    transform: translateY(0);
+    width: 100%;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 820px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__typo-wrap {
+    top: 10vh;
+    top: 10svh;
+    transform: translateY(0);
+    width: 100%;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__typo-wrap {
+    top: 10vh;
+    top: 10svh;
+    transform: translateY(0);
+    width: 100%;
+  }
+}
+@media only screen and (orientation: landscape) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__typo-wrap {
+    top: 10vh;
+    top: 10svh;
+    transform: translateY(0);
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 376px) and (max-device-width: 479px) {
+  .contents__main-visual .main__typo-wrap {
+    top: 10vh;
+    top: 10svh;
+    transform: translateY(0);
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+  .contents__main-visual .main__typo-wrap {
+    top: 25vh;
+    top: 25svh;
+    transform: translateY(0);
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  .contents__main-visual .main__typo-wrap {
+    top: 13vh;
+    top: 13svh;
+    transform: translateY(0);
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
+  .contents__main-visual .main__typo-wrap {
+    top: 7vh;
+    top: 7svh;
+    transform: translateY(0);
+    width: 100%;
+  }
+}
+.contents__main-visual .main__typo-normal {
+  font-size: 5.1rem;
+  font-weight: 700;
+  letter-spacing: -0.005rem;
+}
+@media only screen and (orientation: portrait) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual .main__typo-normal {
+    font-size: 9vw;
+    text-align: center;
+  }
+}
+@media only screen and (orientation: landscape) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual .main__typo-normal {
+    font-size: 6vw;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 820px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__typo-normal {
+    font-size: 7.1rem;
+    text-align: center;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__typo-normal {
+    font-size: 6.1rem;
+    text-align: center;
+  }
+}
+@media only screen and (orientation: landscape) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__typo-normal {
+    font-size: 5.1rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width: 376px) and (max-device-width: 479px) {
+  .contents__main-visual .main__typo-normal {
+    font-size: 9vw;
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+  .contents__main-visual .main__typo-normal {
+    font-size: 9vw;
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  .contents__main-visual .main__typo-normal {
+    font-size: 9vw;
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
+  .contents__main-visual .main__typo-normal {
+    font-size: 12vw;
+    text-align: center;
+  }
+}
+.contents__main-visual .main__typo-normal-text {
+  display: block;
+}
+.contents__main-visual .main__typo-normal br {
+  display: none;
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
+  .contents__main-visual .main__typo-normal br {
+    display: block;
+  }
+}
+.contents__main-visual .main__typo-normal strong {
+  text-decoration: underline;
+  text-underline-offset: 0.9rem;
+}
+@media only screen and (orientation: portrait) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual .main__typo-normal strong {
+    text-underline-offset: 1.2rem;
+  }
+}
+.contents__main-visual .main__typo-sub1 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.9rem 0 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+}
+@media only screen and (orientation: portrait) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual .main__typo-sub1 {
+    display: flex;
+    font-size: 6vw;
+  }
+}
+@media only screen and (orientation: landscape) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual .main__typo-sub1 {
+    font-size: 4vw;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 820px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__typo-sub1 {
+    display: flex;
+    font-size: 4rem;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__typo-sub1 {
+    display: flex;
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+  .contents__main-visual .main__typo-sub1 {
+    display: flex;
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  .contents__main-visual .main__typo-sub1 {
+    display: flex;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
+  .contents__main-visual .main__typo-sub1 {
+    display: flex;
+    font-size: 2.7rem;
+  }
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
+  .contents__main-visual .main__typo-icon img {
+    width: 8rem;
+    max-width: 100%;
+  }
+}
+.contents__main-visual .main__typo-sub2 {
+  display: block;
+  margin-top: 4rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+@media only screen and (orientation: landscape) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual .main__typo-sub2 {
+    font-size: 4vw;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__typo-sub2 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (orientation: landscape) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__typo-sub2 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-device-width: 376px) and (max-device-width: 479px) {
+  .contents__main-visual .main__typo-sub2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+  .contents__main-visual .main__typo-sub2 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  .contents__main-visual .main__typo-sub2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
+  .contents__main-visual .main__typo-sub2 {
+    font-size: 2.4rem;
+  }
+}
+.contents__main-visual .main__image {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: -10rem;
+}
+@media only screen and (min-device-width: 1440px) and (max-device-width: 1600px) {
+  .contents__main-visual .main__image {
+    width: 70rem;
+    right: 0;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual .main__image {
+    width: 100%;
+    max-width: 100%;
+    right: 0;
+  }
+}
+@media only screen and (orientation: landscape) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual .main__image {
+    width: 60vw;
+    max-width: 100%;
+    right: 0;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 820px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__image {
+    width: 100%;
+    max-width: 100%;
+    right: 0;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__image {
+    width: 100%;
+    max-width: 100%;
+    right: 0;
+  }
+}
+@media only screen and (orientation: landscape) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual .main__image {
+    width: 90%;
+    max-width: 100%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+@media only screen and (min-device-width: 376px) and (max-device-width: 479px) {
+  .contents__main-visual .main__image {
+    max-width: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 13rem;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+  .contents__main-visual .main__image {
+    max-width: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  .contents__main-visual .main__image {
+    max-width: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0;
+  }
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
+  .contents__main-visual .main__image {
+    max-width: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 8rem;
+  }
+}
+.contents__main-visual a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 5.7rem;
+  right: 4.8rem;
+  width: 18rem;
+  height: 5.5rem;
+  border-radius: 3rem;
+  color: #fff;
+  font-size: 1.8rem;
+  background-color: #ff6000;
+}
+@media only screen and (min-device-width: 1440px) and (max-device-width: 1600px) {
+  .contents__main-visual a {
+    bottom: 4rem;
+    right: 12rem;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual a {
+    bottom: 4rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 34rem;
+    height: 10rem;
+    border-radius: 5rem;
+    font-size: 4vw;
+  }
+}
+@media only screen and (orientation: landscape) and (min-device-width: 1024px) and (max-device-width: 1439px) {
+  .contents__main-visual a {
+    bottom: 4rem;
+    right: 4.8rem;
+    width: 34rem;
+    height: 10rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 820px) and (max-device-width: 1023px) {
+  .contents__main-visual a {
+    bottom: 4rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 34rem;
+    height: 10rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+  }
+}
+@media only screen and (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual a {
+    bottom: 4rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 34rem;
+    height: 10rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+  }
+}
+@media only screen and (orientation: landscape) and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .contents__main-visual a {
+    bottom: 4rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 34rem;
+    height: 10rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-device-width: 376px) and (max-device-width: 479px) {
+  .contents__main-visual a {
+    bottom: 4rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 90%;
+    height: 9rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+  .contents__main-visual a {
+    bottom: 4rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 34rem;
+    height: 10rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  .contents__main-visual a {
+    bottom: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 90%;
+    height: 7rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-device-width: 280px) and (max-device-width: 319px) {
+  .contents__main-visual a {
+    bottom: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 90%;
+    height: 7rem;
+    border-radius: 5rem;
+    font-size: 2.4rem;
+  }
+}

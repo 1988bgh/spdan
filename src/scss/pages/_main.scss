@@ -1,0 +1,394 @@
+.contents__ {
+  &main {
+    &-visual {
+      height: 70rem;
+      background-color: #ebebeb;
+      @include laptop {
+        height: 60rem;
+      }
+      @include tablet-pro-portrait {
+        height: 100vh;
+        height: 100svh;
+      }
+      @include tablet-pro-landscape {
+        height: 102.4rem;
+      }
+      @include tablet-air-portrait {
+        height: 100vh;
+        height: 100svh;
+      }
+      @include tablet-portrait {
+        height: 100vh;
+        height: 100svh;
+      }
+      @include tablet-landscape {
+        height: 102.4rem;
+      }
+      @include mobile-portrait {
+        height: 100vh;
+        height: 100svh;
+      }
+      @include mobile-landscape {
+        height: 102.4rem;
+      }
+      @include mobile-mini {
+        height: 100vh;
+        height: 100svh;
+      }
+      @include mobile-fold {
+        height: 100vh;
+        height: 100svh;
+      }
+      .main__ {
+        &typo {
+          &-wrap {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            @include tablet-pro-portrait {
+              top: 10vh;
+              top: 10svh;
+              transform: translateY(0);
+              width: 100%;
+            }
+            @include tablet-pro-landscape {
+              top: 10vh;
+              top: 10svh;
+              transform: translateY(0);
+              width: 100%;
+            }
+            @include tablet-air-portrait {
+              top: 10vh;
+              top: 10svh;
+              transform: translateY(0);
+              width: 100%;
+            }
+            @include tablet-portrait {
+              top: 10vh;
+              top: 10svh;
+              transform: translateY(0);
+              width: 100%;
+            }
+            @include tablet-landscape {
+              top: 10vh;
+              top: 10svh;
+              transform: translateY(0);
+              width: 100%;
+            }
+            @include mobile-portrait {
+              top: 10vh;
+              top: 10svh;
+              transform: translateY(0);
+              width: 100%;
+            }
+            @include mobile-landscape {
+              top: 25vh;
+              top: 25svh;
+              transform: translateY(0);
+              width: 100%;
+            }
+            @include mobile-mini {
+              top: 13vh;
+              top: 13svh;
+              transform: translateY(0);
+              width: 100%;
+            }
+            @include mobile-fold {
+              top: 7vh;
+              top: 7svh;
+              transform: translateY(0);
+              width: 100%;
+            }
+          }
+          &-normal {
+            font-size: 5.1rem;
+            font-weight: 700;
+            letter-spacing: -0.005rem;
+            @include tablet-pro-portrait {
+              font-size: 9vw;
+              text-align: center;
+            }
+            @include tablet-pro-landscape {
+              font-size: 6vw;
+            }
+            @include tablet-air-portrait {
+              font-size: 7.1rem;
+              text-align: center;
+            }
+            @include tablet-portrait {
+              font-size: 6.1rem;
+              text-align: center;
+            }
+            @include tablet-landscape {
+              font-size: 5.1rem;
+              text-align: center;
+            }
+            @include mobile-portrait {
+              font-size: 9vw;
+              text-align: center;
+            }
+            @include mobile-landscape {
+              font-size: 9vw;
+              text-align: center;
+            }
+            @include mobile-mini {
+              font-size: 9vw;
+              text-align: center;
+            }
+            @include mobile-fold {
+              font-size: 12vw;
+              text-align: center;
+            }
+            &-text {
+              display: block;
+            }
+            br {
+              display: none;
+              @include mobile-fold {
+                display: block;
+              }
+            }
+            strong {
+              text-decoration: underline;
+              text-underline-offset: 0.9rem;
+              @include tablet-pro-portrait {
+                text-underline-offset: 1.2rem;
+              }
+            }
+          }
+          &-sub1 {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2.9rem 0 2rem;
+            font-size: 3rem;
+            font-weight: 300;
+            @include tablet-pro-portrait {
+              display: flex;
+              font-size: 6vw;
+            }
+            @include tablet-pro-landscape {
+              font-size: 4vw;
+            }
+            @include tablet-air-portrait {
+              display: flex;
+              font-size: 4rem;
+            }
+            @include tablet-portrait {
+              display: flex;
+              font-size: 4rem;
+            }
+            @include mobile-landscape {
+              display: flex;
+              font-size: 4rem;
+            }
+            @include mobile-mini {
+              display: flex;
+              font-size: 3rem;
+            }
+            @include mobile-fold {
+              display: flex;
+              font-size: 2.7rem;
+            }
+          }
+          &-icon {
+            img {
+              @include mobile-fold {
+                width: 8rem;
+                max-width: 100%;
+              }
+            }
+          }
+          &-sub2 {
+            display: block;
+            margin-top: 4rem;
+            font-size: 5rem;
+            font-weight: 700;
+            @include tablet-pro-landscape {
+              font-size: 4vw;
+            }
+            @include tablet-portrait {
+              font-size: 4rem;
+            }
+            @include tablet-landscape {
+              font-size: 4rem;
+            }
+            @include mobile-portrait {
+              font-size: 3rem;
+            }
+            @include mobile-landscape {
+              font-size: 4rem;
+            }
+            @include mobile-mini {
+              font-size: 3rem;
+            }
+            @include mobile-fold {
+              font-size: 2.4rem;
+            }
+          }
+        }
+        &image {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: -10rem;
+          @include laptop {
+            width: 70rem;
+            right: 0;
+          }
+
+          @include tablet-pro-portrait {
+            width: 100%;
+            max-width: 100%;
+            right: 0;
+          }
+
+          @include tablet-pro-landscape {
+            width: 60vw;
+            max-width: 100%;
+            right: 0;
+          }
+
+          @include tablet-air-portrait {
+            width: 100%;
+            max-width: 100%;
+            right: 0;
+          }
+          @include tablet-portrait {
+            width: 100%;
+            max-width: 100%;
+            right: 0;
+          }
+          @include tablet-landscape {
+            width: 90%;
+            max-width: 100%;
+            right: 50%;
+            transform: translateX(50%);
+          }
+          @include mobile-portrait {
+            max-width: 100%;
+            right: 50%;
+            transform: translateX(50%);
+            bottom: 13rem;
+          }
+          @include mobile-landscape {
+            max-width: 100%;
+            right: 50%;
+            transform: translateX(50%);
+            bottom: 0;
+          }
+          @include mobile-mini {
+            max-width: 100%;
+            right: 50%;
+            transform: translateX(50%);
+            bottom: 0;
+          }
+          @include mobile-fold {
+            max-width: 100%;
+            right: 50%;
+            transform: translateX(50%);
+            bottom: 8rem;
+          }
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 5.7rem;
+        right: 4.8rem;
+        width: 18rem;
+        height: 5.5rem;
+        border-radius: 3rem;
+        color: #fff;
+        font-size: 1.8rem;
+        background-color: #ff6000;
+        @include laptop {
+          bottom: 4rem;
+          right: 12rem;
+        }
+        @include tablet-pro-portrait {
+          bottom: 4rem;
+          right: 50%;
+          transform: translateX(50%);
+          width: 34rem;
+          height: 10rem;
+          border-radius: 5rem;
+          font-size: 4vw;
+        }
+        @include tablet-pro-landscape {
+          bottom: 4rem;
+          right: 4.8rem;
+          width: 34rem;
+          height: 10rem;
+          border-radius: 5rem;
+          font-size: 3rem;
+        }
+        @include tablet-air-portrait {
+          bottom: 4rem;
+          right: 50%;
+          transform: translateX(50%);
+          width: 34rem;
+          height: 10rem;
+          border-radius: 5rem;
+          font-size: 3rem;
+        }
+        @include tablet-portrait {
+          bottom: 4rem;
+          right: 50%;
+          transform: translateX(50%);
+          width: 34rem;
+          height: 10rem;
+          border-radius: 5rem;
+          font-size: 3rem;
+        }
+        @include tablet-landscape {
+          bottom: 4rem;
+          right: 50%;
+          transform: translateX(50%);
+          width: 34rem;
+          height: 10rem;
+          border-radius: 5rem;
+          font-size: 3rem;
+        }
+        @include mobile-portrait {
+          bottom: 4rem;
+          right: 50%;
+          transform: translateX(50%);
+          width: 90%;
+          height: 9rem;
+          border-radius: 5rem;
+          font-size: 3rem;
+        }
+        @include mobile-landscape {
+          bottom: 4rem;
+          right: 50%;
+          transform: translateX(50%);
+          width: 34rem;
+          height: 10rem;
+          border-radius: 5rem;
+          font-size: 3rem;
+        }
+        @include mobile-mini {
+          bottom: 1rem;
+          right: 50%;
+          transform: translateX(50%);
+          width: 90%;
+          height: 7rem;
+          border-radius: 5rem;
+          font-size: 3rem;
+        }
+        @include mobile-fold {
+          bottom: 1rem;
+          right: 50%;
+          transform: translateX(50%);
+          width: 90%;
+          height: 7rem;
+          border-radius: 5rem;
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+}

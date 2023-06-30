@@ -6,12 +6,19 @@
 
 html,
 body {
-  font-family: "Noto Sans KR";
-  font-size: 56.25%;
+  font-family: "Pretendard";
+  font-weight: 400;
+  letter-spacing: -0.04rem;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 ul,
 ol,
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }

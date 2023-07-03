@@ -39,6 +39,12 @@ This license is copied below, and is also available with a FAQ at:
 http://scripts.sil.org/OFL
 */
 @font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Pretendard";
   font-weight: 900;
   font-display: swap;
@@ -366,21 +372,39 @@ http://scripts.sil.org/OFL
   }
 }
 .contents__main-step {
+  position: relative;
   text-align: center;
+  overflow: hidden;
+}
+.contents__main-step .step__bg-phone {
+  position: absolute;
+  top: -37rem;
+  left: 0;
+}
+.contents__main-step .step__bg-airplane {
+  position: absolute;
+  top: 37rem;
+  right: 0;
+  mix-blend-mode: overlay;
 }
 .contents__main-step .step__feature-wrap {
-  padding: 15rem 0;
+  overflow: hidden;
 }
 .contents__main-step .step__feature-wrap:nth-of-type(1) {
+  padding: 15rem 0 10rem;
+  background-image: url(../assets/images/main-step_phone.png);
+  background-repeat: no-repeat;
+  background-position: 0 -37rem;
   background-color: #ff6000;
 }
 .contents__main-step .step__feature-wrap:nth-of-type(2) {
+  padding: 10rem 0 15rem;
   background-color: #ffa800;
 }
 .contents__main-step .step__typo-box {
   display: inline-block;
   padding-left: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.8rem;
   margin-bottom: 15rem;
   margin-left: -2rem;
   text-align: center;
@@ -394,6 +418,7 @@ http://scripts.sil.org/OFL
   font-size: 5.5rem;
   font-weight: 700;
   text-align: center;
+  letter-spacing: -0.02rem;
 }
 .contents__main-step .step__typo-box span:nth-child(1) {
   display: block;
@@ -405,6 +430,7 @@ http://scripts.sil.org/OFL
   font-size: 5.5rem;
 }
 .contents__main-step .step__typo-box span:nth-child(2) i {
+  color: #fff;
   font-style: none;
 }
 .contents__main-step .step__typo-box span:nth-child(3) {
@@ -416,6 +442,237 @@ http://scripts.sil.org/OFL
   align-items: top;
   justify-content: flex-start;
 }
+.contents__main-step .step__feature-icon {
+  margin-left: 19.5rem;
+  margin-right: 22rem;
+}
 .contents__main-step .step__feature-desc {
   text-align: left;
+}
+.contents__main-step .step__feature-desc .box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.contents__main-step .step__feature-desc .box span:nth-child(1) {
+  margin-right: 2.4rem;
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.contents__main-step .step__feature-desc .box span:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24.6rem;
+  height: 4.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 3rem;
+}
+.contents__main-step .step__feature-desc .box span:nth-child(2).keyword1 {
+  color: #ff6000;
+}
+.contents__main-step .step__feature-desc .box span:nth-child(2).keyword2 {
+  color: #ffa800;
+}
+.contents__main-step .step__feature-desc .desc {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.contents__main-step .step__more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36.2rem;
+  height: 9.6rem;
+  margin: 0 auto;
+  margin-top: 18rem;
+  color: #343b43;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.04rem;
+  border-radius: 5rem;
+  background-color: #ffd200;
+}
+.contents__main-video {
+  padding: 12rem 0 16rem;
+  background-color: #ffd200;
+  background-image: url("../assets/images/main-video_bg.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.contents__main-video .video__text-icon {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.contents__main-video .video__text-desc {
+  text-align: center;
+}
+.contents__main-video .video__text-desc > span {
+  display: inline-block;
+  padding: 0 1.3rem;
+  margin-bottom: 1.6rem;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  background-color: #ffa800;
+}
+.contents__main-video .video__text-desc p {
+  margin-bottom: 11rem;
+  font-size: 6rem;
+  font-weight: 700;
+}
+.contents__main-video .video__text-desc p span {
+  color: #ff6000;
+}
+.contents__main-video .video__text-desc p span strong {
+  color: #fff;
+  background-color: #000;
+}
+.contents__main-video .video__box {
+  width: 120rem;
+  height: 68rem;
+  background-color: #000;
+}
+.contents__main-banner {
+  background-image: url(../assets/images/main-banner-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contents__main-banner .banner__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contents__main-banner .banner__wrap img {
+  display: block;
+  margin-top: -8rem;
+}
+.contents__main-banner .banner__typo-box {
+  position: relative;
+  margin-left: -10rem;
+}
+.contents__main-banner .banner__typo-box span {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+  background-color: #ffbf00;
+}
+.contents__main-banner .banner__typo-box p {
+  position: relative;
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  z-index: 1;
+}
+.contents__main-banner .banner__typo-box p strong i {
+  color: #ffbd00;
+  font-style: normal;
+}
+.contents__main-banner .banner__typo-box img {
+  position: absolute;
+  bottom: -2rem;
+  left: -5rem;
+}
+.contents__main-feature {
+  padding: 18rem 21rem;
+  background-image: url("/src/assets/images/main-feature-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contents__main-feature .feature__icon {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+.contents__main-feature .feature__typo {
+  margin-bottom: 5rem;
+  font-size: 5rem;
+  text-align: center;
+}
+.contents__main-feature .feature__typo span:nth-child(1) {
+  display: block;
+  font-weight: 100;
+}
+.contents__main-feature .feature__typo span:nth-child(2) {
+  color: #fd8369;
+  font-weight: 700;
+}
+.contents__main-feature .feature__typo span:nth-child(3) {
+  font-weight: 700;
+}
+.contents__main-feature .feature__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100rem;
+  height: 28rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  background-color: #e2e6ed;
+}
+.contents__main-feature .feature__box p {
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "GmarketSansMedium";
+  color: #3a3a3a;
+  z-index: 1;
+}
+.contents__main-feature .feature__box img {
+  position: absolute;
+}
+.contents__main-feature .feature__box img.comma1 {
+  left: 24rem;
+  top: 7.2rem;
+}
+.contents__main-feature .feature__box img.comma2 {
+  right: 25rem;
+  top: 13.5rem;
+}
+.contents__main-feature .feature__typo-box {
+  text-align: center;
+}
+.contents__main-feature .feature__typo-box > span {
+  display: inline-block;
+  padding: 0 4rem;
+  margin-bottom: 4rem;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 100;
+  letter-spacing: -0.06em;
+  background-color: #ff6000;
+}
+.contents__main-feature .feature__typo-box p span {
+  position: relative;
+  font-size: 6rem;
+  font-weight: bold;
+  letter-spacing: -0.06em;
+}
+.contents__main-feature .feature__typo-box p span:nth-of-type(odd)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background-color: #000;
+}
+.contents__main-feature .feature__typo-box p span:nth-of-type(even) {
+  color: #ff9834;
+}
+.contents__main-feature .feature__typo-box p span:nth-of-type(even)::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -0.5rem;
+  width: 104%;
+  height: 0.5rem;
+  background-color: #ff9834;
 }

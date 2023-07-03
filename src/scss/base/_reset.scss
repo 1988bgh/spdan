@@ -11,8 +11,8 @@ body {
   letter-spacing: -0.04rem;
   font-size: 62.5%;
   overflow-x: hidden;
-  @include mobile-min {
-    width: 28rem;
+  @include mobile-fold {
+    min-width: 28rem;
     overflow-x: auto;
   }
 }

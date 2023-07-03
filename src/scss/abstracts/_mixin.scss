@@ -1,9 +1,3 @@
-@mixin mobile-min {
-  @media only screen and (max-width: 279px) {
-    @content;
-  }
-}
-
 @mixin mobile-fold {
   @media only screen and (max-width: 319px) {
     @content;
@@ -14,59 +8,21 @@
     @content;
   }
 }
-@mixin mobile-portrait {
-  @media only screen and (min-width: 376px) and (max-width: 479px) {
+@mixin mobile-default {
+  @media only screen and (min-width: 376px) and (max-width: 767px) {
     @content;
   }
 }
-@mixin mobile-landscape {
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+@mixin tablet-default {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     @content;
   }
 }
-@mixin tablet-landscape {
-  @media (orientation: landscape) {
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-      @content;
-    }
-  }
-}
-@mixin tablet-portrait {
-  @media (orientation: portrait) {
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-      @content;
-    }
-  }
-}
 
-@mixin tablet-air-landscape {
-  @media (orientation: landscape) {
-    @media only screen and (min-width: 820px) and (max-width: 1023px) {
-      @content;
-    }
-  }
-}
-@mixin tablet-air-portrait {
-  @media (orientation: portrait) {
-    @media only screen and (min-width: 820px) and (max-width: 1023px) {
-      @content;
-    }
-  }
-}
-
-@mixin tablet-pro-landscape {
-  @media (orientation: landscape) {
-    @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-      @content;
-    }
-  }
-}
-
-@mixin tablet-pro-portrait {
-  @media (orientation: portrait) {
-    @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-      @content;
-    }
+@mixin tablet-pro {
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    @content;
   }
 }
 

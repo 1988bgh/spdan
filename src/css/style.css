@@ -12,10 +12,10 @@ body {
   font-size: 62.5%;
   overflow-x: hidden;
 }
-@media only screen and (max-width: 279px) {
+@media only screen and (max-width: 319px) {
   html,
   body {
-    width: 28rem;
+    min-width: 28rem;
     overflow-x: auto;
   }
 }
@@ -109,60 +109,19 @@ http://scripts.sil.org/OFL
   height: 70rem;
   background-color: #ebebeb;
 }
-@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .contents__main-visual {
-    height: 60rem;
+    height: 90rem;
   }
 }
-@media only screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 376px) and (max-width: 767px) {
   .contents__main-visual {
-    height: 100vh;
-    height: 100svh;
-  }
-}
-@media only screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1439px) {
-  .contents__main-visual {
-    height: 102.4rem;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 820px) and (max-width: 1023px) {
-  .contents__main-visual {
-    height: 100vh;
-    height: 100svh;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual {
-    height: 100vh;
-    height: 100svh;
-  }
-}
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual {
-    height: 102.4rem;
-  }
-}
-@media only screen and (min-width: 376px) and (max-width: 479px) {
-  .contents__main-visual {
-    height: 100vh;
-    height: 100svh;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .contents__main-visual {
-    height: 102.4rem;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 375px) {
-  .contents__main-visual {
-    height: 100vh;
-    height: 100svh;
+    height: 80rem;
   }
 }
 @media only screen and (max-width: 319px) {
   .contents__main-visual {
-    height: 100vh;
-    height: 100svh;
+    height: 60rem;
   }
 }
 .contents__main-visual .main__typo-wrap {
@@ -170,76 +129,46 @@ http://scripts.sil.org/OFL
   top: 50%;
   transform: translateY(-50%);
 }
-@media only screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .contents__main-visual .main__typo-wrap {
-    top: 10vh;
-    top: 10svh;
+    top: 10rem;
     transform: translateY(0);
-    width: 100%;
   }
 }
-@media only screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .contents__main-visual .main__typo-wrap {
-    top: 10vh;
-    top: 10svh;
-    transform: translateY(0);
+    top: 8rem;
+    left: 50%;
+    transform: translateY(0) translateX(-50%);
     width: 100%;
+    text-align: center;
   }
 }
-@media only screen and (orientation: portrait) and (min-width: 820px) and (max-width: 1023px) {
+@media only screen and (min-width: 376px) and (max-width: 767px) {
   .contents__main-visual .main__typo-wrap {
-    top: 10vh;
-    top: 10svh;
-    transform: translateY(0);
+    top: 10rem;
+    left: 50%;
+    transform: translateY(0) translateX(-50%);
     width: 100%;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual .main__typo-wrap {
-    top: 10vh;
-    top: 10svh;
-    transform: translateY(0);
-    width: 100%;
-  }
-}
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual .main__typo-wrap {
-    top: 10vh;
-    top: 10svh;
-    transform: translateY(0);
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 376px) and (max-width: 479px) {
-  .contents__main-visual .main__typo-wrap {
-    top: 9vh;
-    top: 9svh;
-    transform: translateY(0);
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .contents__main-visual .main__typo-wrap {
-    top: 15vh;
-    top: 15svh;
-    transform: translateY(0);
-    width: 100%;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .contents__main-visual .main__typo-wrap {
-    top: 13vh;
-    top: 13svh;
-    transform: translateY(0);
+    top: 8rem;
+    left: 50%;
+    transform: translateY(0) translateX(-50%);
     width: 100%;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 319px) {
   .contents__main-visual .main__typo-wrap {
-    top: 7vh;
-    top: 7svh;
-    transform: translateY(0);
+    top: 6rem;
+    left: 50%;
+    transform: translateY(0) translateX(-50%);
     width: 100%;
+    text-align: center;
   }
 }
 .contents__main-visual .main__typo-normal {
@@ -247,62 +176,24 @@ http://scripts.sil.org/OFL
   font-weight: 700;
   letter-spacing: -0.005rem;
 }
-@media only screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .contents__main-visual .main__typo-normal {
-    font-size: 9vw;
-    text-align: center;
+    font-size: 4.1rem;
   }
 }
-@media only screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 376px) and (max-width: 767px) {
   .contents__main-visual .main__typo-normal {
-    font-size: 6vw;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 820px) and (max-width: 1023px) {
-  .contents__main-visual .main__typo-normal {
-    font-size: 7.1rem;
-    text-align: center;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual .main__typo-normal {
-    font-size: 9vw;
-    text-align: center;
-  }
-}
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual .main__typo-normal {
-    font-size: 5.1rem;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 376px) and (max-width: 479px) {
-  .contents__main-visual .main__typo-normal {
-    font-size: 9vw;
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .contents__main-visual .main__typo-normal {
-    font-size: 9vw;
-    text-align: center;
+    font-size: 3.6rem;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .contents__main-visual .main__typo-normal {
-    font-size: 9vw;
-    text-align: center;
+    font-size: 3rem;
   }
 }
 @media only screen and (max-width: 319px) {
   .contents__main-visual .main__typo-normal {
-    font-size: 12vw;
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 279px) {
-  .contents__main-visual .main__typo-normal {
-    font-size: 3.36rem;
+    font-size: 2.6rem;
   }
 }
 .contents__main-visual .main__typo-normal-text {
@@ -311,19 +202,9 @@ http://scripts.sil.org/OFL
 .contents__main-visual .main__typo-normal br {
   display: none;
 }
-@media only screen and (max-width: 319px) {
-  .contents__main-visual .main__typo-normal br {
-    display: block;
-  }
-}
 .contents__main-visual .main__typo-normal strong {
   text-decoration: underline;
   text-underline-offset: 0.9rem;
-}
-@media only screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1439px) {
-  .contents__main-visual .main__typo-normal strong {
-    text-underline-offset: 1.2rem;
-  }
 }
 .contents__main-visual .main__typo-sub1 {
   display: inline-flex;
@@ -333,68 +214,37 @@ http://scripts.sil.org/OFL
   font-size: 3rem;
   font-weight: 300;
 }
-@media only screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .contents__main-visual .main__typo-sub1 {
-    display: flex;
-    font-size: 6vw;
-  }
-}
-@media only screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1439px) {
-  .contents__main-visual .main__typo-sub1 {
-    font-size: 4vw;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 820px) and (max-width: 1023px) {
-  .contents__main-visual .main__typo-sub1 {
-    display: flex;
-    font-size: 4rem;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual .main__typo-sub1 {
-    display: flex;
-    font-size: 4rem;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .contents__main-visual .main__typo-sub1 {
-    display: flex;
-    font-size: 4rem;
-  }
-}
-@media only screen and (min-width: 376px) and (max-width: 479px) {
-  .contents__main-visual .main__typo-sub1 {
-    display: flex;
-    font-size: 3rem;
+    margin: 2rem 0 1rem;
+    font-size: 2.4rem;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .contents__main-visual .main__typo-sub1 {
-    display: flex;
-    font-size: 2.5rem;
+    margin: 2rem 0 1rem;
+    font-size: 2.4rem;
   }
 }
 @media only screen and (max-width: 319px) {
   .contents__main-visual .main__typo-sub1 {
-    display: flex;
-    font-size: 2.7rem;
+    margin: 2rem 0 1rem;
+    font-size: 2.4rem;
   }
 }
-@media only screen and (min-width: 376px) and (max-width: 479px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .contents__main-visual .main__typo-icon img {
-    width: 8rem;
+    width: 10rem;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .contents__main-visual .main__typo-icon img {
     width: 8rem;
-    max-width: 100%;
   }
 }
 @media only screen and (max-width: 319px) {
   .contents__main-visual .main__typo-icon img {
     width: 8rem;
-    max-width: 100%;
   }
 }
 .contents__main-visual .main__typo-sub2 {
@@ -403,38 +253,21 @@ http://scripts.sil.org/OFL
   font-size: 3rem;
   font-weight: 700;
 }
-@media only screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .contents__main-visual .main__typo-sub2 {
-    font-size: 4vw;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual .main__typo-sub2 {
-    font-size: 4rem;
-  }
-}
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual .main__typo-sub2 {
-    font-size: 4rem;
-  }
-}
-@media only screen and (min-width: 376px) and (max-width: 479px) {
-  .contents__main-visual .main__typo-sub2 {
+    margin-top: 3rem;
     font-size: 2.4rem;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .contents__main-visual .main__typo-sub2 {
-    font-size: 4rem;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .contents__main-visual .main__typo-sub2 {
+    margin-top: 3rem;
     font-size: 2.4rem;
   }
 }
 @media only screen and (max-width: 319px) {
   .contents__main-visual .main__typo-sub2 {
+    margin-top: 3rem;
     font-size: 2.4rem;
   }
 }
@@ -444,82 +277,41 @@ http://scripts.sil.org/OFL
   bottom: 0;
   right: -10rem;
 }
-@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .contents__main-visual .main__image {
-    width: 70rem;
+    width: 65rem;
     right: 0;
   }
 }
-@media only screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .contents__main-visual .main__image {
-    width: 80rem;
-    max-width: 100%;
+    width: 60rem;
     right: 50%;
     transform: translateX(50%);
   }
 }
-@media only screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 376px) and (max-width: 767px) {
   .contents__main-visual .main__image {
-    width: 60vw;
-    max-width: 100%;
-    right: 0;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 820px) and (max-width: 1023px) {
-  .contents__main-visual .main__image {
-    width: 100%;
-    max-width: 100%;
-    right: 0;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual .main__image {
-    width: 50rem;
-    max-width: 100%;
+    width: 36rem;
+    bottom: 9rem;
     right: 50%;
     transform: translateX(50%);
-  }
-}
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual .main__image {
-    width: 70rem;
-    max-width: 100%;
-    right: 50%;
-    transform: translateX(50%);
-  }
-}
-@media only screen and (min-width: 376px) and (max-width: 479px) {
-  .contents__main-visual .main__image {
-    width: 25rem;
-    max-width: 100%;
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 13rem;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .contents__main-visual .main__image {
-    width: 50rem;
-    max-width: 100%;
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 0;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .contents__main-visual .main__image {
-    max-width: 100%;
+    width: 100%;
+    bottom: 12rem;
     right: 50%;
     transform: translateX(50%);
-    bottom: 0;
   }
 }
 @media only screen and (max-width: 319px) {
   .contents__main-visual .main__image {
-    max-width: 100%;
+    width: 100%;
+    bottom: 11rem;
     right: 50%;
     transform: translateX(50%);
-    bottom: 8rem;
   }
 }
 .contents__main-visual a {
@@ -536,107 +328,94 @@ http://scripts.sil.org/OFL
   font-size: 1.8rem;
   background-color: #ff6000;
 }
-@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .contents__main-visual a {
-    bottom: 4rem;
-    right: 12rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
-@media only screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 376px) and (max-width: 767px) {
   .contents__main-visual a {
-    bottom: 4rem;
-    right: 50%;
-    transform: translateX(50%);
-    width: 34rem;
-    height: 10rem;
-    border-radius: 5rem;
-    font-size: 4vw;
-  }
-}
-@media only screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1439px) {
-  .contents__main-visual a {
-    bottom: 4rem;
-    right: 4.8rem;
-    width: 34rem;
-    height: 10rem;
-    border-radius: 5rem;
-    font-size: 3rem;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 820px) and (max-width: 1023px) {
-  .contents__main-visual a {
-    bottom: 4rem;
-    right: 50%;
-    transform: translateX(50%);
-    width: 34rem;
-    height: 10rem;
-    border-radius: 5rem;
-    font-size: 3rem;
-  }
-}
-@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual a {
-    bottom: 4rem;
-    right: 50%;
-    transform: translateX(50%);
-    width: 34rem;
-    height: 8rem;
-    border-radius: 5rem;
-    font-size: 2.4rem;
-  }
-}
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1023px) {
-  .contents__main-visual a {
-    bottom: 4rem;
-    right: 50%;
-    transform: translateX(50%);
-    width: 34rem;
-    height: 8rem;
-    border-radius: 5rem;
-    font-size: 2.4rem;
-  }
-}
-@media only screen and (min-width: 376px) and (max-width: 479px) {
-  .contents__main-visual a {
-    bottom: 6rem;
-    right: 50%;
-    transform: translateX(50%);
-    width: 90%;
-    height: 7rem;
-    border-radius: 5rem;
-    font-size: 2.4rem;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .contents__main-visual a {
-    bottom: 4rem;
-    right: 50%;
-    transform: translateX(50%);
-    width: 34rem;
-    height: 8rem;
-    border-radius: 5rem;
-    font-size: 3rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24rem;
+    height: 6.5rem;
+    font-size: 2.2rem;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .contents__main-visual a {
-    bottom: 1rem;
-    right: 50%;
-    transform: translateX(50%);
-    width: 90%;
-    height: 6rem;
-    border-radius: 5rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24rem;
+    height: 6.5rem;
     font-size: 2.2rem;
   }
 }
 @media only screen and (max-width: 319px) {
   .contents__main-visual a {
-    bottom: 1rem;
-    right: 50%;
-    transform: translateX(50%);
-    width: 90%;
-    height: 7rem;
-    border-radius: 5rem;
-    font-size: 2.4rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22rem;
+    height: 5.5rem;
+    font-size: 1.8rem;
   }
+}
+.contents__main-step {
+  text-align: center;
+}
+.contents__main-step .step__feature-wrap {
+  padding: 15rem 0;
+}
+.contents__main-step .step__feature-wrap:nth-of-type(1) {
+  background-color: #ff6000;
+}
+.contents__main-step .step__feature-wrap:nth-of-type(2) {
+  background-color: #ffa800;
+}
+.contents__main-step .step__typo-box {
+  display: inline-block;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 15rem;
+  margin-left: -2rem;
+  text-align: center;
+  letter-spacing: -0.01rem;
+  background-image: url(../assets/images/main-step_underline.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.contents__main-step .step__typo-box span {
+  color: #fff;
+  font-size: 5.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.contents__main-step .step__typo-box span:nth-child(1) {
+  display: block;
+  font-size: 5.5rem;
+  font-weight: 300;
+}
+.contents__main-step .step__typo-box span:nth-child(2) {
+  color: #fdff34;
+  font-size: 5.5rem;
+}
+.contents__main-step .step__typo-box span:nth-child(2) i {
+  font-style: none;
+}
+.contents__main-step .step__typo-box span:nth-child(3) {
+  margin-right: 1rem;
+  color: #ffd234;
+}
+.contents__main-step .step__feature-box {
+  display: flex;
+  align-items: top;
+  justify-content: flex-start;
+}
+.contents__main-step .step__feature-desc {
+  text-align: left;
 }

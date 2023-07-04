@@ -39,6 +39,12 @@ This license is copied below, and is also available with a FAQ at:
 http://scripts.sil.org/OFL
 */
 @font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "GmarketSansMedium";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
   font-weight: normal;
@@ -675,4 +681,203 @@ http://scripts.sil.org/OFL
   width: 104%;
   height: 0.5rem;
   background-color: #ff9834;
+}
+.contents__main-review {
+  padding: 14.4rem 0 12rem;
+  background-color: #c82a00;
+}
+.contents__main-review .review__title-box img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+.contents__main-review .review__title-box .box {
+  display: block;
+  width: 60rem;
+  height: 7rem;
+  border-radius: 4rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 300;
+  letter-spacing: -0.06em;
+  text-align: center;
+  line-height: 7rem;
+  background-color: #ffba00;
+}
+.contents__main-review .review__title-box span:nth-of-type(2) {
+  display: block;
+  margin-bottom: 1rem;
+  color: #fef1ab;
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+}
+.contents__main-review .review__title-box span:nth-of-type(3) {
+  display: block;
+  margin-bottom: 10rem;
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -0.06em;
+}
+.contents__main-review .review__title-box span:nth-of-type(3) strong {
+  color: #ffba00;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 1.2rem;
+}
+.contents__main-review .review__caroucel {
+  position: relative;
+  width: 117rem;
+  margin: 0 auto;
+  margin-bottom: 13rem;
+  padding: 3.5rem;
+  overflow: hidden;
+}
+.contents__main-review .swiper-slide {
+  position: relative;
+  width: 34rem;
+  height: 49rem;
+  padding: 5rem 4rem;
+  border-radius: 5rem;
+  background-color: #fff;
+  opacity: 0.3;
+}
+.contents__main-review .swiper-slide .mark {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13rem;
+  height: 3.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  background-color: #ffba00;
+}
+.contents__main-review .swiper-slide.swiper-slide-next {
+  opacity: 1;
+}
+.contents__main-review .swiper-slide .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.contents__main-review .swiper-slide .info span {
+  color: #4d4d4d;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.contents__main-review .swiper-slide .title {
+  margin-bottom: 2.5rem;
+  color: #d94018;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.contents__main-review .swiper-slide .desc {
+  min-height: 14rem;
+  margin-bottom: 4rem;
+  font-size: 1.4rem;
+  letter-spacing: -0.04em;
+  line-height: 2em;
+  word-break: keep-all;
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contents__main-review .swiper-slide .star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26.5rem;
+  height: 6.5rem;
+  background-color: #c82a00;
+  border-radius: 5rem;
+}
+.contents__main-review button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6.5rem;
+  height: 6.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+  cursor: pointer;
+}
+.contents__main-review button.caroucel__next {
+  right: 0;
+  background-image: url("../assets/images/review-arrow-next.png");
+}
+.contents__main-review button.caroucel__prev {
+  left: 0;
+  background-image: url("../assets/images/review-arrow-prev.png");
+}
+.contents__main-review .caroucel__pagination {
+  display: none;
+}
+.contents__main-review .more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33rem;
+  height: 10rem;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: #ffba00;
+  border-radius: 5rem;
+}
+.contents__main-package {
+  padding: 22rem 0 24rem;
+  background-image: url("../assets/images/main-package-bg.png");
+}
+.contents__main-package .title-box {
+  margin-bottom: 14rem;
+  text-align: center;
+}
+.contents__main-package .title-box span {
+  font-family: "yg-jalnan";
+  color: #fff;
+  font-size: 6.5rem;
+}
+.contents__main-package .title-box span:nth-child(2) {
+  color: #ffde00;
+}
+.contents__main-package .title-box span:nth-child(3) {
+  color: #ff9834;
+}
+.contents__main-package .title-box p {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+.contents__main-recommend {
+  height: 68rem;
+  background-image: url("../assets/images/main-recommend-bg.png");
+  background-repeat: no-repeat;
+}
+.contents__main-recommend .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contents__main-recommend img:nth-of-type(1) {
+  margin-top: -6.2rem;
+}
+.contents__main-recommend img:nth-of-type(2) {
+  margin-left: 13.3rem;
 }

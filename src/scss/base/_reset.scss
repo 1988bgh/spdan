@@ -10,9 +10,8 @@ body {
   font-weight: 400;
   letter-spacing: -0.04rem;
   font-size: 62.5%;
-  overflow-x: hidden;
-  @include mobile-fold {
-    min-width: 28rem;
+  @include s1 {
+    min-width: 280px;
     overflow-x: auto;
   }
 }
@@ -25,4 +24,8 @@ li {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }

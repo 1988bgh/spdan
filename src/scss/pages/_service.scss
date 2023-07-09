@@ -1,0 +1,437 @@
+.contents__service {
+  padding: 87px 0 250px;
+  .inner {
+    padding: 0 32px;
+    @include s1 {
+      padding: 0;
+    }
+  }
+  .service__ {
+    &title-box {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 90px;
+      @include s1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 50px;
+      }
+      .title {
+        color: #ff6000;
+        font-size: 30px;
+        font-weight: 500;
+        @include s1 {
+          margin-bottom: 20px;
+          font-size: 24px;
+        }
+      }
+      .location {
+        color: #98989a;
+        font-size: 16px;
+        span {
+          color: #ff6000;
+        }
+      }
+    }
+    &board-list {
+      .search-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include s1 {
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100%;
+          max-width: 320px;
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+        select {
+          width: 120px;
+          height: 44px;
+          margin-right: 8px;
+          padding: 0 11px;
+          font-size: 15px;
+          font-weight: 500;
+          border: 1px solid #e4e4e4;
+          background-image: url("../assets/images/search-arrow.png");
+          background-position: 95% center;
+          background-repeat: no-repeat;
+          @include s1 {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+            font-size: 14px;
+          }
+        }
+        input {
+          width: 200px;
+          height: 44px;
+          padding-left: 13px;
+          font-size: 15px;
+          border: 1px solid #e4e4e4;
+          @include s1 {
+            width: 100%;
+            font-size: 14px;
+          }
+        }
+        .form-box {
+          position: relative;
+          @include s1 {
+            width: 100%;
+          }
+          button {
+            position: absolute;
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      .total-info {
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        @include s1 {
+          display: none;
+        }
+      }
+      .board- {
+        &category {
+          display: flex;
+          width: 100%;
+          background-color: #fafaf9;
+          border-top: 1px solid #bababa;
+          border-bottom: 1px solid #bababa;
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: -0.06em;
+            &.no {
+              width: 70px;
+              flex-shrink: 0;
+            }
+            &.title {
+              width: 536px;
+            }
+            &.user {
+              width: 100px;
+              flex-shrink: 0;
+            }
+            &.date {
+              width: 150px;
+              flex-shrink: 0;
+            }
+            &.view {
+              width: 80px;
+              flex-shrink: 0;
+            }
+            @include s2 {
+              height: 40px;
+              font-size: 16px;
+              &.no {
+                width: 60px;
+                flex-shrink: 0;
+              }
+              &.title {
+                width: 536px;
+              }
+              &.user {
+                width: 90px;
+                flex-shrink: 0;
+              }
+              &.date {
+                width: 120px;
+                flex-shrink: 0;
+              }
+              &.view {
+                width: 70px;
+                flex-shrink: 0;
+              }
+            }
+            @include s1 {
+              &.date {
+                width: 80px;
+              }
+              &.no {
+                width: 40px;
+              }
+              font-size: 14px;
+              &.user {
+                display: none;
+              }
+              &.view {
+                display: none;
+              }
+            }
+            @include s0 {
+              &.date {
+                display: none;
+              }
+            }
+          }
+        }
+        &contents {
+          width: 100%;
+          margin-bottom: 44px;
+          @include s1 {
+            margin-bottom: 20px;
+          }
+          li {
+            display: flex;
+            width: 100%;
+            height: 80px;
+            border-bottom: 1px solid #e6e6e6;
+            overflow: hidden;
+            @include s2 {
+              height: 50px;
+            }
+            span {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #2e2e2e;
+              font-size: 18px;
+              font-weight: 100;
+              letter-spacing: -0.06em;
+              overflow: hidden;
+              &.no {
+                width: 70px;
+                flex-shrink: 0;
+              }
+              &.title {
+                width: 536px;
+                justify-content: flex-start;
+                flex-shrink: 1;
+                a {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  line-height: 80px;
+                  color: #2e2e2e;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+              }
+              &.user {
+                width: 100px;
+                flex-shrink: 0;
+              }
+              &.date {
+                width: 150px;
+                flex-shrink: 0;
+              }
+              &.view {
+                width: 80px;
+                flex-shrink: 0;
+              }
+              @include s2 {
+                height: 50px;
+                font-size: 16px;
+                &.no {
+                  width: 60px;
+                  flex-shrink: 0;
+                }
+                &.title {
+                  a {
+                    line-height: 50px;
+                  }
+                }
+                &.user {
+                  width: 90px;
+                  flex-shrink: 0;
+                }
+                &.date {
+                  width: 120px;
+                  flex-shrink: 0;
+                }
+                &.view {
+                  width: 70px;
+                  flex-shrink: 0;
+                }
+              }
+              @include s1 {
+                font-size: 14px;
+                &.user {
+                  display: none;
+                }
+                &.view {
+                  display: none;
+                }
+                &.date {
+                  width: 80px;
+                }
+                &.no {
+                  width: 40px;
+                }
+              }
+              @include s0 {
+                &.date {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .pagination-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 34px;
+          height: 34px;
+          margin-right: 6px;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 500;
+          background-color: #303030;
+          &:last-child {
+            margin-right: 0;
+          }
+          &.current {
+            background-color: #ff6000;
+          }
+        }
+        @include s1 {
+          a {
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    &board-view {
+      .view__ {
+        &item {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 10px 0;
+          border-bottom: 1px solid #bababa;
+          overflow: hidden;
+          @include s1 {
+            &:nth-child(2) {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+          }
+          h3 {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            width: 185px;
+            padding-left: 53px;
+            color: #ff6000;
+            font-size: 18px;
+            @include s2 {
+              width: 120px;
+              padding-left: 30px;
+              font-size: 16px;
+            }
+            @include s1 {
+              font-size: 14px;
+            }
+          }
+          span {
+            font-size: 18px;
+            font-weight: 300;
+            word-break: break-all;
+            @include s2 {
+              font-size: 16px;
+            }
+            @include s1 {
+              font-size: 14px;
+            }
+          }
+          .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include s1 {
+              justify-content: flex-start;
+              width: 100%;
+              &:first-child {
+                padding-bottom: 10px;
+              }
+            }
+            &:last-child {
+              margin-left: auto;
+              margin-right: 190px;
+              @include s1 {
+                padding-top: 10px;
+                margin-left: 0;
+                margin-right: 0;
+                border-top: 1px solid #bababa;
+              }
+            }
+          }
+          .file {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+            padding-right: 14px;
+            background-color: #ff6000;
+            overflow: hidden;
+            img {
+              margin-left: 10px;
+            }
+            a {
+              display: block;
+              max-width: 200px;
+              height: 36px;
+              padding-left: 14px;
+              color: #fff;
+              line-height: 36px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        &content {
+          min-height: 250px;
+          padding: 20px;
+          margin-bottom: 46px;
+          border-bottom: 1px solid #bababa;
+          @include s2 {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+  .view__btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 36px;
+    margin: 0 auto;
+    border-radius: 18px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    @include s1 {
+      width: 100%;
+      max-width: 320px;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+}

@@ -23,3 +23,70 @@ section {
     max-width: 1000px;
   }
 }
+
+.common__ {
+  &title-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 90px;
+    @include s1 {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 50px;
+    }
+    .title {
+      color: #ff6000;
+      font-size: 30px;
+      font-weight: 500;
+      @include s1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+    }
+    .location {
+      color: #98989a;
+      font-size: 16px;
+      span {
+        color: #ff6000;
+      }
+    }
+  }
+}
+
+.agree__check-box {
+  input {
+    display: none;
+    &:checked + label {
+      .check {
+        background-image: url("../assets/images/agree-check-on.png");
+      }
+    }
+  }
+  label {
+    display: flex;
+    align-items: center;
+    &.left {
+      justify-content: flex-start;
+    }
+    &.center {
+      justify-content: center;
+    }
+    color: #b1b1b1;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    @include s2 {
+      font-size: 16px;
+    }
+  }
+  .check {
+    display: block;
+    width: 30px;
+    height: 28px;
+    margin-right: 8px;
+    background-image: url("../assets/images/agree-check-off.png");
+  }
+}

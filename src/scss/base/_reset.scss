@@ -7,7 +7,7 @@
 html,
 body {
   font-family: "Pretendard";
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: -0.04rem;
   font-size: 62.5%;
   @include s1 {
@@ -28,4 +28,28 @@ a {
 
 img {
   max-width: 100%;
+}
+
+input {
+  display: block;
+  border: none;
+  outline: none;
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+select {
+  -webkit-appearance: none; /* for chrome */
+  -moz-appearance: none; /*for firefox*/
+  appearance: none;
+  outline: none;
+  border: none;
+}
+textarea {
+  font-family: "Pretendard";
+  font-weight: 300;
+  line-height: 1.6;
+  outline: none;
 }

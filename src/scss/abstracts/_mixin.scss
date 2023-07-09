@@ -1,3 +1,8 @@
+@mixin s0 {
+  @media only screen and (max-width: 319px) {
+    @content;
+  }
+}
 @mixin s1 {
   @media only screen and (max-width: 767px) {
     @content;
@@ -10,6 +15,18 @@
 }
 @mixin s3 {
   @media only screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin h {
+  @media only screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin s {
+  @media only screen and (max-width: 400px) {
     @content;
   }
 }

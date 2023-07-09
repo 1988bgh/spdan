@@ -1,0 +1,113 @@
+.contents__login {
+  padding: 150px 0 140px;
+  @include s1 {
+    padding: 100px 0 100px;
+  }
+  .inner {
+    max-width: 500px;
+  }
+  h2 {
+    margin-bottom: 20px;
+    color: #ff6000;
+    font-size: 46px;
+    font-weight: 800;
+    text-align: center;
+    @include s1 {
+      font-size: 30px;
+    }
+  }
+  p {
+    margin-bottom: 80px;
+    color: #3c3c3c;
+    font-size: 24px;
+    text-align: center;
+    @include s1 {
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+  }
+  .login__ {
+    &input-form {
+      position: relative;
+      height: 80px;
+      @include s1 {
+        height: 50px;
+      }
+      &:nth-of-type(2) {
+        margin-bottom: 44px;
+      }
+    }
+    &pw {
+      margin-top: 20px;
+    }
+    &id,
+    &pw {
+      width: 100%;
+      height: 100%;
+      padding: 19px;
+      font-size: 20px;
+      border-bottom: 1px solid #b1b1b1;
+      @include s1 {
+        font-size: 16px;
+      }
+      &::placeholder {
+        color: #b1b1b1;
+        font-size: 20px;
+        @include s1 {
+          font-size: 16px;
+        }
+      }
+      & + img {
+        position: absolute;
+        right: 32px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 208px;
+      height: 60px;
+      margin: 0 auto;
+      margin-bottom: 70px;
+      font-size: 25px;
+      color: #fff;
+      background-color: #272727;
+      border-radius: 30px;
+      @include s1 {
+        width: 100%;
+        max-width: 320px;
+        height: 50px;
+        margin-bottom: 40px;
+        font-size: 20px;
+      }
+    }
+    &link-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        display: block;
+        padding: 6px 40px;
+        color: #898a8d;
+        font-size: 18px;
+        border-right: 1px solid #b1b1b1;
+        @include s1 {
+          padding: 3px 10px;
+          font-size: 14px;
+        }
+        &:nth-child(1) {
+          padding-left: 0;
+        }
+        &:nth-child(2) {
+        }
+        &:nth-child(3) {
+          padding-right: 0;
+          border-right: none;
+        }
+      }
+    }
+  }
+}

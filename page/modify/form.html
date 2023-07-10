@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스단결::비밀번호 찾기</title>
+    <link rel="stylesheet" href="../../src/css/style.css" />
+    <script src="../../src/js/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="top__banner">
+        <div class="inner inner-12">
+          <span class="top__banner-flag"
+            ><img src="../../src/assets/images/top-flag.png" alt=""
+          /></span>
+          <p><span>쉽고 빠른</span> 스페인어 <span>단어연결</span> 학습법!</p>
+          <a href="javascript:void(0)">기사보기</a>
+          <button type="button">
+            <img src="../../src/assets/images/top-closed.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <header>
+        <div class="inner inner-12">
+          <a href="/" class="logo"
+            ><img
+              src="../../src/assets/images/logo.png"
+              alt="스페인어는 단어의 연결이다 스단결"
+          /></a>
+          <a href="javascript:void(0)" class="login-btn">로그인</a>
+          <a href="javascript:void(0)" class="join-btn">회원가입</a>
+          <a href="javascript:void(0)" class="customer-btn">고객센터</a>
+          <a href="javascript:void(0)" class="youtube-btn"
+            ><img src="../../src/assets/images/header-youtube.svg" alt=""
+          /></a>
+        </div>
+      </header>
+      <nav class="gnb">
+        <div class="inner inner-12">
+          <button type="button" class="gnb__all-btn"></button>
+          <a href="javascript:void(0)" class="gnb__item">수강신청</a>
+          <a href="javascript:void(0)" class="gnb__item">스단결 특징</a>
+          <a href="javascript:void(0)" class="gnb__item">효과후기</a>
+          <a href="javascript:void(0)" class="gnb__item">샘플강의</a>
+          <a href="javascript:void(0)" class="gnb__item">강사소개</a>
+          <a href="javascript:void(0)" class="gnb__item">강좌소개</a>
+          <a href="javascript:void(0)" class="gnb__item">FAQ</a>
+          <a href="javascript:void(0)" class="mypage-btn">나의 스터디룸</a>
+        </div>
+      </nav>
+      <section class="contents__modify">
+        <div class="inner inner-10 form">
+          <h2 class="mform__title">회원정보 수정</h2>
+          <div class="mform__form-box">
+            <h3>기본사항</h3>
+            <div class="mform__item name">
+              <h4>이름</h4>
+              <input type="text" value="김정은" readonly />
+            </div>
+            <div class="mform__item gender">
+              <h4>성별</h4>
+              <input type="text" value="여자" readonly />
+            </div>
+            <div class="mform__item birth">
+              <h4>생년월일</h4>
+              <input type="text" value="2023.01.01" readonly />
+            </div>
+            <div class="mform__item phone">
+              <h4>휴대전화</h4>
+              <input type="text" value="010-1234-5678" readonly />
+            </div>
+          </div>
+          <div class="mform__form-box">
+            <h3>회원정보입력 <span>(필수)</span></h3>
+            <div class="mform__item">
+              <h4>아이디</h4>
+              <input type="text" value="test00" readonly />
+            </div>
+            <div class="mform__item pw">
+              <h4>비밀번호</h4>
+              <div class="pw-box">
+                <button type="button" class="popup-btn">비밀번호 변경</button>
+              </div>
+            </div>
+            <div class="mform__item addr">
+              <h4 class="first">주소</h4>
+              <div class="addr-box">
+                <div class="addr-item">
+                  <input type="text" value="46523" readonly />
+                  <button type="button" class="search-btn">주소검색</button>
+                </div>
+                <div class="addr-item">
+                  <input type="text" value="서울 마포구 독막로 35" readonly />
+                </div>
+                <div class="addr-item">
+                  <input type="text" value="유림빌딩 4층" />
+                </div>
+              </div>
+            </div>
+            <div class="mform__item">
+              <h4>이메일</h4>
+              <div class="email-box">
+                <div class="email-item">
+                  <input type="text" value="test00" />
+                </div>
+                <span>@</span>
+                <div class="email-item">
+                  <input type="text" value="naver.com" />
+                  <button type="button" class="email-btn">중복확인</button>
+                </div>
+              </div>
+            </div>
+            <div class="mform__item">
+              <h4 class="first kakao">
+                카카오톡<br />
+                친구추가
+              </h4>
+              <div class="kakao-box">
+                <p>친구추가를 통해 신속하고 원활한 상담을 해드리겠습니다.</p>
+                <ul class="list">
+                  <li>* 강의, 패키지, 결제 관련 상담</li>
+                  <li>* 다양한 혜택 및 서비스 정책 메시지 발송</li>
+                  <li>
+                    * 회원정보, 서비스 정책 관련 메시지는 안전거래를 위해
+                    정보수신 여부와 관계 없이 발송됩니다.
+                  </li>
+                </ul>
+                <div class="agree__check-box kakao">
+                  <input
+                    type="checkbox"
+                    class="agree__check"
+                    id="agree__check4"
+                  />
+                  <label for="agree__check4">
+                    <span class="check"></span>카카오톡 수신 여부를
+                    동의합니다.</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mform__form-box">
+            <h3>선택사항</h3>
+            <div class="mform__item">
+              <h4>탈퇴신청</h4>
+              <div class="out-box">
+                <button type="button" class="out-btn">탈퇴신청</button>
+              </div>
+            </div>
+          </div>
+          <div class="mform__btn-wrap">
+            <a href="javascript:void(0)" class="btn cancel">취소</a>
+            <a href="javascript:void(0)" class="btn modify">수정</a>
+          </div>
+        </div>
+      </section>
+      <section class="contents__modify-popup" style="display: none">
+        <div class="inner inner-10">
+          <div class="popup-wrap">
+            <button type="button">
+              <img
+                src="../../src/assets/images/modify-popup_close.png"
+                alt=""
+              />
+            </button>
+            <div class="cont">
+              <img src="../../src/assets/images/modify-popup-pw.png" alt="" />
+              <h2>비밀번호 변경</h2>
+              <p class="desc">
+                6~12자 영문+숫자를 조합해서 입력해 주세요.(대소문자 주의)
+              </p>
+              <div class="form-box">
+                <h3>현재 비밀번호</h3>
+                <input type="text" placeholder="현재 비밀번호 입력해 주세요" />
+              </div>
+              <div class="form-box">
+                <h3 class="point">변경 비밀번호</h3>
+                <input
+                  type="text"
+                  placeholder="변경할 비밀번호를 입력해 주세요"
+                />
+              </div>
+              <div class="form-box">
+                <h3 class="point">비밀번호 확인</h3>
+                <input
+                  type="text"
+                  placeholder="변경할 비밀번호를 다시 한 번 입력해 주세요"
+                />
+              </div>
+              <div class="btn-wrap">
+                <a href="javascript:void(0)" class="cancel">취소</a>
+                <a href="javascript:void(0)">변경하기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

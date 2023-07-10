@@ -49,58 +49,44 @@
           <a href="javascript:void(0)" class="mypage-btn">나의 스터디룸</a>
         </div>
       </nav>
-      <section class="contents__find">
+      <section class="contents__modify">
         <div class="inner inner-10">
-          <h2 class="find__title">아이디/비밀번호 찾기</h2>
-          <div class="tab-handler">
-            <a href="./idFindForm.html" class="tab"> 아이디 찾기 </a>
-            <a href="javascript:void(0)" class="tab active"> 비밀번호 찾기 </a>
-          </div>
-          <p class="find__desc">
-            스단결을 방문해 주셔서 감사합니다.<br />
-            아이디나 비밀번호가 생각나지 않으세요?
+          <h2 class="modify__title">회원정보 수정</h2>
+          <p class="modify__desc">
+            혹시 비밀번호를 잊으셨나요?<br />
+            고객센터에서 신속히 안내해 드립니다!
           </p>
-          <p class="find__desc">
-            회원님의 개인정보를 안전하게 되찾으실 수 있도록 도와드리겠습니다.
-          </p>
-          <div class="find__icon">
-            <img src="../../src/assets/images/find-id-phone.png" alt="" />
-            <h3>휴대폰번호 인증</h3>
+          <div class="modify__contact-box">
+            <span>
+              <img src="../../src/assets/images/modify-kakao.png" alt="" />
+              @스단결
+            </span>
+            <span>
+              <img src="../../src/assets/images/modify-tel.png" alt="" />
+              02.323.0377
+            </span>
           </div>
-          <div class="find__form-box">
-            <div class="find__form-item">
-              <h4>아이디</h4>
-              <input type="text" placeholder="아이디를 입력해주세요." />
-            </div>
-            <div class="find__btn-wrap">
-              <a href="./pwFindCert.html" class="btn">확인</a>
-            </div>
-            <div class="notice">
-              ※안내말씀<br />
-              아이디/비밀번호를 찾으실 수 없는 회원님께서는 스단결 고객센터
-              02-6959-0609으로 연락주시기 바랍니다.
+          <div class="modify__form">
+            <img src="../../src/assets/images/modify-phone.png" alt="" />
+            <div class="info">
+              <h3>김정은 회원님</h3>
+              <p>
+                회원니의 정보를 안전하게 보호하기 위해<br /><strong
+                  >비밀번호를 다시 한 번 확인</strong
+                >
+                합니다.
+              </p>
+              <div class="form-box">
+                <input
+                  type="password"
+                  placeholder="이곳에 비밀번호를 입력해 주세요."
+                />
+              </div>
+              <a href="./form.html" class="btn">회원정보 수정하기</a>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <script>
-      const tabHandler = (() => {
-        const method = {
-          onActive: function () {},
-        };
-
-        const _addEvent = () => {};
-
-        const _initialize = () => {
-          _addEvent();
-        };
-
-        return {
-          init: _initialize(),
-        };
-      })();
-      tabHandler.init;
-    </script>
   </body>
 </html>

@@ -50,36 +50,49 @@
         </div>
       </nav>
       <section class="contents__find">
-        <div class="inner inner-10">
+        <div class="inner inner-10 result">
           <h2 class="find__title">아이디/비밀번호 찾기</h2>
           <div class="tab-handler">
             <a href="./idFindForm.html" class="tab"> 아이디 찾기 </a>
             <a href="javascript:void(0)" class="tab active"> 비밀번호 찾기 </a>
           </div>
-          <p class="find__desc">
-            스단결을 방문해 주셔서 감사합니다.<br />
-            아이디나 비밀번호가 생각나지 않으세요?
-          </p>
-          <p class="find__desc">
-            회원님의 개인정보를 안전하게 되찾으실 수 있도록 도와드리겠습니다.
-          </p>
-          <div class="find__icon">
-            <img src="../../src/assets/images/find-id-phone.png" alt="" />
-            <h3>휴대폰번호 인증</h3>
+          <div class="find__check-icon">
+            <img src="../../src/assets/images/find-pw-cert.png" alt="" />
           </div>
-          <div class="find__form-box">
-            <div class="find__form-item">
-              <h4>아이디</h4>
-              <input type="text" placeholder="아이디를 입력해주세요." />
+          <p class="find__desc">비밀번호 찾기 인증에 성공하셨습니다.</p>
+          <p class="find__desc">
+            기존의 비밀번호는 사용하실 수 없으니,<br />
+            비밀번호를 재설정 해 주세요.
+          </p>
+          <div class="find__result">
+            <div class="find__form-box">
+              <div class="find__form-item">
+                <h4>변경 비밀번호</h4>
+                <input
+                  type="text"
+                  placeholder="변경할 비밀번호를 입력해 주세요"
+                />
+              </div>
+              <div class="find__form-item">
+                <h4>비밀번호 확인</h4>
+                <div class="check-box">
+                  <input
+                    type="text"
+                    placeholder="변경된 비밀번호를 다시 한 번 입력해 주세요"
+                  />
+                  <div class="pw-chek">
+                    <img
+                      src="../../src/assets/images/find-pw-notice.png"
+                      alt=""
+                    />
+                    비밀번호가 일치하지 않습니다.
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="find__btn-wrap">
-              <a href="./pwFindCert.html" class="btn">확인</a>
-            </div>
-            <div class="notice">
-              ※안내말씀<br />
-              아이디/비밀번호를 찾으실 수 없는 회원님께서는 스단결 고객센터
-              02-6959-0609으로 연락주시기 바랍니다.
-            </div>
+          </div>
+          <div class="find__btn-wrap">
+            <a href="./pwFindSucceed.html" class="btn">확인</a>
           </div>
         </div>
       </section>

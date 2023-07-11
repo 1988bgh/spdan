@@ -1397,6 +1397,8 @@
       height: 680px;
       background-image: url("../assets/images/main-recommend-bg.png");
       background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
       .inner {
         display: flex;
         align-items: center;

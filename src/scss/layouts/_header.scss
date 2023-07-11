@@ -1,5 +1,6 @@
 .top__banner {
   background-color: #000;
+  overflow: hidden;
   .inner {
     display: flex;
     align-items: center;
@@ -51,6 +52,7 @@
 header {
   height: 6rem;
   border-bottom: 1px solid #d9d8d6;
+  overflow: hidden;
   .inner {
     display: flex;
     align-items: center;
@@ -77,6 +79,7 @@ header {
   height: 7.3rem;
   background-color: #fff;
   z-index: 10;
+  overflow: hidden;
   .inner {
     display: flex;
     align-items: center;

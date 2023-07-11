@@ -1,7 +1,7 @@
 const classCaroucel = new Swiper(".infomation__caroucel", {
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 10,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -11,6 +11,10 @@ const classCaroucel = new Swiper(".infomation__caroucel", {
     prevEl: ".caroucel__prev",
   },
   breakpoints: {
+    375: {
+      slidesPerView: 2, //브라우저가 768보다 클 때
+      spaceBetween: 10,
+    },
     768: {
       slidesPerView: 2, //브라우저가 768보다 클 때
       spaceBetween: 20,

@@ -1,4 +1,9 @@
+main {
+  overflow-x: auto;
+}
+
 section {
+  min-width: 320px;
   overflow-x: hidden;
 }
 

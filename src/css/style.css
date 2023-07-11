@@ -70,6 +70,12 @@ This license is copied below, and is also available with a FAQ at:
 http://scripts.sil.org/OFL
 */
 @font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "yg-jalnan";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff") format("woff");
   font-weight: normal;
@@ -135,7 +141,12 @@ http://scripts.sil.org/OFL
   font-display: swap;
   src: local("Pretendard Thin"), url("../font/woff2/Pretendard-Thin.woff2") format("woff2"), url("../font/woff/Pretendard-Thin.woff") format("woff"), url("../font/woff2-subset/Pretendard-Thin.subset.woff2") format("woff2"), url("../font/woff-subset/Pretendard-Thin.subset.woff") format("woff");
 }
+main {
+  overflow-x: auto;
+}
+
 section {
+  min-width: 320px;
   overflow-x: hidden;
 }
 
@@ -236,6 +247,7 @@ section {
 
 .top__banner {
   background-color: #000;
+  overflow: hidden;
 }
 .top__banner .inner {
   display: flex;
@@ -285,6 +297,7 @@ section {
 header {
   height: 6rem;
   border-bottom: 1px solid #d9d8d6;
+  overflow: hidden;
 }
 header .inner {
   display: flex;
@@ -311,6 +324,7 @@ header .youtube-btn img {
   height: 7.3rem;
   background-color: #fff;
   z-index: 10;
+  overflow: hidden;
 }
 .gnb .inner {
   display: flex;
@@ -1911,6 +1925,8 @@ header .youtube-btn img {
   height: 680px;
   background-image: url("../assets/images/main-recommend-bg.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .contents__main-recommend .inner {
   display: flex;
@@ -1963,6 +1979,303 @@ header .youtube-btn img {
     width: 200px;
     margin-left: -50px;
     margin-bottom: 30px;
+  }
+}
+
+.contents__teacher-profile {
+  position: relative;
+  background-image: url("../assets/images/teacher-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contents__teacher-profile .box {
+  display: flex;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.contents__teacher-profile .teacher__img {
+  position: relative;
+  margin-top: 83px;
+  margin-left: -30px;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__img {
+    margin-top: 30px;
+    margin-left: 0;
+    width: 270px;
+  }
+}
+.contents__teacher-profile .teacher__img img {
+  display: block;
+}
+.contents__teacher-profile .teacher__img span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(30px, 15px);
+  width: 135px;
+  height: 42px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ff6000;
+  border-radius: 21px;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__img span {
+    top: 50%;
+    transform: translate(0%, 0%);
+  }
+}
+.contents__teacher-profile .teacher__typo {
+  position: relative;
+  width: 640px;
+  margin-top: 62px;
+  margin-bottom: 68px;
+  margin-left: -40px;
+  padding: 130px 35px 0;
+  border-radius: 30px 30px 30px 0;
+  background-color: #fff;
+  z-index: 1;
+}
+@media only screen and (max-width: 1440px) {
+  .contents__teacher-profile .teacher__typo {
+    padding-top: 100px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-profile .teacher__typo {
+    padding-top: 50px;
+    margin-left: -100px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__typo {
+    width: 100%;
+    max-width: 100%;
+    margin-top: -50px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 50px 20px 40px;
+  }
+}
+.contents__teacher-profile .teacher__title {
+  display: block;
+  margin-bottom: 43px;
+  font-family: "GmarketSansMedium";
+  font-size: 60px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 1440px) {
+  .contents__teacher-profile .teacher__title {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-profile .teacher__title {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__title {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+.contents__teacher-profile .teacher__typo-box {
+  padding: 27px 43px 30px 33px;
+  margin-bottom: 117px;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: -0.06em;
+  background-color: #ff6000;
+  border-radius: 10px;
+}
+.contents__teacher-profile .teacher__typo-box br {
+  display: none;
+}
+@media only screen and (max-width: 1440px) {
+  .contents__teacher-profile .teacher__typo-box {
+    margin-bottom: 80px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-profile .teacher__typo-box {
+    padding: 20px 15px 20px 15px;
+    margin-bottom: 40px;
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__typo-box {
+    padding: 15px 10px 15px 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .contents__teacher-profile .teacher__typo-box br {
+    display: block;
+  }
+}
+.contents__teacher-profile .teacher__desc {
+  margin-bottom: 144px;
+}
+@media only screen and (max-width: 1440px) {
+  .contents__teacher-profile .teacher__desc {
+    margin-bottom: 72px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-profile .teacher__desc {
+    margin-bottom: 50px;
+  }
+}
+.contents__teacher-profile .teacher__desc p {
+  color: #2b2b2b;
+  font-size: 22px;
+}
+.contents__teacher-profile .teacher__desc p:nth-child(1) {
+  margin-bottom: 37px;
+}
+@media only screen and (max-width: 1440px) {
+  .contents__teacher-profile .teacher__desc p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-profile .teacher__desc p {
+    font-size: 18px;
+  }
+  .contents__teacher-profile .teacher__desc p:nth-child(1) {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__desc p {
+    font-size: 14px;
+  }
+}
+.contents__teacher-profile .teacher__desc + p {
+  font-family: "GmarketSansMedium";
+  font-size: 30px;
+  text-align: center;
+}
+@media only screen and (max-width: 1440px) {
+  .contents__teacher-profile .teacher__desc + p {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-profile .teacher__desc + p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__desc + p {
+    font-size: 16px;
+  }
+}
+.contents__teacher-profile .teacher__desc + p span {
+  color: #ff6000;
+}
+.contents__teacher-greeting {
+  padding: 267px 0 169px;
+  background-image: url("../assets/images/teacher-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-greeting {
+    padding: 130px 0 80px;
+  }
+}
+.contents__teacher-greeting p:nth-child(1) {
+  display: block;
+  margin-bottom: 32px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-greeting p:nth-child(1) {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+}
+.contents__teacher-greeting p:nth-child(2) {
+  margin-bottom: 85px;
+  color: #fff;
+  font-family: "yg-jalnan";
+  font-size: 45px;
+  text-align: center;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-greeting p:nth-child(2) {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-greeting p:nth-child(2) {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .contents__teacher-greeting p:nth-child(2) br {
+    display: none;
+  }
+}
+.contents__teacher-greeting p:nth-child(2) span {
+  color: #ff8328;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-greeting p:nth-child(2) span {
+    display: block;
+  }
+}
+.contents__teacher-greeting p:nth-child(3) {
+  display: block;
+  margin-bottom: 35px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-greeting p:nth-child(3) {
+    font-size: 16px;
+  }
+}
+.contents__teacher-greeting .from {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 154px;
+  height: 51px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-greeting .from {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
   }
 }
 
@@ -5580,7 +5893,6 @@ header .youtube-btn img {
 }
 @media only screen and (max-width: 767px) {
   .contents__class-visual .visual__title {
-    font-size: 30px;
     text-align: center;
   }
 }
@@ -5754,6 +6066,11 @@ header .youtube-btn img {
 .contents__class-intro .intro__desc strong {
   display: block;
 }
+@media only screen and (max-width: 767px) {
+  .contents__class-intro .intro__desc strong {
+    display: inline;
+  }
+}
 .contents__class-intro .intro__popup-btn {
   display: block;
   margin: 0 auto;
@@ -5797,12 +6114,19 @@ header .youtube-btn img {
     padding-bottom: 175px;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .contents__class-infomation .infomation__box {
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+}
 .contents__class-infomation .infomation__box img {
   margin-right: 55px;
 }
 @media only screen and (max-width: 1024px) {
   .contents__class-infomation .infomation__box img {
-    margin-right: 30px;
+    margin-right: 0px;
+    margin-bottom: 50px;
   }
 }
 .contents__class-infomation .infomation__typo {
@@ -5815,6 +6139,8 @@ header .youtube-btn img {
 @media only screen and (max-width: 1024px) {
   .contents__class-infomation .infomation__typo {
     flex-shrink: 0;
+    align-items: center;
+    padding-bottom: 50px;
   }
 }
 .contents__class-infomation .infomation__typo::after {
@@ -5860,6 +6186,16 @@ header .youtube-btn img {
     font-size: 20px;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .contents__class-infomation .infomation__typo .desc {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__class-infomation .infomation__typo .desc br {
+    display: none;
+  }
+}
 .contents__class-infomation .infomation__typo .desc span {
   display: block;
   margin-top: 29px;
@@ -5878,6 +6214,12 @@ header .youtube-btn img {
   background-color: #ededed;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 1;
+}
+@media only screen and (max-width: 1024px) {
+  .contents__class-infomation .infomation__slider button {
+    display: none;
+  }
 }
 .contents__class-infomation .infomation__slider button.caroucel__next {
   right: 0;
@@ -5889,9 +6231,16 @@ header .youtube-btn img {
 }
 .contents__class-infomation .infomation__caroucel {
   position: relative;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  .contents__class-infomation .infomation__caroucel {
+    width: 100%;
+    max-width: 767px;
+  }
 }
 .contents__class-infomation .infomation__caroucel .item {
   text-align: center;
@@ -5910,6 +6259,11 @@ header .youtube-btn img {
   font-family: "yg-jalnan";
   font-size: 30px;
 }
+@media only screen and (max-width: 767px) {
+  .contents__class-infomation .infomation__caroucel .item h3 {
+    font-size: 20px;
+  }
+}
 .contents__class-infomation .infomation__caroucel .item .arrow {
   width: 62px;
   height: 62px;
@@ -5920,11 +6274,22 @@ header .youtube-btn img {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media only screen and (max-width: 767px) {
+  .contents__class-infomation .infomation__caroucel .item .arrow {
+    width: 50px;
+    height: 50px;
+  }
+}
 .contents__class-list {
   padding-top: 135px;
   background-image: url("../assets/images/class-list-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (max-width: 1024px) {
+  .contents__class-list {
+    padding-top: 75px;
+  }
 }
 .contents__class-list .inner {
   max-width: 1200px;
@@ -5943,10 +6308,26 @@ header .youtube-btn img {
   background-color: #ff6000;
   border-radius: 38px;
 }
+@media only screen and (max-width: 1024px) {
+  .contents__class-list .list__title {
+    margin-bottom: 50px;
+  }
+}
 .contents__class-list .list__box {
   padding: 91px 121px;
   background-color: #fff;
   border-radius: 20px 20px 0 0;
+}
+@media only screen and (max-width: 1024px) {
+  .contents__class-list .list__box {
+    padding: 50px 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__class-list .list__box {
+    padding: 50px 30px;
+    overflow-x: auto;
+  }
 }
 .contents__class-list .list__box .top {
   display: flex;
@@ -5955,6 +6336,11 @@ header .youtube-btn img {
   margin-bottom: 25px;
   border-bottom: 3px solid #000;
 }
+@media only screen and (max-width: 767px) {
+  .contents__class-list .list__box .top {
+    min-width: 450px;
+  }
+}
 .contents__class-list .list__box .top span {
   padding: 19px 0;
   color: #303030;
@@ -5962,9 +6348,19 @@ header .youtube-btn img {
   text-align: center;
   font-weight: 700;
 }
+@media only screen and (max-width: 767px) {
+  .contents__class-list .list__box .top span {
+    font-size: 14px;
+  }
+}
 .contents__class-list .list__box .top span.num {
   flex-shrink: 0;
   width: 221px;
+}
+@media only screen and (max-width: 767px) {
+  .contents__class-list .list__box .top span.num {
+    width: 100px;
+  }
 }
 .contents__class-list .list__box .top span.title {
   width: 100%;
@@ -5974,6 +6370,16 @@ header .youtube-btn img {
 .contents__class-list .list__box .top span.time {
   flex-shrink: 0;
   width: 262px;
+}
+@media only screen and (max-width: 767px) {
+  .contents__class-list .list__box .top span.time {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__class-list .list__box .list {
+    min-width: 450px;
+  }
 }
 .contents__class-list .list__box .item {
   display: flex;
@@ -5986,9 +6392,19 @@ header .youtube-btn img {
   font-size: 16px;
   font-weight: 700;
 }
+@media only screen and (max-width: 767px) {
+  .contents__class-list .list__box .item > span {
+    font-size: 12px;
+  }
+}
 .contents__class-list .list__box .item > span.num {
   flex-shrink: 0;
   width: 221px;
+}
+@media only screen and (max-width: 767px) {
+  .contents__class-list .list__box .item > span.num {
+    width: 100px;
+  }
 }
 .contents__class-list .list__box .item > span.num span {
   display: flex;
@@ -6003,6 +6419,11 @@ header .youtube-btn img {
   background-color: #000;
   border-radius: 50%;
 }
+@media only screen and (max-width: 767px) {
+  .contents__class-list .list__box .item > span.num span {
+    font-size: 12px;
+  }
+}
 .contents__class-list .list__box .item > span.title {
   width: 100%;
   text-align: center;
@@ -6012,6 +6433,11 @@ header .youtube-btn img {
 .contents__class-list .list__box .item > span.time {
   flex-shrink: 0;
   width: 262px;
+}
+@media only screen and (max-width: 767px) {
+  .contents__class-list .list__box .item > span.time {
+    width: 100px;
+  }
 }
 .contents__class-list .list__box .item > span.time span {
   display: flex;
@@ -6026,6 +6452,13 @@ header .youtube-btn img {
   border: 1px solid #303030;
   border-radius: 19px;
 }
+@media only screen and (max-width: 767px) {
+  .contents__class-list .list__box .item > span.time span {
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
 .contents__class-bottom {
   display: flex;
   align-items: center;
@@ -6036,8 +6469,28 @@ header .youtube-btn img {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 1024px) {
+  .contents__class-bottom {
+    padding: 200px 0 200px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__class-bottom {
+    padding: 100px 0 100px;
+  }
+}
+@media only screen and (max-width: 319px) {
+  .contents__class-bottom {
+    padding: 50px 0 50px;
+  }
+}
 .contents__class-bottom .bottom__typo {
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .contents__class-bottom .bottom__typo img {
+    width: 50px;
+  }
 }
 .contents__class-bottom .bottom__typo p:nth-child(2) {
   margin-top: 61px;
@@ -6050,11 +6503,38 @@ header .youtube-btn img {
   font-weight: 700;
   background-color: #ff6000;
 }
+@media only screen and (max-width: 767px) {
+  .contents__class-bottom .bottom__typo p:nth-child(2) {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 319px) {
+  .contents__class-bottom .bottom__typo p:nth-child(2) {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+}
 .contents__class-bottom .bottom__typo p:nth-child(3) {
   position: relative;
   color: #fff;
   font-family: "yg-jalnan";
   font-size: 45px;
+}
+@media only screen and (max-width: 1024px) {
+  .contents__class-bottom .bottom__typo p:nth-child(3) {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__class-bottom .bottom__typo p:nth-child(3) {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 319px) {
+  .contents__class-bottom .bottom__typo p:nth-child(3) {
+    font-size: 13px;
+  }
 }
 .contents__class-bottom .bottom__typo p:nth-child(3) span {
   position: relative;
@@ -6064,6 +6544,7 @@ header .youtube-btn img {
   background-image: url("../assets/images/class-bottom-underline.png");
   background-position: right 82%;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .contents__class-bottom .bottom__typo p:nth-child(3) span::before {
   content: "";
@@ -6076,4 +6557,314 @@ header .youtube-btn img {
   background-image: url("../assets/images/class-bottom-point.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+}
+@media only screen and (max-width: 1024px) {
+  .contents__class-bottom .bottom__typo p:nth-child(3) span::before {
+    width: 200px;
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__class-bottom .bottom__typo p:nth-child(3) span::before {
+    width: 90px;
+    height: 35px;
+  }
+}
+
+.contents__teacher-profile {
+  position: relative;
+  background-image: url("../assets/images/teacher-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contents__teacher-profile .box {
+  display: flex;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.contents__teacher-profile .teacher__img {
+  position: relative;
+  margin-top: 83px;
+  margin-left: -30px;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__img {
+    margin-top: 30px;
+    margin-left: 0;
+    width: 270px;
+  }
+}
+.contents__teacher-profile .teacher__img img {
+  display: block;
+}
+.contents__teacher-profile .teacher__img span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(30px, 15px);
+  width: 135px;
+  height: 42px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ff6000;
+  border-radius: 21px;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__img span {
+    top: 50%;
+    transform: translate(0%, 0%);
+  }
+}
+.contents__teacher-profile .teacher__typo {
+  position: relative;
+  width: 640px;
+  margin-top: 62px;
+  margin-bottom: 68px;
+  margin-left: -40px;
+  padding: 130px 35px 0;
+  border-radius: 30px 30px 30px 0;
+  background-color: #fff;
+  z-index: 1;
+}
+@media only screen and (max-width: 1440px) {
+  .contents__teacher-profile .teacher__typo {
+    padding-top: 100px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-profile .teacher__typo {
+    padding-top: 50px;
+    margin-left: -100px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__typo {
+    width: 100%;
+    max-width: 100%;
+    margin-top: -50px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 50px 20px 40px;
+  }
+}
+.contents__teacher-profile .teacher__title {
+  display: block;
+  margin-bottom: 43px;
+  font-family: "GmarketSansMedium";
+  font-size: 60px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 1440px) {
+  .contents__teacher-profile .teacher__title {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-profile .teacher__title {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__title {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+.contents__teacher-profile .teacher__typo-box {
+  padding: 27px 43px 30px 33px;
+  margin-bottom: 117px;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: -0.06em;
+  background-color: #ff6000;
+  border-radius: 10px;
+}
+.contents__teacher-profile .teacher__typo-box br {
+  display: none;
+}
+@media only screen and (max-width: 1440px) {
+  .contents__teacher-profile .teacher__typo-box {
+    margin-bottom: 80px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-profile .teacher__typo-box {
+    padding: 20px 15px 20px 15px;
+    margin-bottom: 40px;
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__typo-box {
+    padding: 15px 10px 15px 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .contents__teacher-profile .teacher__typo-box br {
+    display: block;
+  }
+}
+.contents__teacher-profile .teacher__desc {
+  margin-bottom: 144px;
+}
+@media only screen and (max-width: 1440px) {
+  .contents__teacher-profile .teacher__desc {
+    margin-bottom: 72px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-profile .teacher__desc {
+    margin-bottom: 50px;
+  }
+}
+.contents__teacher-profile .teacher__desc p {
+  color: #2b2b2b;
+  font-size: 22px;
+}
+.contents__teacher-profile .teacher__desc p:nth-child(1) {
+  margin-bottom: 37px;
+}
+@media only screen and (max-width: 1440px) {
+  .contents__teacher-profile .teacher__desc p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-profile .teacher__desc p {
+    font-size: 18px;
+  }
+  .contents__teacher-profile .teacher__desc p:nth-child(1) {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__desc p {
+    font-size: 14px;
+  }
+}
+.contents__teacher-profile .teacher__desc + p {
+  font-family: "GmarketSansMedium";
+  font-size: 30px;
+  text-align: center;
+}
+@media only screen and (max-width: 1440px) {
+  .contents__teacher-profile .teacher__desc + p {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-profile .teacher__desc + p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-profile .teacher__desc + p {
+    font-size: 16px;
+  }
+}
+.contents__teacher-profile .teacher__desc + p span {
+  color: #ff6000;
+}
+.contents__teacher-greeting {
+  padding: 267px 0 169px;
+  background-image: url("../assets/images/teacher-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-greeting {
+    padding: 130px 0 80px;
+  }
+}
+.contents__teacher-greeting p:nth-child(1) {
+  display: block;
+  margin-bottom: 32px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-greeting p:nth-child(1) {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+}
+.contents__teacher-greeting p:nth-child(2) {
+  margin-bottom: 85px;
+  color: #fff;
+  font-family: "yg-jalnan";
+  font-size: 45px;
+  text-align: center;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 1024px) {
+  .contents__teacher-greeting p:nth-child(2) {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-greeting p:nth-child(2) {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .contents__teacher-greeting p:nth-child(2) br {
+    display: none;
+  }
+}
+.contents__teacher-greeting p:nth-child(2) span {
+  color: #ff8328;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-greeting p:nth-child(2) span {
+    display: block;
+  }
+}
+.contents__teacher-greeting p:nth-child(3) {
+  display: block;
+  margin-bottom: 35px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-greeting p:nth-child(3) {
+    font-size: 16px;
+  }
+}
+.contents__teacher-greeting .from {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 154px;
+  height: 51px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+}
+@media only screen and (max-width: 767px) {
+  .contents__teacher-greeting .from {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+  }
 }

@@ -24,8 +24,114 @@
     @include s1 {
       height: 655px;
     }
+
     &.class_01 {
       background-image: url("../assets/images/class-visual-1.png");
+    }
+    &.class_02 {
+      background-image: url("../assets/images/class-visual-2.png");
+      .visual__ {
+        &mark {
+          color: #fff;
+          background-color: #ff6000;
+        }
+        &item {
+          .step {
+            color: #fff;
+            background-color: #ff6000;
+          }
+        }
+      }
+    }
+    &.class_03 {
+      background-image: url("../assets/images/class-visual-3.png");
+      .visual__ {
+        &mark {
+          color: #fff;
+          background-color: #ff6000;
+        }
+        &item {
+          .step {
+            color: #fff;
+            background-color: #ff6000;
+          }
+        }
+      }
+    }
+    &.class_04 {
+      background-image: url("../assets/images/class-visual-4.png");
+      .visual__ {
+        &mark {
+          color: #fff;
+          background-color: #5e7bdb;
+        }
+        &item {
+          .step {
+            color: #fff;
+            background-color: #5e7bdb;
+          }
+        }
+      }
+    }
+    &.class_05 {
+      background-image: url("../assets/images/class-visual-5.png");
+      .visual__ {
+        &mark {
+          color: #fff;
+          background-color: #343434;
+        }
+        &item {
+          .step {
+            color: #fff;
+            background-color: #343434;
+          }
+        }
+      }
+    }
+    &.class_06 {
+      background-image: url("../assets/images/class-visual-6.png");
+      .visual__ {
+        &mark {
+          color: #fff;
+          background-color: #b5d941;
+        }
+        &item {
+          .step {
+            color: #fff;
+            background-color: #b5d941;
+          }
+        }
+      }
+    }
+    &.class_07 {
+      background-image: url("../assets/images/class-visual-7.png");
+      .visual__ {
+        &title {
+          span {
+            &:nth-child(1) {
+              color: #ffd265;
+            }
+            &:nth-child(2) {
+              color: #f7b20f;
+            }
+          }
+        }
+        &mark {
+          color: #fff;
+          background-color: #e4260f;
+        }
+        &item {
+          &:nth-child(2n + 1) {
+            .step {
+              background-color: #f7b20f;
+            }
+          }
+          .step {
+            color: #fff;
+            background-color: #e4260f;
+          }
+        }
+      }
     }
     .visual__ {
       &typo {
@@ -242,6 +348,60 @@
     .inner {
       max-width: 1200px;
     }
+    &.class_02 {
+      .infomation__ {
+        &typo {
+          &::after {
+            background-color: #ffe525;
+          }
+        }
+      }
+    }
+    &.class_03 {
+      .infomation__ {
+        &typo {
+          &::after {
+            background-color: #1a9716;
+          }
+        }
+      }
+    }
+    &.class_04 {
+      .infomation__ {
+        &typo {
+          &::after {
+            background-color: #54cbd8;
+          }
+        }
+      }
+    }
+    &.class_05 {
+      .infomation__ {
+        &typo {
+          &::after {
+            background-color: #de2020;
+          }
+        }
+      }
+    }
+    &.class_06 {
+      .infomation__ {
+        &typo {
+          &::after {
+            background-color: #cbdb33;
+          }
+        }
+      }
+    }
+    &.class_07 {
+      .infomation__ {
+        &typo {
+          &::after {
+            background-color: #fbc960;
+          }
+        }
+      }
+    }
     .infomation__ {
       &title {
         margin-bottom: 161px;
@@ -390,9 +550,9 @@
             margin-bottom: 32px;
             color: #303030;
             font-family: "yg-jalnan";
-            font-size: 30px;
+            font-size: 18px;
             @include s1 {
-              font-size: 20px;
+              font-size: 16px;
             }
           }
           .arrow {

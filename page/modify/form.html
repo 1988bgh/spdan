@@ -155,7 +155,7 @@
           </div>
         </div>
       </section>
-      <section class="contents__modify-popup" style="display: none">
+      <section class="contents__modify-popup">
         <div class="inner inner-10">
           <div class="popup-wrap">
             <button type="button">
@@ -198,4 +198,19 @@
       </section>
     </main>
   </body>
+  <script>
+    const popupHandler = () => {
+      const popupEl = document.querySelector(".contents__modify-popup");
+      const openBtn = document.querySelector(".pw-box button");
+      const closedBtn = document.querySelector(".popup-wrap button");
+
+      openBtn.addEventListener("click", () => {
+        popupEl.style.display = "block";
+      });
+      closedBtn.addEventListener("click", () => {
+        popupEl.style.display = "none";
+      });
+    };
+    onload = popupHandler();
+  </script>
 </html>

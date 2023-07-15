@@ -6,6 +6,7 @@
     <title>스단결::고객센터-공지사항</title>
     <link rel="stylesheet" href="../../src/css/style.css" />
     <script src="../../src/js/main.js" defer></script>
+    <script src="../../src/lib/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <main>
@@ -49,69 +50,205 @@
           <a href="javascript:void(0)" class="mypage-btn">나의 스터디룸</a>
         </div>
       </nav>
-      <section class="contents__service">
-        <div class="inner inner-10">
-          <div class="common__title-box">
-            <h2 class="title">FAQ</h2>
-            <nav class="location">home > 고객센터 > <span>FAQ</span></nav>
-          </div>
-          <div class="service__board-faq">
-            <div class="search-wrap">
-              <div class="form-box">
-                <input
-                  type="text"
-                  class="search-box"
-                  placeholder="검색어를 입력해 주세요."
+      <section class="sub-cont customer faq">
+        <article>
+          <div class="inner inner-10">
+            <div class="title-box">
+              <h2>FAQ</h2>
+              <nav class="location">
+                <a href="javascript:void(0)">Home</a>
+                <span>&gt;</span>
+                <a href="javascript:void(0)">고객센터</a>
+                <span>&gt;</span>
+                <a href="javascript:void(0)" class="current"> FAQ </a>
+              </nav>
+            </div>
+              <div class="search-form">
+                <div class="form-box">
+                  <input
+                    type="text"
+                    placeholder="검색어를 입력해 주세요"
+                  />
+                  <a href="javascript:void(0)" class="search_btn"
+                    ><img
+                      src="../../src/assets/images/search-btn.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </form>
+            <div class="tab-box">
+              <div class="tab-mo">
+                자주 묻는 질문 유형을 선택해 주세요.
+                <img
+                  src="../../src/assets/images/search-arrow.png"
+                  alt=""
                 />
-                <button>
-                  <img src="../../src/assets/images/search-btn.png" alt="" />
-                </button>
+              </div>
+              <div class="tab">
+                <a
+                  href="javascript:void(0)"
+                  class="selected"
+                  >전체</a
+                ><a href="javascript:void(0)" data-cate="회원">회원</a
+                ><a href="javascript:void(0)" data-cate="강의">강의</a
+                ><a href="javascript:void(0)" data-cate="교재">교재</a
+                ><a href="javascript:void(0)" data-cate="결제">결제</a
+                ><a href="javascript:void(0)" data-cate="취소/환불"
+                  >취소/환불</a
+                ><a href="javascript:void(0)" data-cate="플레이어"
+                  >플레이어</a
+                ><a href="javascript:void(0)" data-cate="모바일"
+                  >모바일</a
+                ><a href="javascript:void(0)" data-cate="기타">기타</a>
               </div>
             </div>
-            <div class="board-wrap">
-              <div class="tab-list">
-                <button type="button" class="tab active">전체</button>
-                <button type="button" class="tab">회원</button>
-                <button type="button" class="tab">강의</button>
-                <button type="button" class="tab">교재</button>
-                <button type="button" class="tab">결제</button>
-                <button type="button" class="tab">취소/환불</button>
-                <button type="button" class="tab">플레이어</button>
-                <button type="button" class="tab">모바일</button>
-                <button type="button" class="tab">기타</button>
-              </div>
-              <ul class="tab-contents">
-                <li class="tab-item">
-                  <div class="title-box">
-                    <span class="cate">취소/환불</span>
-                    <h3 class="title">
-                      <a href="javascript:void(0)">
-                        <img src="../../src/assets/images/faq-q.png" alt="" />
-                        교제 취소 및 환불 규정은 어떻게 되나요?
-                      </a>
-                    </h3>
+            <ul class="list">
+              <li class="item visible" data-cate="플레이어">
+                <aside class="question-box">
+                  <span class="cate">플레이어</span>
+                  <div class="q-title">
+                    <img
+                      src="../../src/assets/images/ico-faq-q.png"
+                      alt=""
+                    />
+                    <h3>강의 영상이 끊겨요.</h3>
+                    <img
+                      src="../../src/assets/images/ico-arrow-off.png"
+                      alt=""
+                      class="bt"
+                    />
                   </div>
-                  <div class="contents-box">
-                    <span>
-                      <img src="../../src/assets/images/faq-a.png" alt="" />
-                    </span>
+                </aside>
+                <div class="answer-wrap">
+                  <aside class="answer-box">
+                    <span class="cate"></span>
+                    <img
+                      src="../../src/assets/images/ico-faq-a.png"
+                      alt=""
+                    />
                     <div class="answer">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      In suscipit quam excepturi? Id molestiae totam incidunt
-                      aspernatur obcaecati vitae, repellat delectus repellendus
-                      eaque accusamus, quaerat libero a, ea magni cupiditate!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis, placeat ullam eos molestiae, quam sapiente exercitationem qui error expedita maxime explicabo unde beatae sequi possimus quaerat sit? A, incidunt!
                     </div>
+                  </aside>
+                </div>
+              </li>
+              <li class="item visible" data-cate="플레이어">
+                <aside class="question-box">
+                  <span class="cate">플레이어</span>
+                  <div class="q-title">
+                    <img
+                      src="../../src/assets/images/ico-faq-q.png"
+                      alt=""
+                    />
+                    <h3>강의 영상이 끊겨요.</h3>
+                    <img
+                      src="../../src/assets/images/ico-arrow-off.png"
+                      alt=""
+                      class="bt"
+                    />
                   </div>
-                </li>
-              </ul>
-              <div class="pagination-box">
-                <a href="javascript:void(0)" class="current">1</a>
-                <a href="javascript:void(0)">2</a>
-              </div>
+                </aside>
+                <div class="answer-wrap">
+                  <aside class="answer-box">
+                    <span class="cate"></span>
+                    <img
+                      src="../../src/assets/images/ico-faq-a.png"
+                      alt=""
+                    />
+                    <div class="answer">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis, placeat ullam eos molestiae, quam sapiente exercitationem qui error expedita maxime explicabo unde beatae sequi possimus quaerat sit? A, incidunt!
+                    </div>
+                  </aside>
+                </div>
+              </li>
+              <li class="item visible" data-cate="플레이어">
+                <aside class="question-box">
+                  <span class="cate">플레이어</span>
+                  <div class="q-title">
+                    <img
+                      src="../../src/assets/images/ico-faq-q.png"
+                      alt=""
+                    />
+                    <h3>강의 영상이 끊겨요.</h3>
+                    <img
+                      src="../../src/assets/images/ico-arrow-off.png"
+                      alt=""
+                      class="bt"
+                    />
+                  </div>
+                </aside>
+                <div class="answer-wrap">
+                  <aside class="answer-box">
+                    <span class="cate"></span>
+                    <img
+                      src="../../src/assets/images/ico-faq-a.png"
+                      alt=""
+                    />
+                    <div class="answer">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis, placeat ullam eos molestiae, quam sapiente exercitationem qui error expedita maxime explicabo unde beatae sequi possimus quaerat sit? A, incidunt!
+                    </div>
+                  </aside>
+                </div>
+              </li>
+              
+            </ul>
+            <div class="board-pager">
+              <a href="javascript:void(0)" class="current">1</a>
+              <a href="javascript:void(0)">2</a>
+              <a href="javascript:void(0)">3</a>
+              <a href="javascript:void(0)">4</a>
             </div>
           </div>
-        </div>
+        </article>
       </section>
     </main>
+    <script>
+      function faqFnc(){
+        const tab = $('.tab a'),
+            item = $('.item'),
+            question = $('.question-box'),
+            answer = $('answer-wrap'),
+            moTab = $('.tab-mo');
+    
+        let tabData = 0;
+    
+        // $(tab).on('click',function(){
+        //   $(tab).removeClass('selected')
+        //   $(this).addClass('selected');
+    
+        //   tabData = $(this).data('cate');
+        //   item.removeClass('visible');
+    
+        //   if(tabData == 'all'){
+        //     item.addClass('visible');
+        //   }else{
+        //     item.each(function(item,index){
+        //       if($(this).data('cate') == tabData){
+        //         $(this).addClass('visible')
+        //       }
+        //     })
+        //   }
+        // })
+    
+        $(question).on('click',function(){
+          if($(this).hasClass('open')){
+            $(this).removeClass('open')
+            $(this).find('.bt').attr('src','../../src/assets/images/ico-arrow-off.png')
+          }else{
+            $(this).addClass('open')
+            $(this).find('.bt').attr('src','../../src/assets/images/ico-arrow-on.png')
+          }
+    
+          $(this).next('.answer-wrap').stop().slideToggle();
+        })
+    
+        $(moTab).on('click',function(){
+          $('.tab').toggleClass('open');
+        })
+      }
+    
+      faqFnc()
+    </script>
   </body>
 </html>

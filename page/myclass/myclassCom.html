@@ -107,60 +107,42 @@
               </li>
             </ul>
             <div class="myclass__tab-handler">
-              <button type="button" class="tab active" data-index="0">
-                수강 중인 강의
-              </button>
-              <button type="button" class="tab" data-index="1">
+              <button type="button" class="tab">수강 중인 강의</button>
+              <button type="button" class="tab active">
                 완료된 강의/일시정지
               </button>
             </div>
-            <div class="myclass__tab-contents ing">
-              <div class="date-box">
-                <h3>스단결 학습<span>시스템 패키지</span></h3>
-                <div class="date">
-                  <div class="item">
-                    <span>수강시작일</span>
-                    <span>2023.01.01</span>
-                  </div>
-                  <div class="item">
-                    <span>수강종료일</span>
-                    <span>2023.12.31</span>
-                  </div>
+            <div class="myclass__tab-contents completed">
+              <h3>일시정지</h3>
+              <div class="completed__table first">
+                <div class="completed__th">
+                  <span class="title">강의명</span>
+                  <span class="paused">수강정지</span>
+                  <span class="date">남은일수</span>
+                </div>
+                <div class="completed__list">
+                  <span class="title">3단계 학습 시스템 패키지</span>
+                  <span class="paused">2023.01.01</span>
+                  <span class="date">200일</span>
                 </div>
               </div>
-              <div class="progress-box">
-                <div class="item">
-                  <div class="box">
-                    <span>수강 진도율</span>
-                    <span>0강 / 총 9강</span>
-                  </div>
-                  <div class="progress">35<span>%</span></div>
+              <h3>완료된 강의</h3>
+              <div class="completed__table">
+                <div class="completed__th">
+                  <span class="title">강의명</span>
+                  <span class="start">수업 시작일</span>
+                  <span class="com">수강완료일</span>
                 </div>
-                <div class="item">
-                  <div class="box">
-                    <span>남은 수강일</span>
-                    <span>300일 / 365일</span>
-                  </div>
-                  <div class="progress">102<span>일</span></div>
+                <div class="completed__list">
+                  <span class="title">3단계 학습 시스템 패키지</span>
+                  <span class="start">2023.01.01</span>
+                  <span class="com">2023.12.31</span>
                 </div>
-                <div class="notice">
-                  ※수강정지 : 1회시 10일 정지/최대 5회 사용
-                  <span>*한 번에 1회씩만 적용 가능</span>
+                <div class="completed__list">
+                  <span class="title">3일 무료체험권</span>
+                  <span class="start">2023.01.01</span>
+                  <span class="com">2023.12.31</span>
                 </div>
-              </div>
-              <div class="link-box">
-                <a href="javascript:void(0)">
-                  <img src="../../src/assets/images/tab-icon-1.png" alt="" />
-                  <span>강의듣기</span>
-                </a>
-                <a href="javascript:void(0)">
-                  <img src="../../src/assets/images/tab-icon-2.png" alt="" />
-                  <span>정지해제</span>
-                </a>
-                <a href="javascript:void(0)">
-                  <img src="../../src/assets/images/tab-icon-3.png" alt="" />
-                  <span>강의노트</span>
-                </a>
               </div>
             </div>
           </div>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스단결::비밀번호 찾기</title>
+    <link rel="stylesheet" href="../../src/css/style.css" />
+    <script src="../../src/js/main.js" defer></script>
+    <style>
+      .sub-cont.service {
+        padding: 12rem 0;
+      }
+      .service .service-top {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-bottom: 6rem;
+      }
+      .service .service-top h2 {
+        color: #000;
+        font-size: 3rem;
+        font-weight: 500;
+      }
+      .service .service-top nav {
+        margin-left: auto;
+      }
+      .service .service-top nav a {
+        color: #98989a;
+        font-size: 1.6rem;
+      }
+      .service .service-top nav span {
+        padding: 0 1rem;
+        color: #98989a;
+        font-size: 1.6rem;
+      }
+      .service .service-top nav a.current {
+        color: #ff6000;
+      }
+      .service-wrap {
+        padding: 4rem;
+        background-color: #fff;
+        border-radius: 5rem;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+      }
+      .service-wrap .cont h2 {
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+      }
+      .service-wrap .txt-gray {
+        margin-bottom: 3rem;
+        color: #666;
+        font-size: 1.6rem;
+        line-height: 1.6em;
+        word-break: keep-all;
+      }
+      .service-wrap .txt-gray:last-of-type {
+        margin-bottom: 0;
+      }
+      .service-wrap dl {
+        margin-bottom: 3rem;
+      }
+      .service-wrap p,
+      .service-wrap dd {
+        color: #666;
+        font-size: 1.6rem;
+        line-height: 1.6em;
+        word-break: keep-all;
+      }
+      .service-wrap ul {
+        margin: 5rem 0;
+      }
+      .service-wrap ul li {
+        color: #ff6000;
+        font-size: 1.6rem;
+        line-height: 1.6em;
+      }
+      .service-wrap strong,
+      .service-wrap dt {
+        display: block;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+      }
+      .service-wrap table {
+        margin-bottom: 5rem;
+      }
+      .service-wrap table thead {
+        background-color: #f5f5f5;
+      }
+      .service-wrap table thead td {
+        padding: 1rem;
+        font-size: 1.6rem;
+        border: 1px solid #ddd;
+      }
+      .service-wrap table tbody td {
+        padding: 1rem;
+        font-size: 1.6rem;
+        line-height: 1.3em;
+        border: 1px solid #ddd;
+      }
+      .service-wrap .pdt10 {
+        color: #666;
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+      }
+      @media (max-width: 1280px) {
+        .sub-cont.service {
+          padding: 7rem 0;
+        }
+        .service .service-top {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .service .service-top h2 {
+          margin-bottom: 1rem;
+        }
+        .service .service-top nav {
+          margin-left: 0;
+        }
+      }
+      @media (max-width: 1023px) {
+        .service-wrap {
+          padding: 2rem;
+          border-radius: 2rem;
+        }
+        .service-wrap .txt-gray {
+          font-size: 1.3rem;
+        }
+        .service-wrap ul li {
+          font-size: 1.3rem;
+        }
+        .service-wrap strong {
+          font-size: 1.3rem;
+        }
+        .service-wrap table thead td {
+          font-size: 1.3rem;
+        }
+        .service-wrap table tbody td {
+          font-size: 1.3rem;
+        }
+        .service-wrap .cont h2 {
+          margin-bottom: 1rem;
+          font-size: 1.6rem;
+        }
+        .service-wrap p,
+        .service-wrap dt,
+        .service-wrap dd {
+          font-size: 1.3rem;
+        }
+      }
+      @media (max-width: 460px) {
+        .service-wrap .scroll {
+          overflow-x: auto;
+        }
+        .service-wrap table {
+          width: 60rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="top__banner">
+        <div class="inner inner-12">
+          <span class="top__banner-flag"
+            ><img src="../../src/assets/images/top-flag.png" alt=""
+          /></span>
+          <p><span>쉽고 빠른</span> 스페인어 <span>단어연결</span> 학습법!</p>
+          <a href="javascript:void(0)">기사보기</a>
+          <button type="button">
+            <img src="../../src/assets/images/top-closed.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <header>
+        <div class="inner inner-12">
+          <a href="/" class="logo"
+            ><img
+              src="../../src/assets/images/logo.png"
+              alt="스페인어는 단어의 연결이다 스단결"
+          /></a>
+          <a href="javascript:void(0)" class="login-btn">로그인</a>
+          <a href="javascript:void(0)" class="join-btn">회원가입</a>
+          <a href="javascript:void(0)" class="customer-btn">고객센터</a>
+          <a href="javascript:void(0)" class="youtube-btn"
+            ><img src="../../src/assets/images/header-youtube.svg" alt=""
+          /></a>
+        </div>
+      </header>
+      <nav class="gnb">
+        <div class="inner inner-12">
+          <button type="button" class="gnb__all-btn"></button>
+          <a href="javascript:void(0)" class="gnb__item">수강신청</a>
+          <a href="javascript:void(0)" class="gnb__item">스단결 특징</a>
+          <a href="javascript:void(0)" class="gnb__item">효과후기</a>
+          <a href="javascript:void(0)" class="gnb__item">샘플강의</a>
+          <a href="javascript:void(0)" class="gnb__item">강사소개</a>
+          <a href="javascript:void(0)" class="gnb__item">강좌소개</a>
+          <a href="javascript:void(0)" class="gnb__item">FAQ</a>
+          <a href="javascript:void(0)" class="mypage-btn">나의 스터디룸</a>
+        </div>
+      </nav>
+      <section class="sub-cont service">
+        <div class="inner inner-10">
+          <div class="service-top">
+            <h2>개인정보 처리방침</h2>
+            <nav>
+              <a href="javascript:void(0)">Home</a>
+              <span>&gt;</span>
+              <a href="javascript:void(0)" class="current">개인정보 처리방침</a>
+            </nav>
+          </div>
+          <div class="service-wrap">
+            <div class="cont">
+              <p class="txt-gray">
+                준스탠다드(이하 “회사”라 함)는 정보 통신망 이용촉진 및 정보보호
+                등에 관한 법률(이하 “정보통신망법”) 등 정보통신서비스 제공자가
+                준수하여야 할 관련 법령상의 개인정보보호 규정을 준수하며, 관련
+                법령에 의거한 개인정보처리방침을 정하여 이용자 권익 보호에
+                최선을 다하고 있습니다.<br /><br />
+                회사는 개인정보처리방침을 통하여 개인정보가 어떠한 목적과
+                방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가
+                취해지고 있는지를 알려드립니다.
+              </p>
+              <ul>
+                <li>제 1장. 개인정보의 수집 및 이용목적</li>
+                <li>제 2장. 개인정보 수집에 대한 동의</li>
+                <li>제 3장. 개인정보의 보유 및 이용기간</li>
+                <li>제 4장. 개인정보의 열람, 갱신, 수정 또는 삭제</li>
+                <li>제 5장. 개인정보의 파기절차 및 방법</li>
+                <li>제 6장. 수집한 개인정보의 위탁</li>
+                <li>제 7장. 이용자 및 법정대리인의 권리와 그 행사방법</li>
+                <li>
+                  제 8장. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한
+                  사항
+                </li>
+                <li>제 9장. 개인정보보호를 위한 기술적, 관리적 대책</li>
+                <li>제 10장. 아동의 개인정보 보호</li>
+                <li>
+                  제 11장. 개인정보보호 책임자 및 담당자의 소속, 성명 및 연락처
+                </li>
+              </ul>
+              <p class="txt-gray">
+                <strong>제 1장. 개인정보 수집 및 이용목적</strong>
+                회사는 회원가입, 서비스 제공에 따른 개인 실명과 계좌정보,
+                기타상담 등을 위해 개인정보를 수집하고 있으며, 또한 설문조사나
+                이벤트 시에 집단적인 통계분석을 위해서나 경품발송을 위한
+                목적으로도 개인정보 기재를 요청할 수 있습니다. 그러나, 회사는
+                이용자의 기본적 인권 침해의 우려가 있는 민감한 개인정보(인종 및
+                민족, 사상 및 신조, 출신지 및 본적지, 정치적 성향 및 범죄기록
+                등)는 가급적 수집하지 않으며 부득이하게 수집해야 할 경우
+                이용자들의 사전동의를 반드시 구합니다.<br />
+                이때에도 기입하신 정보는 해당서비스 제공이나 회원님께 사전에
+                밝힌 목적 이외의 다른 어떠한 목적으로도 사용되지 않음을
+                알려드립니다.<br />
+                개인정보 수집 및 이용에 동의하지 않을 권리가 있으며, 동의를
+                거부할 경우 회원가입 및 서비스 제공이 불가능 합니다.<br />
+                단, 선택항목의 경우에는 거부 시 회원가입 및 서비스 이용에 문제가
+                없습니다.<br />
+                개인정보의 수집 내용은 아래와 같습니다.
+              </p>
+              <div class="scroll">
+                <table class="border_tbl">
+                  <colgroup>
+                    <col width="18%" />
+                    <col />
+                    <col />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <td>구분</td>
+                      <td>이용 목적</td>
+                      <td>수집항목</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>회원 가입 및 관리</td>
+                      <td>
+                        회원제 서비스 이용에 따른 본인 확인, 불량회원의 부정
+                        이용 방지와 비인가 사용방지, 불만처리 등 민원처리, 공지
+                        및 상담 등
+                      </td>
+                      <td>
+                        [준스탠다드]<br />
+                        (필수) 아이디, 비밀번호, 이름, 성별, 생년월일,
+                        휴대전화번호, 이메일, 주소<br />
+                        (선택) 정보수신여부 (안내 및 이벤트 관련정보
+                        안내),마케팅 수신동의
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>이벤트 응모</td>
+                      <td>이벤트 진행 및 고지사항 안내</td>
+                      <td>(필수) 성명, 휴대전화번호</td>
+                    </tr>
+                    <tr>
+                      <td>주문/결제/배송</td>
+                      <td>주문 상품의 결제 및 환불, 요금결제, 배송 등</td>
+                      <td>
+                        결제정보 (카드사명, 카드번호, 카드유효기간, 휴대폰번호,
+                        이메일, 통신사, 결제승인번호, 은행명, 계좌번호),
+                        배송정보 (주문자 및 수취인의 이름, 주소, 전화번호,
+                        휴대폰 번호)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>사이트 접속 시 수집될 수 있는 개인정보</td>
+                      <td>
+                        소비자보호를 위한 법적 의무 준수, 서비스 통계 분석 등
+                      </td>
+                      <td>IP Address, 쿠키, 방문일자, 서비스 이용기록</td>
+                    </tr>
+                    <tr>
+                      <td>단체수강 문의</td>
+                      <td>기업 및 단체 특성에 따른 서비스 제공</td>
+                      <td>
+                        (필수) 회사명 /단체명, 이름, 요청사항, 휴대전화번호,
+                        이메일, 문의내용<br />
+                        (선택) 수강기간, 수강인원
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>제휴 문의</td>
+                      <td>
+                        제휴 문의에 대한 답변 및 원활한 의사소통의 경로 확보
+                      </td>
+                      <td>
+                        (필수) 문의구분(광고제휴, 판매제휴, 콘텐츠 제휴,
+                        기업/단체강연 ), 회사명, 담당자명, 휴대전화번호,
+                        이메일<br />
+                        (선택) 문의내용, 첨부파일
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>카카오톡</td>
+                      <td>학습 안내 서비스</td>
+                      <td>휴대폰 번호</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="txt-gray">
+                <strong>제 2장. 개인정보 수집에 대한 동의</strong>
+                회사는 회원님의 개인정보 수집에 대하여 동의를 받고 있으며, 회사
+                내의 회원가입 절차 중 이용약관 및 개인정보처리방침에 개인정보
+                수집 동의절차를 마련해 두고 있습니다. 회원님께서[“약관 및
+                정책”에 동의합니다.]란에 체크하시면 개인정보 수집에 대해 동의한
+                것으로 봅니다.
+              </p>
+              <p class="txt-gray">
+                <strong>제 3장. 개인정보의 보유 및 이용 기간</strong>
+                서비스 이용자가 당사의 회원으로서 서비스를 계속 이용하는 동안
+                당사는 이용자의 개인정보를 계속 보유하며 서비스 제공 등을 위해
+                이용합니다.<br />
+                서비스 이용자의 개인정보는 그 수집 및 이용 목적(설문조사, 이벤트
+                등 일시적인 목적을 포함)이 달성되거나 이용자가 직접 삭제 또는
+                회원 탈퇴한 경우에 재생할 수 없는 방법으로 파기됩니다.<br />
+                참고로 “개인정보 유효기간제”에 따라 1년간 서비스를 이용하지 않은
+                회원의 개인정보를 별도로 분리 보관하고 있습니다.<br />
+                당사는 이용자의 권리 남용, 악용 방지, 권리침해/명예훼손 분쟁 및
+                수사협조 등의 요청이 있었을 경우에는 이의 재발에 대비하여 회원의
+                이용계약 해지 시로부터 1년 동안 회원의 개인정보를 보관할 수
+                있습니다.<br />
+                상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의
+                규정에 의하여 보존할 필요가 있는 경우 당사는 관계법령에서 정한
+                일정한 기간 동안 회원정보를 보관합니다. <br />
+                이 경우 당사는 보관하는 정보를 그 보관의 목적으로만 이용하며
+                보존기간은 아래와 같습니다.<br /><br />
+
+                가. 회사 내부 방침에 의한 정보보유 사유<br />
+                회원탈퇴 시 개인정보 보존기간은 아래와 같습니다.<br />
+                보존근거 : 불량 이용자의 재가입 방지, 명예훼손 등 권리침해 분쟁
+                및 수사협조<br />
+                보존기간 : 회원탈퇴 후 1년<br /><br />
+                나. 관련법령에 의한 정보보유 사유<br />
+                상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의
+                규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한
+                일정한 기간 동안 회원정보를 보관합니다. <br />
+                이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며
+                보존기간은 아래와 같습니다.<br /><br />
+
+                계약 또는 청약철회 등에 관한 기록<br />
+                보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률<br />
+                보존 기간 : 5년<br />
+                대금결제 및 재화 등의 공급에 관한 기록<br />
+                보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률<br />
+                보존 기간 : 5년<br />
+                소비자의 불만 또는 분쟁처리에 관한 기록<br />
+                보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률<br />
+                보존 기간 : 3년<br /><br />
+
+                본인확인에 관한 기록<br />
+                보존 이유 : 정보통신망 이용촉진 및 정보보호 등에 관한 법률<br />
+                보존 기간 : 6개월<br />
+                방문에 관한 기록<br />
+                보존 이유 : 정보통신망 이용촉진 및 정보보호 등에 관한 법률<br />
+                보존 기간 : 3개월
+              </p>
+              <p class="txt-gray mb0">
+                <strong>제 4장. 개인정보의 열람, 갱신, 수정 또는 삭제</strong>
+                회원님은 등록되어 있는 고객의 개인정보를 열람하거나 수정하실수
+                있으며, 회원탈퇴를 요청하실 수 있습니다. 회원님의 개인정보 열람
+                및 수정은 사이트 내의 회원정보변경을 통해 직접 열람 또는
+                수정하거나, 개인정보 보호책임자 및 담당자에게 전자우편 또는
+                서면으로 요청하신 경우 지체없이 조치하겠습니다.
+              </p>
+              <p class="txt-gray">
+                <strong>제 5장. 개인정보의 파기절차 및 방법</strong>
+                파기절차<br />
+                이용자가 회원가입 등을 위해 입력한 정보는 목적이 달성된 후
+                별도의 DB로 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타
+                관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조)<br />
+                일정 기간 저장된 후 파기됩니다.<br />
+                동 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른
+                목적으로 이용되지 않습니다.<br /><br />
+                파기방법<br />
+                종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여
+                파기합니다.<br />
+                전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는
+                기술적 방법을 사용하여 삭제합니다.
+              </p>
+              <p class="txt-gray">
+                <strong>제 6장. 수집한 개인정보의 위탁</strong>
+                회사의 개인정보 위탁처리 기관 및 위탁업무는 다음과 같습니다.
+              </p>
+              <div class="scroll">
+                <table class="border_tbl mb30">
+                  <thead>
+                    <tr>
+                      <td>수탁업체</td>
+                      <td>위탁업무 내용</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>㈜아이오젠, Vimeo</td>
+                      <td>
+                        DRM플레이어 관련 기술 문의, 상담 업무 및 앱 관련
+                        기술문의 및 문의상담
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>㈜KG 이니시스, ㈜엘지유플러스</td>
+                      <td>
+                        결제처리(토스 결제, 휴대폰, 무통장입금, 계좌이체,
+                        신용카드, 지류상품권 및 기타 결제수단, 환불계좌 인증,
+                        현금영수증 발행)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>카페24㈜, ㈜나누미넷</td>
+                      <td>서버 호스팅 및 보안 관제</td>
+                    </tr>
+                    <tr>
+                      <td>Facebook, Google</td>
+                      <td>신규 서비스 및 이벤트 정보 안내/광고</td>
+                    </tr>
+                    <tr style="text-align: center">
+                      <td colspan="2">
+                        * 개인정보의 보유 및 이용기간 : 회원탈퇴 시 혹은
+                        위탁계약 종료 시 까지
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="txt-gray">
+                <strong
+                  >제 7장. 이용자 및 법정대리인의 권리와 그 행사방법</strong
+                >
+                이용자 및 법정대리인은 언제든지 등록되어 있는 회원의 개인정보를
+                열람하거나 수정할 수 있으며, 회원탈퇴 절차를 통하여 개인정보
+                이용에 대한 동의를 철회할 수 있습니다.<br />
+                혹은 개인정보보호책임자에게 서면, 전화 또는 이메일로 연락하시면
+                지체 없이 조치하겠습니다. <br />
+                이용자가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을
+                완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다.
+                <br />
+                또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리
+                결과를 제 3자에게 지체 없이 통지하여 정정이 이루어지도록
+                하겠습니다.<br />
+                회사는 이용자 혹은 법정 대리인의 요청에 의해 해지 또는 삭제된
+                개인정보는 “개인정보의 보유 및 이용기간”에 명시된 바에 따라
+                처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고
+                있습니다.
+              </p>
+              <p class="txt-gray">
+                <strong
+                  >제 8장. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한
+                  사항</strong
+                >
+                쿠키(cookie)는 HTTP 서버에서 사용자 브라우저에게 보내는 조그마한
+                데이터 파일로써 회원님의 컴퓨터에 저장됩니다.<br />
+                회사는 이러한 쿠키(cookie)를 이용하여 회원님의 브라우저 형식이나
+                서비스 이용 형태를 얻게 되며, 이러한 쿠키 정보를 바탕으로
+                회원님께 유용하고 보다 편리한 맞춤서비스를 제공하는데 사용하게
+                됩니다.<br />
+                회원님은 쿠키에 대한 선택권을 가지고 있습니다. <br />
+                회원님의 웹브라우저에서 옵션을 선택함으로써 모든 쿠키를
+                허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 모든 쿠키의
+                저장을 거부할 수 있습니다. <br />
+                단, 쿠키의 저장을 거부하실 경우 로그인 (Log-in) 이 필요한 회사의
+                모든 서비스는 이용하실 수 없게 됩니다.
+              </p>
+              <p class="txt-gray">
+                <strong>제 9장. 개인정보보호를 위한 기술적, 관리적 대책</strong>
+                회원님의 개인정보는 비밀번호에 의해 보호되고 있습니다. <br />
+                회원님 계정의 비밀번호는 오직 본인만이 알 수 있으며, 개인정보의
+                확인 및 변경도 비밀번호를 알고 있는 본인에 의해서만 가능합니다.
+                <br />
+                따라서 회원님의 비밀번호는 누구에게도 알려주면 안됩니다. <br />
+                또한 작업을 마치신 후에는 로그아웃(log-out)하시고 웹브라우저를
+                종료하는 것이 바람직합니다.<br />
+                특히 다른 사람과 컴퓨터를 공유하여 사용하거나 공공장소에서
+                이용한 경우 개인정보가 다른 사람에게 알려지는 것을 막기 위해서
+                이와 같은 절차가 더욱 필요합니다. <br />
+                이용자 부주의나 인터넷상의 문제로 인한 개인정보 유출에 대해서
+                회사는 책임을 지지 않습니다.<br />
+                회사는 개인정보 취급 직원을 최소화하고 담당 직원의 수시교육을
+                통해 개인정보 보호 정책의 준수를 강조하고 있습니다.<br />
+                회사는 개인정보보호를 위한 기술적 관리적 대책을 다음과 같이
+                시행하고 있습니다.<br />
+                해킹 방지를 위한 방화벽과 보안 시스템에 만전을 기하고
+                있습니다.<br />
+                개인정보 송수신시 SSL 보안서버 인증서를 설치하여 정보를
+                보호합니다.<br />
+                개인정보에의 접근은 해당 업무 수행자, 업무 수행 시 개인정보
+                취급이 불가피한 자로 제한하여 그 이외의 직원이 접근하지 못하도록
+                하고 있습니다.
+              </p>
+              <p class="txt-gray">
+                <strong>제 10장. 아동의 개인정보 보호</strong>
+                회사는 만 14세 미만의 아동의 개인정보는 관계법령이 허용하지 않는
+                용도로는 사용하지 않고 있습니다. 회사는 아동의 개인정보를
+                보호하기 위해 다음 각호의 조치를 하고 있습니다.<br />
+                1) 회사는 만14세 미만 아동의 개인정보 처리에 대하여
+                법정대리인에게 고지하여야 할 사유가 발생한 경우에는 행정안전부
+                고시 [개인정보 보호지침]의 고지방법을 준수합니다.<br />
+                2) 법정대리인은 만14세 미만 아동의 개인정보에 대한 열람, 수정 및
+                삭제를 요청할 수 있으며, 회사는 이러한 요청에 지체 없이 필요한
+                조치를 취합니다.
+              </p>
+              <p class="txt-gray">
+                <strong
+                  >제 11장. 개인정보보호 책임자 및 담당자의 소속, 성명 및
+                  연락처</strong
+                >
+                회사 개인정보처리방침과 관련하여 의견이 있을 경우 연락을 주시면
+                접수 즉시 조치하고 처리결과를 알려 드리겠습니다. 개인정보관리
+                책임자와 담당자는 아래와 같습니다.<br /><br />
+                [개인정보보호 책임자]<br />
+                이름 : 송준혁<br />
+                부서 : 기획부서<br />
+                전화 : 02-6959-0609<br /><br />
+
+                [개인정보보호 담당자]<br />
+                이름 : 송준혁<br />
+                부서 : 기획부서<br />
+                전화 : 02-6959-0609<br /><br />
+
+                기타 개인정보 침해에 대한 신고나 상담이 필요한 경우에 아래
+                기관에 문의 가능합니다.<br />
+                개인정보침해신고센터 (privacy.kisa.or.kr / 국번없이 118)<br />
+                대검찰청 사이버수사과 (www.spo.go.kr / 국번없이 1301)<br />
+                경찰청 사이버안전국 (police.go.kr / 국번없이 182)
+              </p>
+              <p class="txt-gray mb0">
+                [ 부칙 ]<br />
+                기존 개인정보보호정책은 개인정보처리방침으로 개정합니다.<br />
+                현 개인정보처리방침의 수정, 변경이 있을 시 최소 7일 이전에
+                사이트 내 공지를 통하여 고지할 것입니다.<br />
+                개인정보처리방침 시행일자 : 2022년 02월 01일<br />
+                이 약관은 2022년 02월 01일부터 시행하며 종전의 약관은 이
+                약관으로 대체합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

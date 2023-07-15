@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스단결::학습순서</title>
+    <link rel="stylesheet" href="../../src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../../src/js/package-caroucel.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="top__banner">
+        <div class="inner inner-12">
+          <span class="top__banner-flag"
+            ><img src="../../src/assets/images/top-flag.png" alt=""
+          /></span>
+          <p><span>쉽고 빠른</span> 스페인어 <span>단어연결</span> 학습법!</p>
+          <a href="javascript:void(0)">기사보기</a>
+          <button type="button">
+            <img src="../../src/assets/images/top-closed.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <header>
+        <div class="inner inner-12">
+          <a href="/" class="logo"
+            ><img
+              src="../../src/assets/images/logo.png"
+              alt="스페인어는 단어의 연결이다 스단결"
+          /></a>
+          <a href="javascript:void(0)" class="login-btn">로그인</a>
+          <a href="javascript:void(0)" class="join-btn">회원가입</a>
+          <a href="javascript:void(0)" class="customer-btn">고객센터</a>
+          <a href="javascript:void(0)" class="youtube-btn"
+            ><img src="../../src/assets/images/header-youtube.svg" alt=""
+          /></a>
+        </div>
+      </header>
+      <nav class="gnb">
+        <div class="inner inner-12">
+          <button type="button" class="gnb__all-btn"></button>
+          <a href="javascript:void(0)" class="gnb__item">수강신청</a>
+          <a href="javascript:void(0)" class="gnb__item">스단결 특징</a>
+          <a href="javascript:void(0)" class="gnb__item">효과후기</a>
+          <a href="javascript:void(0)" class="gnb__item">샘플강의</a>
+          <a href="javascript:void(0)" class="gnb__item">강사소개</a>
+          <a href="javascript:void(0)" class="gnb__item">강좌소개</a>
+          <a href="javascript:void(0)" class="gnb__item">FAQ</a>
+          <a href="javascript:void(0)" class="mypage-btn">나의 스터디룸</a>
+        </div>
+      </nav>
+      <section class="sub-cont register">
+        <article class="sub-visual">
+          <div class="inner inner-10">
+            <div class="typo">
+              <h2>수강신청</h2>
+              <p>
+                스단결을 통해 여러분의 삶이<br />
+                더욱 윤택해지시길 소망합니다.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg"
+            style="
+              background-image: url('../../src/assets/images/order-form-visual.png');
+            "
+          ></div>
+        </article>
+        <article>
+          <div class="inner inner-10">
+            <div class="step-list">
+              <div class="step current">수강신청</div>
+              <div class="step">상품·결제</div>
+              <div class="step">신청완료</div>
+            </div>
+            <div class="step-table type-1">
+              <h3>주문상품 정보</h3>
+              <div class="top">
+                <span class="mo">상품정보</span> <span class="cate">분류</span>
+                <span class="title">상품명</span>
+                <span class="date">수강기간</span>
+                <span class="price">상품금액</span>
+                <span class="mo">상세정보</span>
+              </div>
+
+              <ul class="list">
+                <li class="item">
+                  <div class="mo-box">
+                    <span class="cate">패키지 명</span>
+                    <span class="title">3단계 학습 시스템 패키지</span>
+                  </div>
+                  <div class="mo-box">
+                    <span class="date"><i>수강기간 : </i>365일</span>
+                    <span class="price"><i>상품가격 : </i> 290,000원</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="step-table type-2">
+              <h3>최종 강좌 금액</h3>
+              <div class="top">
+                <span class="title">상품명</span>
+                <span class="date">수강기간</span>
+                <span class="coupon">쿠폰사용</span>
+                <span class="price">상품금액</span>
+                <span class="mo">상세정보</span>
+              </div>
+
+              <ul class="list">
+                <li class="item">
+                  <div class="mo-box">
+                    <span class="title">3단계 학습 시스템 패키지</span>
+                  </div>
+                  <div class="mo-box">
+                    <span class="date"><i>수강기간 :</i> 365일</span>
+                    <span class="coupon"
+                      ><a href="javascript:void(0)" class="coupon-btn"
+                        >쿠폰적용</a
+                      ></span
+                    >
+                    <span class="price" id="total_cnt02"
+                      ><i>상품금액 : </i> 290,000원</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="step-table type-3">
+              <h3>최종 결제 금액</h3>
+              <div class="top">
+                <span class="price">상품금액</span> <span class="ico"></span>
+                <span class="delivery">배송비</span> <span class="ico"></span>
+                <span class="discount">할인금액</span>
+              </div>
+              <ul class="list">
+                <li class="item">
+                  <span class="price">229,000원</span>
+                  <span class="ico">
+                    <img
+                      src="../../src/assets/images/ico-plus.png"
+                      alt=""
+                      class="pc"
+                    />
+                  </span>
+                  <span class="delivery">0원</span>
+                  <span class="ico">
+                    <img
+                      src="../../src/assets/images/ico-minus.png"
+                      alt=""
+                      class="pc"
+                    />
+                  </span>
+                  <span class="price" id="sale_cnt">0원</span>
+                </li>
+              </ul>
+            </div>
+            <div class="total-price">
+              <span>최종 결제금액</span>
+              <strong id="total_cnt">290,000원</strong>
+            </div>
+            <div class="btn-wrap">
+              <a href="javascript:void(0)" id="jsOrder">주문서 작성하기</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="coupon-popup">
+        <div class="iw">
+          <a href="javascript:void(0)" class="closed">
+            <img src="../../src/assets/images/popup-close.png" alt="" />
+          </a>
+          <div class="cont">
+            <img src="../../src/assets/images/coupon_icon.png" alt="" />
+            <h2>쿠폰</h2>
+            <form>
+              <div class="form-box">
+                <input
+                  type="text"
+                  class="cupon-num required"
+                  name="cm_seq_v1"
+                  id="cm_seq_v1"
+                  autocomplete="off"
+                  maxlength="4"
+                  title="쿠폰번호 앞자리"
+                  required=""
+                />
+                <span>-</span>
+                <input
+                  type="text"
+                  class="cupon-num required"
+                  name="cm_seq_v2"
+                  autocomplete="off"
+                  id="cm_seq_v2"
+                  maxlength="4"
+                  title="쿠폰번호 뒷자리"
+                  required=""
+                />
+              </div>
+              <div class="btn-wrap">
+                <a href="javascript:void(0)" id="jsCouponWrite">쿠폰적용하기</a>
+              </div>
+            </form>
+            <div class="table">
+              <div class="top">
+                <span class="name">쿠폰명</span>
+                <span class="discount pc">할인금액(율)</span>
+                <span class="time pc">사용마감기간</span>
+                <span class="state pc">적용</span>
+                <span class="mo">쿠폰정보</span>
+              </div>
+              <ul class="list">
+                <li class="item">
+                  <span class="name">1만원 할인쿠폰</span>
+                  <div class="mo-box">
+                    <span class="discount pc">10,000원</span>
+                    <span class="time pc">2023.01.01</span>
+                    <span class="state pc"
+                      ><a href="javascript:void(0)">적용</a></span
+                    >
+                  </div>
+                </li>
+                <li class="item">
+                  <span class="name">등록된 쿠폰이 없습니다.</span>
+                </li>
+              </ul>
+            </div>
+            <ul class="notice">
+              <li>
+                * 쿠폰 등록 할인 적용 시 최대 7만원까지 등록 사용 가능합니다.
+                (단, 중복 사용 시 7만원이 넘을 경우 높은 금액의 쿠폰만
+                적용됩니다.)<br />
+                예) 3만원, 5만원 쿠폰 적용 할인 받으실 경우 5만원 쿠폰 사용 가능
+              </li>
+              <li>* 유효기간이 지나거나 사용한 쿠폰은 자동 소멸됩니다.</li>
+              <li>
+                * 쿠폰 등록 후 꼭 사용조건, 기간, 할인액 등을 확인해 주세요.
+              </li>
+              <li>
+                * 결제 취소를 할 경우 보유 쿠폰은 주문 취소일 부터 유효기간 내
+                재사용 가능합니다.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      const popup = () => {
+        const mainEl = document.querySelector("main");
+        const popupEl = document.querySelector(".coupon-popup");
+        const openBtn = document.querySelector(".coupon-btn");
+        const closeBtn = document.querySelector(".closed");
+
+        openBtn.addEventListener("click", () => {
+          mainEl.classList.add("open");
+          popupEl.classList.add("open");
+        });
+        closeBtn.addEventListener("click", () => {
+          mainEl.classList.remove("open");
+          popupEl.classList.remove("open");
+        });
+      };
+
+      window.onload = popup();
+    </script>
+  </body>
+</html>

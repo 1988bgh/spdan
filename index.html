@@ -18,7 +18,7 @@
   <body>
     <main>
       <div class="top__banner">
-        <div class="inner inner-12">
+        <div class="inner inner-10">
           <span class="top__banner-flag"
             ><img src="./src/assets/images/top-flag.png" alt=""
           /></span>
@@ -30,7 +30,7 @@
         </div>
       </div>
       <header>
-        <div class="inner inner-12">
+        <div class="inner inner-10">
           <a href="/" class="logo"
             ><img
               src="./src/assets/images/logo.png"
@@ -42,10 +42,11 @@
           <a href="javascript:void(0)" class="youtube-btn"
             ><img src="./src/assets/images/header-youtube.svg" alt=""
           /></a>
+          <button type="button" class="mo__all-btn"></button>
         </div>
       </header>
       <nav class="gnb">
-        <div class="inner inner-12">
+        <div class="inner inner-10">
           <button type="button" class="gnb__all-btn"></button>
           <a href="javascript:void(0)" class="gnb__item">수강신청</a>
           <a href="javascript:void(0)" class="gnb__item">스단결 특징</a>
@@ -55,6 +56,113 @@
           <a href="javascript:void(0)" class="gnb__item">강좌소개</a>
           <a href="javascript:void(0)" class="gnb__item">FAQ</a>
           <a href="javascript:void(0)" class="mypage-btn">나의 스터디룸</a>
+        </div>
+      </nav>
+      <nav class="gnb-all">
+        <ul class="list">
+          <div class="inner inner-10">
+            <li class="item">
+              <h2></h2>
+              <div class="lnb-box"></div>
+            </li>
+            <li class="item">
+              <h2>수강신청</h2>
+              <div class="lnb-box">
+                <a href="">수강신청</a>
+              </div>
+            </li>
+            <li class="item">
+              <h2>수단결 특징</h2>
+              <div class="lnb-box">
+                <a href="">스단결 특징</a>
+              </div>
+            </li>
+            <li class="item">
+              <h2>효과후기</h2>
+              <div class="lnb-box">
+                <a href="">효과후기</a>
+              </div>
+            </li>
+            <li class="item">
+              <h2>강사소개</h2>
+              <div class="lnb-box">
+                <a href="">샘플강의</a>
+                <a href="">김문석 선생님</a>
+              </div>
+            </li>
+            <li class="item">
+              <h2>강좌소개</h2>
+              <div class="lnb-box">
+                <a href="">스페인어 발음편</a>
+                <a href="">스단결 시작편</a>
+                <a href="">스단결 성장편</a>
+                <a href="">스단결 유창편</a>
+                <a href="">스단결 능숙편</a>
+              </div>
+            </li>
+            <li class="item">
+              <h2></h2>
+              <div class="lnb-box">
+                <a href="">스단결 완성편</a>
+                <a href="">스페인어 말하기 1편</a>
+                <a href="">스페인어 말하기 2편</a>
+                <a href="">여행 스페인어</a>
+              </div>
+            </li>
+            <li class="item">
+              <h2>고객센터</h2>
+              <div class="lnb-box">
+                <a href="">공지사항</a>
+                <a href="">FAQ</a>
+              </div>
+            </li>
+            <li class="item">
+              <h2></h2>
+              <div class="lnb-box"></div>
+            </li>
+          </div>
+        </ul>
+        <div class="info-box">
+          <div class="inner inner-12">
+            <div class="box">
+              <img src="./src/assets/images/gnb-img-1.png" alt="" />
+              <div class="info">
+                <div class="item">
+                  <img src="./src/assets/images/gnb-img-2.png" alt="" />
+                  <p>
+                    앱스토어 및 구글플레이에서<br />
+                    일단결 어플을 다운로드 해 주세요.
+                  </p>
+                </div>
+                <div class="item">
+                  <a href="javascript:void(0)">
+                    <img src="./src/assets/images/gnb-img-3.png" alt="" />
+                  </a>
+                  <a href="javascript:void(0)">
+                    <img src="./src/assets/images/gnb-img-4.png" alt="" />
+                  </a>
+                </div>
+                <div class="item">
+                  <span>
+                    <b>카카오톡</b>
+                    <img src="./src/assets/images/gnb-img-5.png" alt="" />
+                  </span>
+                  <span>@sdan</span>
+                </div>
+                <div class="item">
+                  <span>
+                    <b>유선상담</b>
+                    <img src="./src/assets/images/gnb-img-5.png" alt="" />
+                  </span>
+                  <span>
+                    02.2659.0609
+                    <em>평일 10:00-19:00(금:18:00)</em>
+                    <em>주말/공휴일 휴무</em>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
       <section class="contents__main-visual">
@@ -395,5 +503,28 @@
       </section>
       <footer></footer>
     </main>
+    <script>
+      const sectionEl = document.querySelectorAll("section");
+      const allBtn = document.querySelector(".gnb .gnb__all-btn");
+      const gnbEl = document.querySelector(".gnb-all");
+
+      let status;
+
+      allBtn.addEventListener("click", () => {
+        if (!status) {
+          status = true;
+          gnbEl.style.display = "block";
+          sectionEl.forEach((el) => {
+            el.style.display = "none";
+          });
+        } else {
+          status = false;
+          gnbEl.style.display = "none";
+          sectionEl.forEach((el) => {
+            el.style.display = "block";
+          });
+        }
+      });
+    </script>
   </body>
 </html>

@@ -328,11 +328,6 @@ header .mo__all-btn {
   border-bottom: 1px solid #d9d8d6;
   z-index: 10;
 }
-@media only screen and (max-width: 1280px) {
-  .gnb {
-    display: none;
-  }
-}
 .gnb .inner {
   display: flex;
   align-items: center;
@@ -348,9 +343,19 @@ header .mo__all-btn {
   background-color: transparent;
   cursor: pointer;
 }
+@media only screen and (max-width: 1280px) {
+  .gnb .gnb__all-btn {
+    display: none;
+  }
+}
 .gnb .gnb__item {
   position: relative;
   height: 100%;
+}
+@media only screen and (max-width: 1280px) {
+  .gnb .gnb__item {
+    display: none;
+  }
 }
 .gnb .gnb__item a {
   display: flex;
@@ -8161,7 +8166,8 @@ footer .mo {
   }
 }
 .contents__myclass {
-  padding-bottom: 220px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .contents__myclass .pd64 {
   padding: 0 64px;
@@ -8300,7 +8306,7 @@ footer .mo {
     margin-bottom: 45px;
   }
 }
-.contents__myclass .myclass__tab-handler button {
+.contents__myclass .myclass__tab-handler a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8310,12 +8316,12 @@ footer .mo {
   font-size: 24px;
   border: 1px solid #151515;
 }
-.contents__myclass .myclass__tab-handler button.active {
+.contents__myclass .myclass__tab-handler a.active {
   color: #fff;
   background-color: #151515;
 }
 @media only screen and (max-width: 767px) {
-  .contents__myclass .myclass__tab-handler button {
+  .contents__myclass .myclass__tab-handler a {
     height: 50px;
     font-size: 14px;
   }
@@ -10005,6 +10011,9 @@ footer .mo {
   }
 }
 .contents__modify .mform__item .out-box .out-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 140px;
   height: 44px;
   color: #636569;

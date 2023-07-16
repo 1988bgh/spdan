@@ -1,5 +1,6 @@
 .contents__myclass {
-  padding-bottom: 220px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   .pd64 {
     padding: 0 64px;
     @include s1 {
@@ -127,7 +128,7 @@
       @include s1 {
         margin-bottom: 45px;
       }
-      button {
+      a {
         display: flex;
         align-items: center;
         justify-content: center;

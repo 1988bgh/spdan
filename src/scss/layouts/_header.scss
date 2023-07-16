@@ -58,9 +58,6 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #d9d8d6;
   z-index: 10;
-  @include s2 {
-    display: none;
-  }
   .inner {
     display: flex;
     align-items: center;
@@ -75,10 +72,16 @@ header {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    @include s2 {
+      display: none;
+    }
   }
   .gnb__item {
     position: relative;
     height: 100%;
+    @include s2 {
+      display: none;
+    }
     a {
       display: flex;
       align-items: center;

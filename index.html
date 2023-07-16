@@ -743,15 +743,23 @@
       });
 
       addEventListener("resize", () => {
-        status.pc = false;
-        gnbEl.style.display = "none";
-        status.mo = false;
-        moGnbEl.style.display = "none";
+        if (innerWidth > 1280) {
+          status.mo = false;
+          moGnbEl.style.display = "none";
+          footerEl.style.display = "block";
+          sectionEl.forEach((el) => {
+            el.style.display = "block";
+          });
+        }
 
-        footerEl.style.display = "block";
-        sectionEl.forEach((el) => {
-          el.style.display = "block";
-        });
+        if (innerWidth < 1281) {
+          status.pc = false;
+          gnbEl.style.display = "none";
+          footerEl.style.display = "block";
+          sectionEl.forEach((el) => {
+            el.style.display = "block";
+          });
+        }
       });
     </script>
   </body>

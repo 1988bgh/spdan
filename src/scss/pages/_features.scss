@@ -1,0 +1,418 @@
+.feature__ {
+  &visual {
+    padding: 180px 0 99px;
+    background-image: url("../assets/images/feature-visual-bg.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include s2 {
+      padding: 80px 0 80px;
+    }
+    .typo {
+      text-align: center;
+      p {
+        &:nth-child(1) {
+          margin-bottom: 54px;
+          color: #fff;
+          font-size: 25px;
+          font-weight: 200;
+          span {
+            background-color: #ff6000;
+          }
+          @include s1 {
+            margin-bottom: 30px;
+            font-size: 18px;
+          }
+        }
+        &:nth-child(2) {
+          color: #fff;
+          font-size: 55px;
+          font-weight: 700;
+          span {
+            display: block;
+            margin-bottom: 150px;
+            padding-bottom: 10px;
+            font-family: "yg-jalnan";
+            background-image: url("../assets/images/feature-visual-underline.png");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: contain;
+            @include s2 {
+              margin-bottom: 70px;
+            }
+            b {
+              color: #ff6000;
+            }
+          }
+          @include s2 {
+            font-size: 40px;
+          }
+          @include s1 {
+            font-size: 24px;
+            b {
+              display: block;
+            }
+          }
+        }
+      }
+      & > span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 390px;
+        height: 65px;
+        margin: 0 auto;
+        color: #3f250e;
+        font-size: 22px;
+        font-weight: 500;
+        background-image: url("../assets/images/feature-box-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include s2 {
+          width: 320px;
+        }
+        @include s1 {
+          width: 300px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  &01 {
+    padding: 90px 0;
+    background-image: url("../assets/images/feature-intro-visual-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include s1 {
+      background-color: #a70003;
+      background-size: auto;
+      background-position: 30% center;
+    }
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 590px;
+      background-color: rgba(0, 0, 0, 0.1);
+      @include s1 {
+        height: auto;
+        padding: 50px 0;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .text-box {
+        margin-left: 550px;
+        padding-left: 20px;
+        border-left: 1px solid #f3b201;
+        @include s2 {
+          margin-left: 400px;
+        }
+        @include s1 {
+          margin-left: 0;
+        }
+        p {
+          &:nth-child(1) {
+            margin-bottom: 35px;
+            color: #fff;
+            font-family: "yg-jalnan";
+            font-size: 60px;
+            line-height: 1.2;
+            i {
+              position: relative;
+              color: #f3b201;
+              font-style: normal;
+              &::before {
+                content: "";
+                position: absolute;
+                top: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                background-color: #f3b201;
+                @include s1 {
+                  width: 10px;
+                  height: 10px;
+                  top: -15px;
+                }
+              }
+            }
+            @include s2 {
+              font-size: 40px;
+            }
+            @include s1 {
+              font-size: 30px;
+            }
+          }
+          &:nth-child(2) {
+            color: #fff;
+            font-size: 25px;
+            font-weight: 200;
+            span {
+              display: block;
+              position: relative;
+              color: #9e0007;
+              z-index: 2;
+              b {
+                position: absolute;
+                top: 0;
+                left: -2.5%;
+                width: 95%;
+                height: 100%;
+                background-color: #f3b201;
+                z-index: -1;
+              }
+            }
+            @include s1 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &02 {
+    padding-top: 65px;
+    background-image: url("../assets/images/feature02-bg.png");
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include s1 {
+        flex-direction: column;
+      }
+      .typo {
+        margin-bottom: 100px;
+        margin-right: -80px;
+        text-align: center;
+        @include s3 {
+          margin-right: -250px;
+          z-index: 1;
+        }
+        @include s1 {
+          margin-right: 0;
+          margin-bottom: 50px;
+        }
+        p {
+          &:nth-child(2) {
+            margin-top: 80px;
+            margin-bottom: 50px;
+            font-family: "yg-jalnan";
+            font-size: 50px;
+            span {
+              position: relative;
+              color: #ff512f;
+              z-index: 1;
+              b {
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 105%;
+                height: 80%;
+                background-color: #21201e;
+                z-index: -1;
+              }
+              @include s2 {
+                display: block;
+                b {
+                  width: 210px;
+                }
+              }
+            }
+            @include s2 {
+              margin-top: 40px;
+              margin-bottom: 20px;
+              font-size: 40px;
+            }
+            @include s1 {
+              margin-top: 20px;
+            }
+          }
+          &:nth-child(3) {
+            color: #5b5b5b;
+            font-size: 25px;
+            br {
+              display: none;
+            }
+            span {
+              display: block;
+              padding-bottom: 10px;
+              margin-bottom: 70px;
+              font-weight: 700;
+              background: url("../assets/images/feature-underline.png")
+                no-repeat center bottom;
+              @include s1 {
+                background-size: contain;
+                margin-bottom: 30px;
+              }
+            }
+            @include s2 {
+              font-size: 20px;
+            }
+            @include s1 {
+              font-size: 16px;
+              br {
+                display: block;
+              }
+            }
+          }
+        }
+        & > span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          width: 700px;
+          height: 70px;
+          border-radius: 35px;
+          color: #ffffff;
+          font-size: 30px;
+          letter-spacing: -0.05em;
+          background-color: #ff512f;
+          br {
+            display: none;
+          }
+          @include s2 {
+            width: 100%;
+            max-width: 700px;
+            font-size: 20px;
+          }
+          @include s1 {
+            br {
+              display: block;
+            }
+            padding: 0 40px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  &03 {
+    padding: 245px 0 180px;
+    background-image: url("../assets/images/feature-bg-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include s2 {
+      padding: 120px 0 90px;
+    }
+    .typo {
+      margin-bottom: 70px;
+      @include s2 {
+        margin-bottom: 30px;
+      }
+      p {
+        margin-bottom: 10px;
+        color: #ffd86e;
+        font-size: 50px;
+        text-align: center;
+        font-family: "yg-jalnan";
+        span {
+          color: #ff6c6c;
+          @include s2 {
+            display: block;
+          }
+        }
+        @include s2 {
+          font-size: 30px;
+        }
+      }
+      & > span {
+        display: block;
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+  }
+  &04 {
+    padding: 230px 0;
+    background-image: url("../assets/images/feature-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    @include s2 {
+      padding: 120px 0;
+    }
+    @include s1 {
+      padding: 60px 0;
+    }
+    p {
+      margin-top: 100px;
+      margin-bottom: 180px;
+      color: #fff;
+      font-size: 40px;
+      text-align: center;
+      @include s3 {
+        font-size: 30px;
+      }
+      @include s1 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        br {
+          display: none;
+        }
+      }
+      span {
+        color: #ff512f;
+        font-weight: 500;
+        @include s2 {
+          display: block;
+          margin: 10px 0;
+        }
+      }
+      b {
+        position: relative;
+        font-weight: 500;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 101%;
+          height: 100%;
+          border: 1px solid #ff512f;
+        }
+      }
+    }
+    .btn-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 366px;
+        height: 104px;
+        margin: 0 21px;
+        font-size: 35px;
+        font-weight: 500;
+        border-radius: 52px;
+        &.step {
+          color: #ff512f;
+          background-color: #fff;
+        }
+        &.package {
+          color: #fff;
+          background-color: #ff512f;
+        }
+        @include s2 {
+          height: 60px;
+          font-size: 25px;
+        }
+        @include s1 {
+          margin: 0 10px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

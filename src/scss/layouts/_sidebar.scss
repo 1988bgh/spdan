@@ -1,0 +1,207 @@
+.side__ {
+  &nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 75px;
+    max-height: 100000px;
+    min-height: 100vh;
+    background-color: #1f1f1f;
+    z-index: 20;
+    overflow-y: auto;
+    transition: width 0.2s ease;
+    @include h {
+      &:hover {
+        width: 170px;
+        br {
+          display: none;
+        }
+        b {
+          transition: transform 0.1s 0.2s ease;
+          transform: scale(1) !important;
+        }
+      }
+    }
+    @include s2 {
+      display: none;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      height: 133px;
+      color: #8b8b8b;
+      font-size: 15px;
+      text-align: center;
+      border-bottom: 1px solid #424242;
+      &:nth-child(2) {
+        .ico {
+          width: 30px;
+          height: 22px;
+          margin-bottom: 17px;
+          background-image: url("../assets/images/side/ico-s1.png");
+        }
+        @include h {
+          &:hover {
+            color: #fff;
+            background-color: #ff6100;
+            .ico {
+              background-image: url("../assets/images/side/ico-s1-hover.png");
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        .ico {
+          width: 24px;
+          height: 26px;
+          margin-bottom: 17px;
+          background-image: url("../assets/images/side/ico-s2.png");
+        }
+        @include h {
+          &:hover {
+            color: #fff;
+            background-color: #ff6100;
+            .ico {
+              background-image: url("../assets/images/side/ico-s2-hover.png");
+            }
+          }
+        }
+      }
+      &:nth-child(4) {
+        .ico {
+          width: 33px;
+          height: 25px;
+          margin-bottom: 17px;
+          background-image: url("../assets/images/side/ico-s3.png");
+        }
+        @include h {
+          &:hover {
+            color: #fff;
+            background-color: #ff6100;
+            .ico {
+              background-image: url("../assets/images/side/ico-s3-hover.png");
+            }
+          }
+        }
+      }
+    }
+  }
+  &logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    background-image: url("../assets/images/side/logo-back.png");
+  }
+  &service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 63px;
+    padding-bottom: 40px;
+    .ico {
+      width: 36px;
+      height: 37px;
+      margin-bottom: 17px;
+      background-image: url("../assets/images/side/ico-phone.png");
+    }
+    span {
+      &:nth-of-type(2) {
+        color: #8b8b8b;
+        font-size: 15px;
+        text-align: center;
+        b {
+          display: block;
+          transform: scale(0);
+          color: #ff6100;
+        }
+      }
+    }
+  }
+  &kakao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 43px;
+    .ico {
+      width: 38px;
+      height: 36px;
+      margin-bottom: 17px;
+      background-image: url("../assets/images/side/ico-kakao.png");
+    }
+    span {
+      &:nth-of-type(2) {
+        color: #8b8b8b;
+        font-size: 15px;
+        text-align: center;
+        b {
+          display: block;
+          transform: scale(0);
+          color: #ffc939;
+        }
+      }
+    }
+  }
+  &quick-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 226px;
+    right: 30px;
+    z-index: 20;
+    @include s2 {
+      display: none;
+    }
+  }
+  &quick {
+    width: 122px;
+    height: 321px;
+    margin-bottom: 160px;
+    background-image: url("../assets/images/side/quick-nav.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 106px;
+      h2 {
+        color: #321a16;
+        font-size: 14px;
+        font-weight: 200;
+      }
+      span {
+        color: #321a16;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      height: 108px;
+      img {
+        margin-bottom: 5px;
+      }
+      h2 {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+  }
+}

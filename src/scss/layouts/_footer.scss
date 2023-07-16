@@ -1,0 +1,150 @@
+footer .service {
+  background-color: #eaeaea;
+}
+footer .service .inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 4rem;
+}
+footer .service a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  color: #363636;
+  font-size: 1.6rem;
+}
+footer .service a:nth-of-type(1) {
+  padding-right: 2rem;
+  margin-right: 2rem;
+}
+footer .service a:nth-of-type(1)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 2rem;
+  background-color: #bbb;
+}
+footer .info {
+  padding: 5rem 0;
+}
+footer .info .iw {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .info h1 {
+  flex-shrink: 0;
+  margin-right: 5rem;
+}
+footer .info h2 {
+  margin-bottom: 2rem;
+  color: #272727;
+  font-size: 2.2rem;
+}
+footer .info span {
+  position: relative;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  color: #76777a;
+  font-size: 1.6rem;
+  line-height: 1.6em;
+  font-weight: 300;
+}
+footer .info span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 1rem;
+  background-color: #bbb;
+}
+footer .info span.no-line {
+  margin-right: 0;
+  padding-right: 0;
+}
+footer .info span.no-line::before {
+  display: none;
+}
+footer .copy {
+  width: 100%;
+  color: #b4b4b4;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-top: 3rem;
+}
+footer .mo {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  footer .info span {
+    font-size: 1.4rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  footer {
+    border-top: 1px solid #f5f5f5;
+  }
+  footer .pc {
+    display: none;
+  }
+  footer .mo {
+    display: block;
+  }
+  footer .info .iw {
+    display: block;
+  }
+  footer .logo img {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  footer .info {
+    text-align: center;
+  }
+  footer .info span {
+    display: block;
+    padding-right: 0rem;
+    margin-right: 0rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  footer .info span.no-b {
+    display: inline-block;
+    padding: 0 0.5rem;
+  }
+  footer .info br {
+    display: none;
+  }
+  footer .info span::before {
+    display: none;
+  }
+  footer .service {
+    background-color: #fff;
+  }
+  footer .service .iw {
+    display: flex;
+    justify-content: center;
+  }
+  footer .service a {
+    font-size: 1.2rem;
+  }
+  footer .service a:nth-of-type(1)::before {
+    height: 1rem;
+  }
+  footer .copy {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}

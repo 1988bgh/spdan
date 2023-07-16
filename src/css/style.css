@@ -997,6 +997,11 @@ footer .mo {
   right: 30px;
   z-index: 20;
 }
+@media only screen and (max-width: 1440px) {
+  .side__quick-wrap {
+    top: 100px;
+  }
+}
 @media only screen and (max-width: 1280px) {
   .side__quick-wrap {
     display: none;

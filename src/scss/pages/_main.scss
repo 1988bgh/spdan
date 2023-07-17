@@ -146,27 +146,27 @@
         &feature-wrap {
           overflow: hidden;
           &:nth-of-type(1) {
-            padding: 150px 0 100px;
+            padding: 100px 0 100px;
             background-image: url(../assets/images/main-step_phone.png);
             background-repeat: no-repeat;
             background-position: 0 -370px;
             background-color: #ff6000;
             @include s3 {
-              padding: 100px 0 80px;
+              padding: 80px 0;
             }
             @include s2 {
-              padding: 80px 0 50px;
+              padding: 60px 0;
               background-image: none;
             }
           }
           &:nth-of-type(2) {
-            padding: 100px 0 150px;
+            padding: 100px 0;
             background-color: #ffa800;
             @include s3 {
               padding: 80px 0 100px;
             }
             @include s2 {
-              padding: 50px 0 80px;
+              padding: 60px 0;
             }
           }
         }
@@ -335,15 +335,15 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 362px;
-          height: 96px;
+          width: 200px;
+          height: 70px;
           margin: 0 auto;
-          margin-top: 180px;
+          margin-top: 100px;
           color: #343b43;
-          font-size: 35px;
+          font-size: 24px;
           font-weight: 700;
           letter-spacing: -0.04em;
-          border-radius: 50px;
+          border-radius: 35px;
           background-color: #ffd200;
           @include s2 {
             margin-top: 70px;
@@ -358,7 +358,7 @@
       }
     }
     &-video {
-      padding: 120px 0 160px;
+      padding: 100px 0 100px;
       background-color: #ffd200;
       background-image: url("../assets/images/main-video_bg.png");
       background-position: center bottom;
@@ -393,7 +393,7 @@
               padding: 0 13px;
               margin-bottom: 16px;
               color: #fff;
-              font-size: 40px;
+              font-size: 34px;
               font-weight: 300;
               letter-spacing: -0.04em;
               background-color: #ffa800;
@@ -406,7 +406,7 @@
             }
             p {
               margin-bottom: 110px;
-              font-size: 60px;
+              font-size: 50px;
               font-weight: 700;
               span {
                 color: #ff6000;
@@ -548,7 +548,7 @@
       }
     }
     &-feature {
-      padding: 180px 0 210px;
+      padding: 100px 0 100px;
       background-image: url("/src/assets/images/main-feature-bg.png");
       background-repeat: no-repeat;
       background-position: center;
@@ -584,7 +584,7 @@
           width: 1000px;
           height: 280px;
           margin: 0 auto;
-          margin-bottom: 100px;
+          margin-bottom: 50px;
           background-color: #e2e6ed;
           p {
             position: relative;
@@ -760,23 +760,21 @@
       }
     }
     &-review {
-      padding: 144px 0 120px;
+      padding: 100px 0;
       background-color: #c82a00;
       @include s3 {
-        padding: 100px 0 100px;
-      }
-      @include s2 {
         padding: 80px 0 80px;
       }
-      @include s1 {
-        padding: 60px 0 60px;
+      @include s2 {
+        padding: 60px 0;
       }
       .review__ {
         &title-box {
           img {
             display: block;
             margin: 0 auto;
-            margin-bottom: 50px;
+            width: 250px;
+            margin-bottom: 30px;
             @include s2 {
               width: 250px;
               margin-bottom: 30px;
@@ -788,13 +786,13 @@
           }
           .box {
             display: block;
-            width: 600px;
+            width: 500px;
             height: 70px;
             border-radius: 40px;
             margin: 0 auto;
             margin-bottom: 40px;
             color: #fff;
-            font-size: 36px;
+            font-size: 28px;
             font-weight: 300;
             letter-spacing: -0.06em;
             text-align: center;
@@ -818,7 +816,7 @@
               display: block;
               margin-bottom: 1rem;
               color: #fef1ab;
-              font-size: 40px;
+              font-size: 30px;
               font-weight: 300;
               text-align: center;
               @include s2 {
@@ -830,9 +828,9 @@
             }
             &:nth-of-type(3) {
               display: block;
-              margin-bottom: 100px;
+              margin-bottom: 70px;
               color: #fff;
-              font-size: 60px;
+              font-size: 40px;
               font-weight: 500;
               text-align: center;
               letter-spacing: -0.06em;
@@ -1054,24 +1052,22 @@
       }
     }
     &-package {
-      padding: 220px 0 240px;
+      padding: 100px 0;
       background-image: url("../assets/images/main-package-bg.png");
       @include s3 {
-        padding: 100px 0 160px;
+        padding: 80px 0;
       }
       @include s2 {
-        padding: 80px 0 120px;
+        padding: 60px 0;
       }
-      @include s1 {
-        padding: 60px 0 100px;
-      }
+
       .title-box {
-        margin-bottom: 140px;
+        margin-bottom: 70px;
         text-align: center;
         span {
           font-family: "yg-jalnan";
           color: #fff;
-          font-size: 65px;
+          font-size: 45px;
           &:nth-child(2) {
             color: #ffde00;
           }
@@ -1081,7 +1077,7 @@
         }
         p {
           color: #fff;
-          font-size: 30px;
+          font-size: 25px;
           font-weight: 300;
           text-align: center;
         }
@@ -1124,8 +1120,8 @@
           margin-bottom: 20px;
         }
         .box {
-          width: 424px;
-          height: 244px;
+          width: 400px;
+          height: 220px;
           padding: 25px;
           border-radius: 40px;
           text-align: center;
@@ -1245,7 +1241,7 @@
           .price {
             position: relative;
             color: #d93030;
-            font-size: 70px;
+            font-size: 50px;
             font-family: "yg-jalnan";
             &:after {
               content: "";
@@ -1289,7 +1285,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 192px;
+        margin-bottom: 100px;
 
         @include s2 {
           margin-bottom: 100px;
@@ -1303,7 +1299,7 @@
           align-items: center;
           justify-content: center;
           width: 420px;
-          height: 347px;
+          height: 240px;
           border-radius: 40px;
           &:nth-child(1) {
             margin-right: 102px;
@@ -1337,15 +1333,15 @@
           span {
             color: #d93030;
             &:nth-child(1) {
-              font-size: 30px;
-              margin-bottom: 40px;
+              font-size: 24px;
+              margin-bottom: 20px;
               @include s1 {
                 margin-bottom: 20px;
               }
             }
             &:nth-child(2) {
               font-family: "yg-jalnan";
-              font-size: 90px;
+              font-size: 50px;
               span {
                 font-size: 35px;
               }
@@ -1364,15 +1360,17 @@
         }
       }
       .btn-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         a {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 944px;
-          height: 118px;
-          margin: 0 auto;
-          font-size: 33px;
+          width: 300px;
+          height: 80px;
+          font-size: 30px;
           border-radius: 60px;
           @include s2 {
             width: 100%;
@@ -1380,7 +1378,7 @@
             font-size: 28px;
           }
           &:nth-child(1) {
-            margin-bottom: 20px;
+            margin-right: 20px;
             color: #fff;
             background-color: #d93030;
           }
@@ -1394,7 +1392,7 @@
     &-recommend {
       position: relative;
       overflow: visible;
-      height: 680px;
+      height: 400px;
       background-image: url("../assets/images/main-recommend-bg.png");
       background-repeat: no-repeat;
       background-size: cover;
@@ -1406,10 +1404,12 @@
       }
       img {
         &:nth-of-type(1) {
-          margin-top: -62px;
+          width: 240px;
+          margin-top: -24px;
         }
         &:nth-of-type(2) {
-          margin-left: 133px;
+          width: 400px;
+          margin-left: 50px;
         }
       }
       @include s3 {

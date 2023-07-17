@@ -31,6 +31,36 @@ header {
       display: none;
     }
   }
+  .myclass-btn {
+    display: none;
+    width: 90px !important;
+    color: #888;
+    font-size: 1.4rem;
+    margin-right: 2.5rem;
+    @include s2 {
+      display: inline-flex;
+    }
+  }
+
+  .mobile-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #ff6000;
+    &.join-btn {
+      width: 60px;
+      background-color: #333;
+    }
+    @include s2 {
+      display: inline-flex;
+    }
+  }
   .youtube-btn img {
     width: 6rem;
     @include s2 {
@@ -58,10 +88,23 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #d9d8d6;
   z-index: 10;
-  .inner {
+  @include s2 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    height: 50px;
+    padding: 0 30px;
+    overflow: auto;
+  }
+  .inner {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include s2 {
+      width: 636px;
+      margin: 0 auto;
+    }
   }
   .gnb__all-btn {
     width: 4.8rem;
@@ -79,9 +122,6 @@ header {
   .gnb__item {
     position: relative;
     height: 100%;
-    @include s2 {
-      display: none;
-    }
     a {
       display: flex;
       align-items: center;
@@ -102,6 +142,9 @@ header {
         background-color: #ff6000;
         transition: width 0.3s ease, color 0.3s ease;
       }
+      @include s2 {
+        font-size: 14px;
+      }
     }
     & > a {
       &::before {
@@ -113,6 +156,11 @@ header {
         width: 1px;
         height: 10px;
         background-color: #d9d8d6;
+      }
+      &:last-child {
+        &::before {
+          display: none;
+        }
       }
     }
     @include h {
@@ -145,6 +193,9 @@ header {
         font-size: 1.2rem;
         background-image: url("../assets/images/discount-mark.png");
         background-repeat: no-repeat;
+        @include s2 {
+          display: none;
+        }
       }
     }
     &:last-of-type {
@@ -195,6 +246,9 @@ header {
     color: #fff;
     font-size: 1.6rem;
     background-color: #ff6000;
+    @include s2 {
+      display: none;
+    }
   }
 }
 .gnb-all {

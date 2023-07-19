@@ -338,20 +338,24 @@
       &popup-btn {
         display: block;
         margin: 0 auto;
+        text-align: center;
+        img {
+          max-width: 70%;
+        }
       }
     }
   }
   &infomation {
-    padding: 206px 0 317px;
+    padding: 100px 0 100px;
     @include s3 {
-      padding: 100px 0 150px;
+      padding: 80px 0 80px;
     }
     .inner {
       max-width: 1200px;
     }
     .infomation__ {
       &title {
-        margin-bottom: 161px;
+        margin-bottom: 80px;
         color: #303030;
         font-family: "yg-jalnan";
         font-size: 50px;
@@ -365,7 +369,7 @@
         display: flex;
         justify-content: center;
         padding: 0 100px;
-        padding-bottom: 175px;
+        padding-bottom: 100px;
         margin: 0 auto;
         margin-bottom: 93px;
         border-bottom: 1px solid #ededed;
@@ -523,7 +527,7 @@
     }
   }
   &list {
-    padding-top: 135px;
+    padding-top: 100px;
     background-image: url("../assets/images/class-list-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -552,7 +556,7 @@
         }
       }
       &box {
-        padding: 91px 121px;
+        padding: 50px 80px;
         background-color: #fff;
         border-radius: 20px 20px 0 0;
         @include s2 {
@@ -566,7 +570,7 @@
           display: flex;
           align-items: center;
           justify-content: flex-start;
-          margin-bottom: 25px;
+          margin-bottom: 20px;
           border-bottom: 3px solid #000;
           @include s1 {
             min-width: 450px;
@@ -611,7 +615,7 @@
           align-items: center;
           justify-content: flex-start;
           & > span {
-            padding: 19px 0;
+            padding-bottom: 15px;
             color: #fff;
             font-size: 16px;
             font-weight: 700;
@@ -681,7 +685,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 310px 0 400px;
+    padding: 120px 0 120px;
     background-image: url("../assets/images/class-bottom-visual.png");
     background-size: cover;
     background-position: center;

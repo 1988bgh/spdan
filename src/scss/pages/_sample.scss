@@ -159,13 +159,13 @@
   }
 }
 .contents__sample {
-  padding: 114px 0 124px;
+  padding: 100px 0;
   background-color: #f7f7f7;
   @include s1 {
     padding: 50px 0 60px;
   }
   .list {
-    padding: 160px 100px 135px;
+    padding: 100px 100px 100px;
     background-color: #fff;
     @include s2 {
       padding: 80px 50px 60px;
@@ -249,7 +249,7 @@
   }
 }
 .contents__sample-about {
-  padding: 114px 0 160px;
+  padding: 100px 0;
   background-image: url("../assets/images/sample-bg-2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -258,7 +258,7 @@
   }
   .list {
     position: relative;
-    padding: 160px 100px 107px;
+    padding: 80px 100px 100px;
     @include s2 {
       padding: 80px 50px 50px;
     }
@@ -345,6 +345,9 @@
       a {
         display: block;
         margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
         @include s1 {
           margin-bottom: 10px;
         }

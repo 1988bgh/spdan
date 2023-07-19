@@ -1,7 +1,7 @@
 .contents__login {
-  padding: 150px 0 140px;
-  @include s1 {
-    padding: 100px 0 100px;
+  padding: 100px 0;
+  @include s2 {
+    padding: 60px 0;
   }
   .inner {
     max-width: 500px;
@@ -17,7 +17,7 @@
     }
   }
   p {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     color: #3c3c3c;
     font-size: 24px;
     text-align: center;
@@ -29,7 +29,7 @@
   .login__ {
     &input-form {
       position: relative;
-      height: 80px;
+      height: 70px;
       @include s1 {
         height: 50px;
       }

@@ -1,7 +1,7 @@
 .contents__join {
-  padding: 150px 0 140px;
-  @include s1 {
-    padding: 100px 0 100px;
+  padding: 100px 0;
+  @include s2 {
+    padding: 60px 0;
   }
   .inner-12 {
     max-width: 720px;
@@ -11,9 +11,9 @@
   }
   .join__ {
     &title {
-      margin-bottom: 58px;
+      margin-bottom: 40px;
       color: #ff6000;
-      font-size: 46px;
+      font-size: 40px;
       font-weight: 800;
       text-align: center;
       @include s1 {
@@ -24,7 +24,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 75px;
+      margin-bottom: 50px;
       @include s1 {
         margin-bottom: 30px;
       }
@@ -45,17 +45,18 @@
         span {
           display: block;
           &:nth-child(1) {
+            margin-bottom: 5px;
             color: #ff6000;
-            font-size: 18px;
+            font-size: 14px;
             @include s1 {
               margin-bottom: 5px;
-              font-size: 14px;
+              font-size: 12px;
             }
           }
           &:nth-child(2) {
-            font-size: 24px;
+            font-size: 20px;
             @include s1 {
-              font-size: 18px;
+              font-size: 16px;
             }
           }
         }
@@ -65,18 +66,9 @@
             display: block;
             &:nth-child(1) {
               color: #fff;
-              font-size: 18px;
-              @include s1 {
-                margin-bottom: 5px;
-                font-size: 14px;
-              }
             }
             &:nth-child(2) {
               color: #fff;
-              font-size: 24px;
-              @include s1 {
-                font-size: 18px;
-              }
             }
           }
         }
@@ -86,7 +78,7 @@
   .certify__ {
     &title {
       margin-bottom: 20px;
-      font-size: 32px;
+      font-size: 28px;
       text-align: center;
       @include s1 {
         margin-bottom: 20px;
@@ -94,9 +86,10 @@
       }
     }
     &desc {
-      margin-bottom: 110px;
+      margin-bottom: 60px;
       color: #76777a;
-      font-size: 19px;
+      font-size: 16px;
+      line-height: 1.6em;
       font-weight: 200;
       text-align: center;
       @include s1 {
@@ -110,6 +103,7 @@
     &btn-box {
       text-align: center;
       img {
+        max-width: 250px;
         @include s1 {
           width: 100%;
           max-width: 240px;
@@ -122,12 +116,12 @@
       justify-content: center;
       position: relative;
       width: 100%;
-      max-width: 420px;
+      max-width: 300px;
       height: 62px;
       margin: 0 auto;
       margin-top: -62px;
       color: #fff;
-      font-size: 28px;
+      font-size: 24px;
       background-color: #272727;
       border-radius: 31px;
       z-index: 1;

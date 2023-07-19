@@ -1,0 +1,784 @@
+/*페이징 css*/
+
+.board-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.board-pager a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  margin: 0 0.5rem;
+  background-color: #303030;
+  color: #fff;
+  font-size: 1.8rem;
+}
+.board-pager a.current {
+  background-color: #ff6c6c;
+}
+.board-pager a.arrow {
+  background-color: #ddd;
+}
+
+.customer .search-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.customer .search-form select {
+  width: 10rem;
+  height: 4rem;
+  padding: 0 1rem;
+  border: 1px solid #e4e4e4;
+  background-image: url("/resource/assets/imgs/board/ico-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 92% center;
+  box-sizing: border-box;
+  outline: none;
+}
+.customer .search-form .form-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 0.5rem;
+  border: 1px solid #e4e4e4;
+}
+.customer .search-form .form-box input {
+  padding-left: 1rem;
+  height: 3.8rem;
+  box-sizing: border-box;
+}
+.customer .search-form .form-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.8rem;
+  height: 3.8rem;
+}
+.customer .board-total {
+  display: block;
+  margin-bottom: 1rem;
+  color: #000;
+  font-size: 1.6rem;
+}
+.customer .b_hit {
+  margin-right: 0;
+}
+.customer .board-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #fafaf9;
+  border-top: 1px solid #bababa;
+  border-bottom: 1px solid #bababa;
+}
+.customer .board-top span {
+  height: 5rem;
+}
+.customer .board-top .b_title {
+  justify-content: center !important;
+}
+.customer .list .item {
+  border-bottom: 1px solid #e6e6e6;
+}
+.customer .list .item a span {
+  padding: 3rem 0;
+}
+.customer .list .item a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.customer .board-top span,
+.customer .list .item span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 10rem;
+  color: #000;
+  font-size: 1.8rem;
+}
+.customer .board-top .b_title,
+.customer .list .item .b_title {
+  flex-shrink: 1;
+  width: 100%;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.customer .board-top span p,
+.customer .list .item span p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/*뷰페이지*/
+.board-view .item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #bababa;
+}
+.board-view dt {
+  flex-shrink: 0;
+  width: 18.4rem;
+  padding-left: 5rem;
+  color: #ff6c6c;
+  font-size: 1.8rem;
+}
+.board-view dd {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.board-view dd.file {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.board-view dd a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 1.3rem 1rem 4rem;
+  color: #fff;
+  background-color: #ff6c6c;
+  border-radius: 0.5rem;
+}
+.board-view dd a img {
+  margin-left: 4rem;
+}
+.board-view .left,
+.board-view .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.board-view .cont {
+  margin-bottom: 4.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid #bababa;
+}
+.board-view .btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.board-view .btn-wrap a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 3.6rem;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 1.8rem;
+  background-color: #303030;
+}
+@media (max-width: 1280px) {
+  .board-view .left {
+    margin-right: 2rem;
+  }
+  .board-view dt {
+    width: 10rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+  }
+  .board-view dd {
+    font-size: 1.6rem;
+  }
+  .board-view dd a {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 767px) {
+  .board-view dt {
+    width: 6rem;
+    padding-left: 0rem;
+    font-size: 1.4rem;
+  }
+  .board-view dd {
+    font-size: 1.3rem;
+  }
+  .board-view dd a {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .customer .search-form {
+    flex-direction: column;
+  }
+  .customer .search-form select {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .customer .search-form .form-box {
+    margin-left: 0;
+    width: 100%;
+  }
+  .customer .search-form .form-box input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .customer .list .item:hover {
+    background-color: #f8f8f8f8;
+  }
+}
+
+/*쿠폰페이지 게시판 (리스트)*/
+
+.sub-cont.coupon .board-total {
+  display: block;
+  margin-bottom: 1rem;
+  color: #000;
+  font-size: 1.6rem;
+}
+.sub-cont.coupon .board-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #fafaf9;
+  border-top: 1px solid #bababa;
+  border-bottom: 1px solid #bababa;
+}
+.sub-cont.coupon .board-top span {
+  height: 5rem;
+}
+.sub-cont.coupon .list,
+.sub-cont.coupon .list .item a {
+  width: 100%;
+}
+.sub-cont.coupon .list .item {
+  display: flex;
+  border-bottom: 1px solid #e6e6e6;
+}
+.sub-cont.coupon .list .item:nth-of-type(2n) {
+  background-color: #fafaf9;
+}
+.sub-cont.coupon .list .item a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sub-cont.coupon .list .item a span {
+  padding: 3rem 0;
+}
+.sub-cont.coupon .list .item a .b_name {
+  flex-shrink: 0;
+}
+.sub-cont.coupon .list .item a .flex-box {
+  display: flex;
+  flex: 3;
+}
+.sub-cont.coupon .board-top span,
+.sub-cont.coupon .list .item a span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  color: #000;
+  font-size: 1.8rem;
+}
+.sub-cont.coupon .list .item a .b_num {
+  color: #ff6c6c;
+}
+.sub-cont.coupon .board-top .mo {
+  display: none;
+}
+@media (max-width: 1280px) {
+  .sub-cont.coupon .board-top span,
+  .sub-cont.coupon .list .item a span {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1023px) {
+  .sub-cont.coupon .board-top span,
+  .sub-cont.coupon .list .item a span {
+    font-size: 1.4rem;
+  }
+  .coupon .notice-list li {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 767px) {
+  .sub-cont.coupon .board-wrap {
+    margin-bottom: 5rem;
+  }
+  .sub-cont.coupon .list .item {
+    padding: 1rem 0;
+  }
+  .sub-cont.coupon .list .item a {
+    padding: 0 1rem;
+  }
+  .sub-cont.coupon .list .item a .flex-box {
+    flex: 1;
+    flex-direction: column;
+  }
+  .sub-cont.coupon .list .item a span {
+    justify-content: flex-end;
+    padding: 1rem 0;
+  }
+  .sub-cont.coupon .board-top .mo {
+    display: flex;
+  }
+  .sub-cont.coupon .board-top .b_discount,
+  .sub-cont.coupon .board-top .b_date,
+  .sub-cont.coupon .board-top .b_num {
+    display: none;
+  }
+  .sub-cont.coupon .list .item a span {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  .sub-cont.coupon .list .item a span.b_date {
+    text-align: right;
+  }
+  .sub-cont.coupon .list .item a span.b_name {
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.6rem;
+    word-break: keep-all;
+  }
+}
+
+/*inquiry board*/
+.inquiry .board-wrap .total {
+  display: block;
+  padding: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1.6rem;
+}
+.inquiry .board-wrap .board-top {
+  display: flex;
+  border-top: 1px solid #bababa;
+  border-bottom: 1px solid #bababa;
+  background-color: #fafaf9;
+}
+.inquiry .board-wrap span {
+  display: block;
+  padding: 2rem 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.inquiry .board-wrap span.num {
+  flex-shrink: 0;
+  width: 7rem;
+}
+.inquiry .board-wrap span.cate {
+  flex-shrink: 0;
+  width: 12rem;
+}
+.inquiry .board-wrap span.lec {
+  flex-shrink: 0;
+  width: 20rem;
+}
+.inquiry .board-wrap span.title {
+  width: 100%;
+}
+.inquiry .board-wrap span.date {
+  flex-shrink: 0;
+  width: 11rem;
+}
+.inquiry .board-wrap span.status {
+  flex-shrink: 0;
+  width: 10rem;
+}
+.inquiry .board-wrap span.status.com {
+  color: #ff6c6c;
+}
+.inquiry .board-wrap span.mo {
+  flex-shrink: 0;
+  width: 10rem;
+  display: none;
+}
+.inquiry .board-wrap .item {
+  border-bottom: 1px solid #e6e6e6;
+}
+.inquiry .board-wrap .item a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.inquiry .board-wrap .item a .box {
+  display: flex;
+}
+.inquiry .board-wrap .btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.inquiry .board-wrap .write-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14rem;
+  height: 5rem;
+  margin-top: 3rem;
+  color: #fff;
+  font-size: 1.6rem;
+  background-color: #ff6c6c;
+}
+
+@media (max-width: 1280px) {
+  .inquiry .board-wrap span {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  .inquiry .board-wrap span.lec {
+    flex-shrink: 0;
+    width: 15rem;
+  }
+}
+@media (max-width: 767px) {
+  .inquiry .board-wrap .total {
+    font-size: 1.3rem;
+  }
+  .inquiry .board-wrap .item a {
+    padding: 1rem 0;
+  }
+  .inquiry .board-wrap .board-top span {
+    padding: 1rem 0.5rem;
+  }
+  .inquiry .board-wrap span {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .inquiry .board-wrap span.num {
+    width: 4rem;
+  }
+  .inquiry .board-wrap span.cate {
+    width: 6rem;
+  }
+  .inquiry .board-wrap span.lec {
+    display: none;
+    flex-shrink: 0;
+    width: 8rem;
+  }
+  .inquiry .board-wrap .board-top span.date,
+  .inquiry .board-wrap .board-top span.status {
+    display: none;
+  }
+  .inquiry .board-wrap .board-top span.mo {
+    display: block;
+    width: 7rem;
+  }
+  .inquiry .board-wrap .item a .box {
+    display: block;
+  }
+  .inquiry .board-wrap span.date {
+    width: 8rem;
+  }
+  .inquiry .board-wrap span.status {
+    width: 7rem;
+    border: 1px solid #eee;
+    margin: 0 auto;
+  }
+  .inquiry .board-wrap .write-btn {
+    width: 8rem;
+    height: 4rem;
+    margin-bottom: 5rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .inquiry .board-wrap .item:hover {
+    background-color: #fafaf9;
+  }
+}
+
+/*글쓰기 페이지*/
+.write .board {
+  padding: 8rem 0;
+}
+.write .iw {
+  max-width: 100rem;
+}
+.write .sub-visual {
+  position: relative;
+  height: 45rem;
+}
+.write .sub-visual .iw {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+.write .sub-visual .typo {
+  margin-top: 5rem;
+}
+.write .sub-visual h2 {
+  margin-bottom: 2.5rem;
+  color: #fff;
+  font-size: 4rem;
+  text-align: left;
+}
+.write .sub-visual p {
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 1.6em;
+}
+.write .sub-visual .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.write .board .iw {
+  max-width: 80rem;
+}
+.write .board .flex-box {
+  display: flex;
+  margin-bottom: 3rem;
+}
+.write .board .form-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.write .board .flex-box .form-item {
+  margin-right: 4rem;
+}
+.write .board .form-item h3 {
+  flex-shrink: 0;
+  width: 10rem;
+  color: #ff6c6c;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.write .board .form-item:last-of-type {
+  margin-right: 0;
+}
+.write .board .form-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid #c8c8c8;
+}
+.write .board .form-box input,
+.write .board .form-box select {
+  width: 100%;
+  height: 5.5rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.write .board .form-box select {
+  border: none;
+  background-image: url("/resource/assets/imgs/board/select-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  outline: none;
+}
+.write .board .form-box input::placeholder {
+  font-family: "Pretendard";
+}
+.write .board .form-box .text-limit {
+  flex-shrink: 0;
+  color: #a1a1a1;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.write .board .form-item.cont {
+  margin-top: 3rem;
+}
+.write .board .form-box textarea {
+  width: 100%;
+  height: 30rem;
+  font-family: "Pretendard";
+  font-size: 2rem;
+  line-height: 1.6em;
+}
+.write .board .form-box textarea::placeholder {
+  color: #a1a1a1;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.write .board .btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.write .board .btn-wrap a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 7rem;
+  border-radius: 3.5rem;
+  color: #fff;
+  font-size: 2.8rem;
+  background-color: #101010;
+}
+.write .board .btn-wrap a.cancle-btn {
+  margin-right: 2rem;
+}
+.write .board .btn-wrap a.submit-btn {
+  background-color: #ff6c6c;
+}
+.write .board .btn-wrap a.modify-btn {
+  margin-right: 2rem;
+  background-color: #ddd;
+}
+
+@media (max-width: 1280px) {
+  .write .board .flex-box {
+    margin-bottom: 2rem;
+  }
+  .write .board .form-item h3 {
+    width: 7rem;
+    font-size: 1.6rem;
+  }
+  .write .board .form-box .text-limit {
+    font-size: 1.6rem;
+  }
+  .write .board .form-box input,
+  .write .board .form-box select {
+    height: 4.5rem;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+  }
+  .write .board .form-box textarea {
+    font-size: 1.8rem;
+  }
+  .write .board .form-box textarea::placeholder {
+    font-size: 1.8rem;
+  }
+  .write .board .btn-wrap {
+    margin-top: 5rem;
+  }
+  .write .board .btn-wrap a {
+    width: 18rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .write .sub-visual {
+    height: 20rem;
+  }
+  .write .sub-visual .typo {
+    margin-top: 0;
+  }
+  .write .sub-visual h2 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  .write .sub-visual p {
+    font-size: 1.6rem;
+  }
+  .write .board .flex-box {
+    display: block;
+  }
+  .write .board .flex-box .form-item {
+    margin-right: 0;
+  }
+  .write .board .form-item {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .write .board .form-item {
+    display: block;
+  }
+  .write .board .form-item.cont {
+    margin-top: 2rem;
+  }
+  .write .board .form-item.cont h3 {
+    margin-bottom: 1rem;
+  }
+  .write .board .form-box textarea {
+    height: 15rem;
+    font-size: 1.6rem;
+  }
+  .write .board .form-box textarea::placeholder {
+    font-size: 1.6rem;
+  }
+  .write .board .btn-wrap a {
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.6rem;
+  }
+  .write .board .btn-wrap a.cancle-btn,
+  .write .board .btn-wrap a.modify-btn {
+    margin-right: 2%;
+  }
+}
+
+.sub-cont.view .view-title {
+  margin-bottom: 1rem;
+  color: #ff6c6c;
+  font-size: 2rem;
+}
+.sub-cont.view .view-title + p {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  background-color: #f5f5f5;
+}
+
+.sub-cont.view .view-cont {
+  margin-bottom: 1rem;
+  color: #ff6c6c;
+  font-size: 2rem;
+}
+.sub-cont.view .view-cont + .cont {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+  background-color: #f5f5f5;
+}
+
+.sub-cont.view .btn-wrap {
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+.sub-cont.view .btn-wrap a {
+  font-size: 1.5rem;
+  width: 10rem;
+  height: 4rem;
+}
+.sub-cont.view .btn-wrap a.cancle-btn {
+  margin-right: 1rem;
+}
+.sub-cont.view .btn-wrap a.modify-btn {
+  margin-right: 1rem;
+}
+
+.admin-reply {
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: #f5f5f5;
+}
+
+.admin-reply .title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.admin-reply .cont {
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 1.6em;
+}

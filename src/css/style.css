@@ -2759,7 +2759,7 @@ footer .mo {
   background-image: url("../assets/images/feature-visual-underline.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: contain;
+  background-size: inherit;
 }
 @media only screen and (max-width: 1280px) {
   .feature__visual .typo p:nth-child(2) span {
@@ -3054,14 +3054,14 @@ footer .mo {
   }
 }
 .feature__03 {
-  padding: 245px 0 180px;
+  padding: 120px 0;
   background-image: url("../assets/images/feature-bg-2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media only screen and (max-width: 1280px) {
   .feature__03 {
-    padding: 120px 0 90px;
+    padding: 80px 0;
   }
 }
 .feature__03 .typo {
@@ -3098,8 +3098,12 @@ footer .mo {
   font-size: 25px;
   text-align: center;
 }
+.feature__03 img {
+  display: block;
+  margin: 0 auto;
+}
 .feature__04 {
-  padding: 230px 0;
+  padding: 150px 0;
   background-image: url("../assets/images/feature-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -3107,7 +3111,7 @@ footer .mo {
 }
 @media only screen and (max-width: 1280px) {
   .feature__04 {
-    padding: 120px 0;
+    padding: 100px 0;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -3117,7 +3121,7 @@ footer .mo {
 }
 .feature__04 p {
   margin-top: 100px;
-  margin-bottom: 180px;
+  margin-bottom: 120px;
   color: #fff;
   font-size: 40px;
   text-align: center;
@@ -3171,10 +3175,10 @@ footer .mo {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 300px;
-  height: 80px;
+  max-width: 200px;
+  height: 60px;
   margin: 0 10px;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
   border-radius: 52px;
 }
@@ -4913,7 +4917,7 @@ footer .mo {
 }
 
 .contents__sample {
-  padding: 114px 0 124px;
+  padding: 100px 0;
   background-color: #f7f7f7;
 }
 @media only screen and (max-width: 767px) {
@@ -4922,7 +4926,7 @@ footer .mo {
   }
 }
 .contents__sample .list {
-  padding: 160px 100px 135px;
+  padding: 100px 100px 100px;
   background-color: #fff;
 }
 @media only screen and (max-width: 1280px) {
@@ -5020,7 +5024,7 @@ footer .mo {
 }
 
 .contents__sample-about {
-  padding: 114px 0 160px;
+  padding: 100px 0;
   background-image: url("../assets/images/sample-bg-2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -5032,7 +5036,7 @@ footer .mo {
 }
 .contents__sample-about .list {
   position: relative;
-  padding: 160px 100px 107px;
+  padding: 80px 100px 100px;
 }
 @media only screen and (max-width: 1280px) {
   .contents__sample-about .list {
@@ -5136,6 +5140,9 @@ footer .mo {
   display: block;
   margin-bottom: 30px;
 }
+.contents__sample-about .list .item a:last-child {
+  margin-bottom: 0;
+}
 @media only screen and (max-width: 767px) {
   .contents__sample-about .list .item a {
     margin-bottom: 10px;
@@ -5191,8 +5198,8 @@ footer .mo {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 80%;
+  left: 390px;
   transform: translate(30px, 15px);
   width: 135px;
   height: 42px;
@@ -5452,11 +5459,11 @@ footer .mo {
 }
 
 .contents__login {
-  padding: 150px 0 140px;
+  padding: 100px 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1280px) {
   .contents__login {
-    padding: 100px 0 100px;
+    padding: 60px 0;
   }
 }
 .contents__login .inner {
@@ -5475,7 +5482,7 @@ footer .mo {
   }
 }
 .contents__login p {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   color: #3c3c3c;
   font-size: 24px;
   text-align: center;
@@ -5488,7 +5495,7 @@ footer .mo {
 }
 .contents__login .login__input-form {
   position: relative;
-  height: 80px;
+  height: 70px;
 }
 @media only screen and (max-width: 767px) {
   .contents__login .login__input-form {
@@ -5577,11 +5584,11 @@ footer .mo {
 }
 
 .contents__join {
-  padding: 150px 0 140px;
+  padding: 100px 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1280px) {
   .contents__join {
-    padding: 100px 0 100px;
+    padding: 60px 0;
   }
 }
 .contents__join .inner-12 {
@@ -5593,9 +5600,9 @@ footer .mo {
   }
 }
 .contents__join .join__title {
-  margin-bottom: 58px;
+  margin-bottom: 40px;
   color: #ff6000;
-  font-size: 46px;
+  font-size: 40px;
   font-weight: 800;
   text-align: center;
 }
@@ -5608,7 +5615,7 @@ footer .mo {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 @media only screen and (max-width: 767px) {
   .contents__join .join__step-box {
@@ -5638,21 +5645,22 @@ footer .mo {
   display: block;
 }
 .contents__join .join__step-box .box span:nth-child(1) {
+  margin-bottom: 5px;
   color: #ff6000;
-  font-size: 18px;
+  font-size: 14px;
 }
 @media only screen and (max-width: 767px) {
   .contents__join .join__step-box .box span:nth-child(1) {
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .contents__join .join__step-box .box span:nth-child(2) {
-  font-size: 24px;
+  font-size: 20px;
 }
 @media only screen and (max-width: 767px) {
   .contents__join .join__step-box .box span:nth-child(2) {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .contents__join .join__step-box .box.active {
@@ -5663,26 +5671,13 @@ footer .mo {
 }
 .contents__join .join__step-box .box.active span:nth-child(1) {
   color: #fff;
-  font-size: 18px;
-}
-@media only screen and (max-width: 767px) {
-  .contents__join .join__step-box .box.active span:nth-child(1) {
-    margin-bottom: 5px;
-    font-size: 14px;
-  }
 }
 .contents__join .join__step-box .box.active span:nth-child(2) {
   color: #fff;
-  font-size: 24px;
-}
-@media only screen and (max-width: 767px) {
-  .contents__join .join__step-box .box.active span:nth-child(2) {
-    font-size: 18px;
-  }
 }
 .contents__join .certify__title {
   margin-bottom: 20px;
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
 }
 @media only screen and (max-width: 767px) {
@@ -5692,9 +5687,10 @@ footer .mo {
   }
 }
 .contents__join .certify__desc {
-  margin-bottom: 110px;
+  margin-bottom: 60px;
   color: #76777a;
-  font-size: 19px;
+  font-size: 16px;
+  line-height: 1.6em;
   font-weight: 200;
   text-align: center;
 }
@@ -5710,6 +5706,9 @@ footer .mo {
 .contents__join .certify__btn-box {
   text-align: center;
 }
+.contents__join .certify__btn-box img {
+  max-width: 250px;
+}
 @media only screen and (max-width: 767px) {
   .contents__join .certify__btn-box img {
     width: 100%;
@@ -5722,12 +5721,12 @@ footer .mo {
   justify-content: center;
   position: relative;
   width: 100%;
-  max-width: 420px;
+  max-width: 300px;
   height: 62px;
   margin: 0 auto;
   margin-top: -62px;
   color: #fff;
-  font-size: 28px;
+  font-size: 24px;
   background-color: #272727;
   border-radius: 31px;
   z-index: 1;
@@ -7319,7 +7318,7 @@ footer .mo {
   }
 }
 .contents__mypage {
-  padding: 87px 0 250px;
+  padding: 100px 0;
 }
 .contents__mypage .inner {
   padding: 0 32px;
@@ -7327,6 +7326,11 @@ footer .mo {
 @media only screen and (max-width: 767px) {
   .contents__mypage .inner {
     padding: 0;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .contents__mypage {
+    padding: 60px 0;
   }
 }
 .contents__mypage .mypage__title-box {
@@ -7564,6 +7568,11 @@ footer .mo {
   display: block;
   padding: 40px 35px 32px;
 }
+@media only screen and (max-width: 767px) {
+  .contents__mypage .mypage__item a {
+    padding: 20px 35px;
+  }
+}
 .contents__mypage .mypage__item .icon {
   display: inline-block;
   width: 48px;
@@ -7572,16 +7581,31 @@ footer .mo {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media only screen and (max-width: 767px) {
+  .contents__mypage .mypage__item .icon {
+    margin-bottom: 15px;
+  }
+}
 .contents__mypage .mypage__item h3 {
   margin-bottom: 16px;
   color: #ff6000;
   font-size: 24px;
   font-weight: 700;
 }
+@media only screen and (max-width: 767px) {
+  .contents__mypage .mypage__item h3 {
+    font-size: 20px;
+  }
+}
 .contents__mypage .mypage__item .desc {
   color: #000;
   font-size: 16px;
   line-height: 1.3;
+}
+@media only screen and (max-width: 767px) {
+  .contents__mypage .mypage__item .desc {
+    font-size: 14px;
+  }
 }
 @media only screen and (min-width: 1025px) {
   .contents__mypage .mypage__item:hover {
@@ -8224,8 +8248,20 @@ footer .mo {
   }
 }
 .contents__myclass {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
+}
+@media only screen and (max-width: 1280px) {
+  .contents__myclass {
+    padding-bottom: 60px;
+  }
+}
+.contents__myclass.pd100 {
+  padding-top: 100px;
+}
+@media only screen and (max-width: 1280px) {
+  .contents__myclass.pd100 {
+    padding-top: 60px;
+  }
 }
 .contents__myclass .pd64 {
   padding: 0 64px;
@@ -8241,6 +8277,11 @@ footer .mo {
   background-image: url("../assets/images/myclass-subvisual.png");
   background-size: cover;
 }
+@media only screen and (max-width: 767px) {
+  .contents__myclass .myclass__visual {
+    height: 330px;
+  }
+}
 .contents__myclass .myclass__user-info {
   display: flex;
   flex-direction: column;
@@ -8255,15 +8296,30 @@ footer .mo {
   font-size: 37px;
   font-weight: 700;
 }
+@media only screen and (max-width: 767px) {
+  .contents__myclass .myclass__user-info .name {
+    font-size: 24px;
+  }
+}
 .contents__myclass .myclass__user-info .name span {
   font-size: 30px;
-  font-weight: 300;
+}
+@media only screen and (max-width: 767px) {
+  .contents__myclass .myclass__user-info .name span {
+    font-size: 24px;
+  }
 }
 .contents__myclass .myclass__user-info p {
   margin-bottom: 30px;
   font-size: 22px;
   font-weight: 300;
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .contents__myclass .myclass__user-info p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
 }
 .contents__myclass .myclass__user-info a {
   display: flex;
@@ -8282,8 +8338,8 @@ footer .mo {
 @media only screen and (max-width: 767px) {
   .contents__myclass .myclass__user-info a {
     align-items: center;
-    width: 100%;
-    max-width: 320px;
+    width: 180px;
+    font-size: 18px;
     margin-left: 0;
   }
 }
@@ -8291,13 +8347,15 @@ footer .mo {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  max-width: 720px;
+  margin: 0 auto;
   margin-top: -60px;
   margin-bottom: 63px;
 }
 @media only screen and (max-width: 767px) {
   .contents__myclass .myclass__list {
     flex-wrap: wrap;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
   }
 }
 .contents__myclass .myclass__item {
@@ -8336,6 +8394,11 @@ footer .mo {
   padding: 25px 0 20px;
   color: #151515;
 }
+@media only screen and (max-width: 767px) {
+  .contents__myclass .myclass__item a {
+    padding: 10px 0 10px;
+  }
+}
 .contents__myclass .myclass__item span:nth-child(1) {
   display: flex;
   align-items: center;
@@ -8343,6 +8406,11 @@ footer .mo {
   width: 60px;
   height: 53px;
   margin-bottom: 21px;
+}
+@media only screen and (max-width: 767px) {
+  .contents__myclass .myclass__item span:nth-child(1) {
+    margin-bottom: 10px;
+  }
 }
 .contents__myclass .myclass__item span:nth-child(2) {
   font-size: 20px;
@@ -8413,6 +8481,7 @@ footer .mo {
 @media only screen and (max-width: 767px) {
   .contents__myclass .myclass__tab-contents.ing .date-box {
     width: 100%;
+    padding: 10px 20px;
     margin-right: 0;
   }
 }
@@ -8432,9 +8501,20 @@ footer .mo {
     font-size: 24px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .contents__myclass .myclass__tab-contents.ing .date-box h3 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+}
 .contents__myclass .myclass__tab-contents.ing .date-box h3 span {
   display: block;
   font-weight: 700;
+}
+@media only screen and (max-width: 767px) {
+  .contents__myclass .myclass__tab-contents.ing .date-box .item {
+    text-align: center;
+  }
 }
 .contents__myclass .myclass__tab-contents.ing .date-box .item:nth-child(1) {
   margin-bottom: 30px;
@@ -8444,9 +8524,19 @@ footer .mo {
     margin-bottom: 20px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .contents__myclass .myclass__tab-contents.ing .date-box .item:nth-child(1) {
+    margin-bottom: 10px;
+  }
+}
 .contents__myclass .myclass__tab-contents.ing .date-box .item span {
   display: block;
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .contents__myclass .myclass__tab-contents.ing .date-box .item span {
+    display: inline-block;
+  }
 }
 .contents__myclass .myclass__tab-contents.ing .date-box .item span:nth-child(1) {
   margin-bottom: 10px;
@@ -8455,7 +8545,13 @@ footer .mo {
 }
 @media only screen and (max-width: 1280px) {
   .contents__myclass .myclass__tab-contents.ing .date-box .item span:nth-child(1) {
-    font-size: 16px;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contents__myclass .myclass__tab-contents.ing .date-box .item span:nth-child(1) {
+    margin-bottom: 0;
   }
 }
 .contents__myclass .myclass__tab-contents.ing .date-box .item span:nth-child(2) {
@@ -8463,7 +8559,7 @@ footer .mo {
 }
 @media only screen and (max-width: 1280px) {
   .contents__myclass .myclass__tab-contents.ing .date-box .item span:nth-child(2) {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 .contents__myclass .myclass__tab-contents.ing .progress-box {
@@ -8477,6 +8573,7 @@ footer .mo {
 }
 @media only screen and (max-width: 767px) {
   .contents__myclass .myclass__tab-contents.ing .progress-box {
+    width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
@@ -8515,7 +8612,7 @@ footer .mo {
 }
 @media only screen and (max-width: 767px) {
   .contents__myclass .myclass__tab-contents.ing .progress-box .box span:nth-child(1) {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 .contents__myclass .myclass__tab-contents.ing .progress-box .box span:nth-child(2) {
@@ -8571,6 +8668,11 @@ footer .mo {
 .contents__myclass .myclass__tab-contents.ing .link-box {
   width: 100%;
 }
+@media only screen and (max-width: 767px) {
+  .contents__myclass .myclass__tab-contents.ing .link-box {
+    display: flex;
+  }
+}
 .contents__myclass .myclass__tab-contents.ing .link-box a {
   display: flex;
   align-items: center;
@@ -8591,7 +8693,15 @@ footer .mo {
 }
 @media only screen and (max-width: 767px) {
   .contents__myclass .myclass__tab-contents.ing .link-box a {
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+  }
+  .contents__myclass .myclass__tab-contents.ing .link-box a:first-child {
+    margin-right: 10px;
+  }
+  .contents__myclass .myclass__tab-contents.ing .link-box a:last-child {
+    display: none;
   }
 }
 .contents__myclass .myclass__tab-contents.ing .link-box a span {
@@ -8610,7 +8720,10 @@ footer .mo {
 }
 @media only screen and (max-width: 767px) {
   .contents__myclass .myclass__tab-contents.ing .link-box a span {
-    margin-left: 20px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 0px;
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -8627,11 +8740,6 @@ footer .mo {
   .contents__myclass .myclass__tab-contents.completed h3 {
     margin-bottom: 10px;
     font-size: 16px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .contents__myclass .myclass__tab-contents.completed .completed__table {
-    width: 500px;
   }
 }
 .contents__myclass .myclass__tab-contents.completed .completed__table.first {
@@ -8710,7 +8818,7 @@ footer .mo {
 }
 @media only screen and (max-width: 767px) {
   .contents__myclass .myclass__tab-contents.completed .completed__list span {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .contents__myclass .myclass__tab-contents.completed .completed__list span.title {
@@ -8751,17 +8859,12 @@ footer .mo {
   border-top: 1px solid #bababa;
   border-bottom: 1px solid #bababa;
 }
-@media only screen and (max-width: 400px) {
-  .contents__myclass .history__board-list .board-category {
-    width: 500px;
-  }
-}
 .contents__myclass .history__board-list .board-category span {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.06em;
 }
@@ -8784,6 +8887,11 @@ footer .mo {
 .contents__myclass .history__board-list .board-category span.status {
   width: 100px;
   flex-shrink: 0;
+}
+.contents__myclass .history__board-list .board-category span.mo {
+  display: none;
+  flex-shrink: 0;
+  width: 70px;
 }
 @media only screen and (max-width: 1280px) {
   .contents__myclass .history__board-list .board-category span {
@@ -8808,16 +8916,19 @@ footer .mo {
 }
 @media only screen and (max-width: 767px) {
   .contents__myclass .history__board-list .board-category span {
-    font-size: 14px;
+    font-size: 12px;
   }
   .contents__myclass .history__board-list .board-category span.class {
-    width: 120px;
+    display: none;
   }
   .contents__myclass .history__board-list .board-category span.date {
     display: none;
   }
-  .contents__myclass .history__board-list .board-category span.no {
+  .contents__myclass .history__board-list .board-category span.status {
     display: none;
+  }
+  .contents__myclass .history__board-list .board-category span.mo {
+    display: flex;
   }
 }
 .contents__myclass .history__board-list .board-contents {
@@ -8829,15 +8940,10 @@ footer .mo {
     margin-bottom: 20px;
   }
 }
-@media only screen and (max-width: 400px) {
-  .contents__myclass .history__board-list .board-contents {
-    width: 500px;
-  }
-}
 .contents__myclass .history__board-list .board-contents li {
   display: flex;
   width: 100%;
-  height: 80px;
+  height: 59px;
   border-bottom: 1px solid #e6e6e6;
   overflow: hidden;
 }
@@ -8846,13 +8952,21 @@ footer .mo {
     height: 50px;
   }
 }
+.contents__myclass .history__board-list .board-contents li .mo-box {
+  display: flex;
+}
+@media only screen and (max-width: 767px) {
+  .contents__myclass .history__board-list .board-contents li .mo-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .contents__myclass .history__board-list .board-contents li span {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #2e2e2e;
-  font-size: 18px;
-  font-weight: 100;
+  font-size: 16px;
   letter-spacing: -0.06em;
   overflow: hidden;
 }
@@ -8874,7 +8988,7 @@ footer .mo {
   display: block;
   width: 100%;
   height: 100%;
-  line-height: 80px;
+  line-height: 59px;
   color: #2e2e2e;
   white-space: nowrap;
   overflow: hidden;
@@ -8915,21 +9029,18 @@ footer .mo {
 }
 @media only screen and (max-width: 767px) {
   .contents__myclass .history__board-list .board-contents li span {
-    font-size: 14px;
+    font-size: 12px;
   }
   .contents__myclass .history__board-list .board-contents li span.class {
-    width: 120px;
+    display: none;
+  }
+  .contents__myclass .history__board-list .board-contents li span.status {
+    width: 70px;
+    height: 20px;
   }
   .contents__myclass .history__board-list .board-contents li span.date {
-    display: none;
-  }
-  .contents__myclass .history__board-list .board-contents li span.no {
-    display: none;
-  }
-}
-@media only screen and (max-width: 319px) {
-  .contents__myclass .history__board-list .board-contents li span.date {
-    display: none;
+    width: 70px;
+    height: 20px;
   }
 }
 .contents__myclass .history__board-list .pagination-box {
@@ -8967,11 +9078,11 @@ footer .mo {
   align-items: center;
   justify-content: center;
   width: 140px;
-  height: 54px;
+  height: 50px;
   margin-left: auto;
   margin-bottom: 30px;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   background-color: #ff6000;
 }
 @media only screen and (max-width: 1280px) {
@@ -8984,12 +9095,20 @@ footer .mo {
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .contents__myclass .history__board-list .board__handler {
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    margin: 0;
+    margin-left: auto;
+  }
+}
 .contents__myclass .history__status {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 105px;
+  margin: 60px 0;
 }
 .contents__myclass .history__status span:nth-child(odd) {
   margin-right: 34px;
@@ -9018,12 +9137,12 @@ footer .mo {
 }
 @media only screen and (max-width: 767px) {
   .contents__myclass .history__status span:nth-child(2) {
-    margin-right: 50px;
+    margin-right: 30px;
   }
 }
 @media only screen and (max-width: 767px) {
   .contents__myclass .history__status {
-    margin-bottom: 50px;
+    margin: 30px 0;
   }
 }
 .contents__myclass .studyroom__visual {
@@ -9275,7 +9394,7 @@ footer .mo {
 }
 .contents__myclass .question__input-box textarea {
   width: 100%;
-  height: 379px;
+  height: 270px;
   padding: 30px 10px 26px;
   border: none;
   border-bottom: 1px solid #c8c8c8;
@@ -9309,12 +9428,12 @@ footer .mo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
-  height: 70px;
+  width: 180px;
+  height: 50px;
   margin: 0 10px;
   border-radius: 35px;
   color: #fff;
-  font-size: 28px;
+  font-size: 16px;
 }
 @media only screen and (max-width: 767px) {
   .contents__myclass .question__handler .handler-btn {
@@ -10616,20 +10735,24 @@ footer .mo {
 .contents__class-intro .intro__popup-btn {
   display: block;
   margin: 0 auto;
+  text-align: center;
+}
+.contents__class-intro .intro__popup-btn img {
+  max-width: 70%;
 }
 .contents__class-infomation {
-  padding: 206px 0 317px;
+  padding: 100px 0 100px;
 }
 @media only screen and (max-width: 1440px) {
   .contents__class-infomation {
-    padding: 100px 0 150px;
+    padding: 80px 0 80px;
   }
 }
 .contents__class-infomation .inner {
   max-width: 1200px;
 }
 .contents__class-infomation .infomation__title {
-  margin-bottom: 161px;
+  margin-bottom: 80px;
   color: #303030;
   font-family: "yg-jalnan";
   font-size: 50px;
@@ -10645,7 +10768,7 @@ footer .mo {
   display: flex;
   justify-content: center;
   padding: 0 100px;
-  padding-bottom: 175px;
+  padding-bottom: 100px;
   margin: 0 auto;
   margin-bottom: 93px;
   border-bottom: 1px solid #ededed;
@@ -10825,7 +10948,7 @@ footer .mo {
   }
 }
 .contents__class-list {
-  padding-top: 135px;
+  padding-top: 100px;
   background-image: url("../assets/images/class-list-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -10858,7 +10981,7 @@ footer .mo {
   }
 }
 .contents__class-list .list__box {
-  padding: 91px 121px;
+  padding: 50px 80px;
   background-color: #fff;
   border-radius: 20px 20px 0 0;
 }
@@ -10877,7 +11000,7 @@ footer .mo {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   border-bottom: 3px solid #000;
 }
 @media only screen and (max-width: 767px) {
@@ -10931,7 +11054,7 @@ footer .mo {
   justify-content: flex-start;
 }
 .contents__class-list .list__box .item > span {
-  padding: 19px 0;
+  padding-bottom: 15px;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -11007,7 +11130,7 @@ footer .mo {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 310px 0 400px;
+  padding: 120px 0 120px;
   background-image: url("../assets/images/class-bottom-visual.png");
   background-size: cover;
   background-position: center;
@@ -11153,8 +11276,8 @@ footer .mo {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 80%;
+  left: 390px;
   transform: translate(30px, 15px);
   width: 135px;
   height: 42px;
@@ -11611,7 +11734,7 @@ footer .mo {
 }
 
 .contents__sample {
-  padding: 114px 0 124px;
+  padding: 100px 0;
   background-color: #f7f7f7;
 }
 @media only screen and (max-width: 767px) {
@@ -11620,7 +11743,7 @@ footer .mo {
   }
 }
 .contents__sample .list {
-  padding: 160px 100px 135px;
+  padding: 100px 100px 100px;
   background-color: #fff;
 }
 @media only screen and (max-width: 1280px) {
@@ -11718,7 +11841,7 @@ footer .mo {
 }
 
 .contents__sample-about {
-  padding: 114px 0 160px;
+  padding: 100px 0;
   background-image: url("../assets/images/sample-bg-2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -11730,7 +11853,7 @@ footer .mo {
 }
 .contents__sample-about .list {
   position: relative;
-  padding: 160px 100px 107px;
+  padding: 80px 100px 100px;
 }
 @media only screen and (max-width: 1280px) {
   .contents__sample-about .list {
@@ -11833,6 +11956,9 @@ footer .mo {
 .contents__sample-about .list .item a {
   display: block;
   margin-bottom: 30px;
+}
+.contents__sample-about .list .item a:last-child {
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 767px) {
   .contents__sample-about .list .item a {
@@ -15197,7 +15323,7 @@ footer .mo {
   background-image: url("../assets/images/feature-visual-underline.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: contain;
+  background-size: inherit;
 }
 @media only screen and (max-width: 1280px) {
   .feature__visual .typo p:nth-child(2) span {
@@ -15492,14 +15618,14 @@ footer .mo {
   }
 }
 .feature__03 {
-  padding: 245px 0 180px;
+  padding: 120px 0;
   background-image: url("../assets/images/feature-bg-2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media only screen and (max-width: 1280px) {
   .feature__03 {
-    padding: 120px 0 90px;
+    padding: 80px 0;
   }
 }
 .feature__03 .typo {
@@ -15536,8 +15662,12 @@ footer .mo {
   font-size: 25px;
   text-align: center;
 }
+.feature__03 img {
+  display: block;
+  margin: 0 auto;
+}
 .feature__04 {
-  padding: 230px 0;
+  padding: 150px 0;
   background-image: url("../assets/images/feature-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -15545,7 +15675,7 @@ footer .mo {
 }
 @media only screen and (max-width: 1280px) {
   .feature__04 {
-    padding: 120px 0;
+    padding: 100px 0;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -15555,7 +15685,7 @@ footer .mo {
 }
 .feature__04 p {
   margin-top: 100px;
-  margin-bottom: 180px;
+  margin-bottom: 120px;
   color: #fff;
   font-size: 40px;
   text-align: center;
@@ -15609,10 +15739,10 @@ footer .mo {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 300px;
-  height: 80px;
+  max-width: 200px;
+  height: 60px;
   margin: 0 10px;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
   border-radius: 52px;
 }

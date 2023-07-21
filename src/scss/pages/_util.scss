@@ -1,0 +1,149 @@
+.sub-cont.service {
+  padding: 12rem 0;
+}
+.service .service-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 6rem;
+}
+.service .service-top h2 {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.service .service-top nav {
+  margin-left: auto;
+}
+.service .service-top nav a {
+  color: #98989a;
+  font-size: 1.6rem;
+}
+.service .service-top nav span {
+  padding: 0 1rem;
+  color: #98989a;
+  font-size: 1.6rem;
+}
+.service .service-top nav a.current {
+  color: #ff6000;
+}
+.service-wrap {
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 5rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+.service-wrap .cont h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+.service-wrap .txt-gray {
+  margin-bottom: 3rem;
+  color: #666;
+  font-size: 1.6rem;
+  line-height: 1.6em;
+  word-break: keep-all;
+}
+.service-wrap .txt-gray:last-of-type {
+  margin-bottom: 0;
+}
+.service-wrap dl {
+  margin-bottom: 3rem;
+}
+.service-wrap p,
+.service-wrap dd {
+  color: #666;
+  font-size: 1.6rem;
+  line-height: 1.6em;
+  word-break: keep-all;
+}
+.service-wrap ul {
+  margin: 5rem 0;
+}
+.service-wrap ul li {
+  color: #ff6000;
+  font-size: 1.6rem;
+  line-height: 1.6em;
+}
+.service-wrap strong,
+.service-wrap dt {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+.service-wrap table {
+  margin-bottom: 5rem;
+}
+.service-wrap table thead {
+  background-color: #f5f5f5;
+}
+.service-wrap table thead td {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ddd;
+}
+.service-wrap table tbody td {
+  padding: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.3em;
+  border: 1px solid #ddd;
+}
+.service-wrap .pdt10 {
+  color: #666;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 1280px) {
+  .sub-cont.service {
+    padding: 7rem 0;
+  }
+  .service .service-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service .service-top h2 {
+    margin-bottom: 1rem;
+  }
+  .service .service-top nav {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .service-wrap {
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+  .service-wrap .txt-gray {
+    font-size: 1.3rem;
+  }
+  .service-wrap ul li {
+    font-size: 1.3rem;
+  }
+  .service-wrap strong {
+    font-size: 1.3rem;
+  }
+  .service-wrap table thead td {
+    font-size: 1.3rem;
+  }
+  .service-wrap table tbody td {
+    font-size: 1.3rem;
+  }
+  .service-wrap .cont h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+  .service-wrap p,
+  .service-wrap dt,
+  .service-wrap dd {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 460px) {
+  .service-wrap .scroll {
+    overflow-x: auto;
+  }
+  .service-wrap table {
+    width: 60rem;
+  }
+}

@@ -296,14 +296,11 @@
     }
   }
 }
-.sub-cont {
-  padding: 100px 0 100px;
-  @include s2 {
-    padding: 60px 0 60px;
-  }
-}
 .sub-cont.withdraw {
-  padding: 8rem 0;
+  padding: 100px 0;
+  @include s1 {
+    padding: 60px 0;
+  }
 
   .agree__check-box {
     margin-bottom: 70px;
@@ -493,6 +490,13 @@
   }
   .sub-cont.withdraw .class-list .item h3 {
     font-size: 1.6rem;
+  }
+}
+
+.sub-cont.mypage {
+  padding: 100px 0;
+  @include s1 {
+    padding: 60px 0;
   }
 }
 
@@ -856,5 +860,294 @@
     text-align: center;
     line-height: 1.6rem;
     word-break: keep-all;
+  }
+}
+
+.contents__oh {
+  padding: 100px 0;
+  @include s2 {
+    padding: 80px 0;
+  }
+  @include s1 {
+    padding: 60px 0;
+  }
+  .inquiry-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 120px;
+    @include s2 {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #ff6000;
+      font-size: 3rem;
+      font-weight: 500;
+      @include s2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+    nav {
+      margin-left: auto;
+      a,
+      span {
+        color: #98989a;
+        font-size: 16px;
+        font-weight: 500;
+        @include s1 {
+          font-size: 14px;
+        }
+      }
+      span {
+        padding: 0 0.5rem;
+      }
+      a {
+        &.current {
+          color: #ff6000;
+        }
+      }
+    }
+  }
+  .board-wrap {
+    .scroll {
+      overflow-x: auto;
+    }
+    .board-list {
+      @include s {
+        width: 620px;
+      }
+    }
+    .total {
+      display: block;
+      padding: 0;
+      margin-bottom: 10px;
+      text-align: left;
+      font-size: 16px;
+      @include s2 {
+        font-size: 12px;
+      }
+    }
+    .board-top {
+      display: flex;
+      border-top: 1px solid #bababa;
+      border-bottom: 1px solid #bababa;
+      background-color: #fafaf9;
+    }
+    span {
+      display: block;
+      padding: 20px 10px;
+      font-size: 16px;
+      text-align: center;
+      @include s2 {
+        padding: 10px;
+        font-size: 14px;
+      }
+      @include s1 {
+        font-size: 12px;
+      }
+      &.apply {
+        flex-shrink: 0;
+        width: 13rem;
+        @include s2 {
+          flex: 1;
+        }
+      }
+      &.title {
+        flex-shrink: 0;
+        width: 25rem;
+        @include s2 {
+          flex: 1;
+        }
+      }
+      &.date {
+        flex-shrink: 0;
+        width: 25rem;
+        @include s2 {
+          flex: 1;
+        }
+      }
+      &.method {
+        flex-shrink: 0;
+        width: 11rem;
+        @include s2 {
+          flex: 1;
+        }
+      }
+      &.state {
+        flex-shrink: 0;
+        width: 11rem;
+        @include s2 {
+          flex: 1;
+        }
+      }
+      &.price {
+        flex-shrink: 0;
+        width: 15rem;
+        @include s2 {
+          flex: 1;
+        }
+      }
+    }
+    .item {
+      display: flex;
+      border-bottom: 1px solid #e6e6e6;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .box {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+/*inquiry board*/
+.inquiry .board-wrap .total {
+  display: block;
+  padding: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1.6rem;
+}
+.inquiry .board-wrap .board-top {
+  display: flex;
+  border-top: 1px solid #bababa;
+  border-bottom: 1px solid #bababa;
+  background-color: #fafaf9;
+}
+.inquiry .board-wrap span {
+  display: block;
+  padding: 2rem 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.inquiry .board-wrap span.apply {
+  flex-shrink: 0;
+  width: 13rem;
+}
+.inquiry .board-wrap span.title {
+  width: 25rem;
+}
+.inquiry .board-wrap span.lec {
+  flex-shrink: 0;
+  width: 20rem;
+}
+.inquiry .board-wrap span.title {
+  width: 100%;
+}
+.inquiry .board-wrap span.date {
+  flex-shrink: 0;
+  width: 11rem;
+}
+.inquiry .board-wrap span.state {
+  flex-shrink: 0;
+  width: 10rem;
+}
+.inquiry .board-wrap span.status.com {
+  color: #ff6c6c;
+}
+.inquiry .board-wrap span.mo {
+  flex-shrink: 0;
+  width: 10rem;
+  display: none;
+}
+.inquiry .board-wrap .item {
+  border-bottom: 1px solid #e6e6e6;
+}
+.inquiry .board-wrap .item a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.inquiry .board-wrap .item a .box {
+  display: flex;
+}
+.inquiry .board-wrap .btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.inquiry .board-wrap .write-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14rem;
+  height: 5rem;
+  margin-top: 3rem;
+  color: #fff;
+  font-size: 1.6rem;
+  background-color: #ff6c6c;
+}
+
+@media (max-width: 1280px) {
+  .inquiry .board-wrap span {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  .inquiry .board-wrap span.lec {
+    flex-shrink: 0;
+    width: 15rem;
+  }
+}
+@media (max-width: 767px) {
+  .inquiry .board-wrap .total {
+    font-size: 1.3rem;
+  }
+  .inquiry .board-wrap .item a {
+    padding: 1rem 0;
+  }
+  .inquiry .board-wrap .board-top span {
+    padding: 1rem 0.5rem;
+  }
+  .inquiry .board-wrap span {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .inquiry .board-wrap span.num {
+    width: 4rem;
+  }
+  .inquiry .board-wrap span.cate {
+    width: 6rem;
+  }
+  .inquiry .board-wrap span.lec {
+    display: none;
+    flex-shrink: 0;
+    width: 8rem;
+  }
+  .inquiry .board-wrap .board-top span.date,
+  .inquiry .board-wrap .board-top span.status {
+    display: none;
+  }
+  .inquiry .board-wrap .board-top span.mo {
+    display: block;
+    width: 7rem;
+  }
+  .inquiry .board-wrap .item a .box {
+    display: block;
+  }
+  .inquiry .board-wrap span.date {
+    width: 8rem;
+  }
+  .inquiry .board-wrap span.status {
+    width: 7rem;
+    border: 1px solid #eee;
+    margin: 0 auto;
+  }
+  .inquiry .board-wrap .write-btn {
+    width: 8rem;
+    height: 4rem;
+    margin-bottom: 5rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .inquiry .board-wrap .item:hover {
+    background-color: #fafaf9;
   }
 }

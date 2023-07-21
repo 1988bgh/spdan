@@ -57,9 +57,14 @@
             실제 스페인 사람들이 자주 사용하는
             <strong>진짜 스페인어 표현들을 배울 수 있는 강좌입니다.</strong>
           </p>
-          <button type="button" class="intro__popup-btn">
+          <a
+            href="javascript:void(0)"
+            data-url="https://player.vimeo.com/video/670582040"
+            onclick="popupOpen(this.dataset.url)"
+            class="intro__popup-btn"
+          >
             <img src="../../src/assets/images/class-thumb-6.png" alt="" />
-          </button>
+          </a>
         </div>
       </section>
       <section class="contents__class-infomation class_06">
@@ -213,6 +218,40 @@
           </div>
         </div>
       </section>
+      <div class="video-popup">
+        <div class="inner inner-12">
+          <a href="javascript:void(0)" class="closed" onclick="">
+            <img src="../../src/assets/images/video_close_btn.png" alt="" />
+          </a>
+          <div class="popup-wrap">
+            <iframe
+              src="https://player.vimeo.com/video/670582040"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </main>
+    <script>
+      const popupOpen = function popupOpen(url) {
+        const popupElem = document.querySelector(".video-popup");
+        const videoElem = document.querySelector(".video-popup iframe");
+        const closed = document.querySelector(".video-popup .closed");
+
+        popupElem.classList.add("open");
+
+        let data = url;
+        videoElem.src = url;
+
+        function closedPopup() {
+          popupElem.classList.remove("open");
+          videoElem.src = "";
+        }
+
+        closed.addEventListener("click", closedPopup);
+      };
+    </script>
   </body>
 </html>

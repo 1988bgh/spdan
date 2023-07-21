@@ -1690,15 +1690,7 @@ footer .mo {
   }
 }
 .contents__main-video .video__box {
-  position: relative;
-  width: 1200px;
-  padding-bottom: 56.6667%;
-  background-color: #000;
-}
-@media only screen and (max-width: 1440px) {
-  .contents__main-video .video__box {
-    width: 100%;
-  }
+  margin-bottom: 30px;
 }
 .contents__main-banner {
   overflow: visible;
@@ -11877,6 +11869,54 @@ footer .mo {
   }
 }
 
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100lvh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  text-align: right;
+}
+.video-popup .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.video-popup.open {
+  display: block;
+}
+
+.video-popup .closed {
+  display: inline-flex;
+  margin-bottom: 2rem;
+}
+
+.video-popup .popup-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-color: #000;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.video-popup .popup-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1280px) {
+  .video-popup .closed {
+    width: 3rem;
+  }
+}
 .contents__teacher-profile {
   position: relative;
   background-image: url("../assets/images/teacher-bg.png");

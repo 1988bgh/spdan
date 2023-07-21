@@ -40,7 +40,12 @@
               </div>
             </div>
             <div class="thumb">
-              <a href="javascript:void(0)">
+              <a
+                href="javascript:void(0)"
+                data-url="https://player.vimeo.com/video/670582040"
+                onclick="popupOpen(this.dataset.url)"
+                class="intro__popup-btn"
+              >
                 <img src="../../src/assets/images/sample-thumb-1.png" alt="" />
               </a>
             </div>
@@ -60,7 +65,12 @@
                   <p>스페인어를 읽을때 발음하는 법을 쉽게 배우는 강좌입니다.</p>
                 </div>
               </div>
-              <a href="javascript:void(0)">
+              <a
+                href="javascript:void(0)"
+                data-url="https://player.vimeo.com/video/670582040"
+                onclick="popupOpen(this.dataset.url)"
+                class="intro__popup-btn"
+              >
                 <img src="../../src/assets/images/sample-thumb-2.png" alt="" />
               </a>
             </div>
@@ -74,7 +84,12 @@
                   <p>단어연결법 강좌의 시작편입니다. 꼭 마스터하세요!</p>
                 </div>
               </div>
-              <a href="javascript:void(0)">
+              <a
+                href="javascript:void(0)"
+                data-url="https://player.vimeo.com/video/670582040"
+                onclick="popupOpen(this.dataset.url)"
+                class="intro__popup-btn"
+              >
                 <img src="../../src/assets/images/sample-thumb-3.png" alt="" />
               </a>
             </div>
@@ -90,7 +105,12 @@
                   <p>스페인어 말하기 능력을 성장시킬 단계입니다.</p>
                 </div>
               </div>
-              <a href="javascript:void(0)">
+              <a
+                href="javascript:void(0)"
+                data-url="https://player.vimeo.com/video/670582040"
+                onclick="popupOpen(this.dataset.url)"
+                class="intro__popup-btn"
+              >
                 <img src="../../src/assets/images/sample-thumb-4.png" alt="" />
               </a>
             </div>
@@ -115,10 +135,20 @@
                   </p>
                 </div>
               </div>
-              <a href="javascript:void(0)">
+              <a
+                href="javascript:void(0)"
+                data-url="https://player.vimeo.com/video/670582040"
+                onclick="popupOpen(this.dataset.url)"
+                class="intro__popup-btn"
+              >
                 <img src="../../src/assets/images/sample-thumb-5.png" alt="" />
               </a>
-              <a href="javascript:void(0)">
+              <a
+                href="javascript:void(0)"
+                data-url="https://player.vimeo.com/video/670582040"
+                onclick="popupOpen(this.dataset.url)"
+                class="intro__popup-btn"
+              >
                 <img src="../../src/assets/images/sample-thumb-6.png" alt="" />
               </a>
             </div>
@@ -126,6 +156,40 @@
           </div>
         </div>
       </section>
+      <div class="video-popup">
+        <div class="inner inner-12">
+          <a href="javascript:void(0)" class="closed" onclick="">
+            <img src="../../src/assets/images/video_close_btn.png" alt="" />
+          </a>
+          <div class="popup-wrap">
+            <iframe
+              src="https://player.vimeo.com/video/670582040"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </main>
+    <script>
+      const popupOpen = function popupOpen(url) {
+        const popupElem = document.querySelector(".video-popup");
+        const videoElem = document.querySelector(".video-popup iframe");
+        const closed = document.querySelector(".video-popup .closed");
+
+        popupElem.classList.add("open");
+
+        let data = url;
+        videoElem.src = url;
+
+        function closedPopup() {
+          popupElem.classList.remove("open");
+          videoElem.src = "";
+        }
+
+        closed.addEventListener("click", closedPopup);
+      };
+    </script>
   </body>
 </html>

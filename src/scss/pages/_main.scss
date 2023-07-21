@@ -441,13 +441,7 @@
           }
         }
         &box {
-          position: relative;
-          width: 1200px;
-          padding-bottom: 56.6667%;
-          background-color: #000;
-          @include s3 {
-            width: 100%;
-          }
+          margin-bottom: 30px;
         }
       }
     }

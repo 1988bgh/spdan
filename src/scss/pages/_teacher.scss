@@ -15,7 +15,7 @@
     }
     .teacher__img {
       position: relative;
-      margin-top: 83px;
+      margin-top: 100px;
       margin-left: -30px;
       @include s1 {
         order: 2;
@@ -61,10 +61,13 @@
         font-weight: 500;
         background-color: #ff6000;
         border-radius: 21px;
-        @include s1 {
-          top: 48%;
+        @include s3 {
+          top: 80%;
           left: -30px;
           transform: translate(0%, 0%);
+        }
+        @include s1 {
+          display: none;
         }
       }
     }
@@ -89,7 +92,6 @@
         @include s1 {
           width: 100%;
           max-width: 100%;
-          margin-top: -50px;
           margin-bottom: 0;
           margin-left: 0;
           padding: 50px 20px 40px;

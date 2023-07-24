@@ -40,6 +40,10 @@
             @include s2 {
               margin-bottom: 70px;
             }
+            @include s1 {
+              margin-bottom: 50px;
+              background-image: none;
+            }
             b {
               color: #ff6000;
             }

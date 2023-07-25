@@ -239,6 +239,7 @@
     padding: 240px 0;
     background-image: url("../assets/images/package-bg-2.png");
     background-repeat: no-repeat;
+    background-size: cover;
     @include s2 {
       padding: 80px 0;
     }

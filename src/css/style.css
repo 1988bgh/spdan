@@ -3574,6 +3574,7 @@ footer .mo {
   padding: 240px 0;
   background-image: url("../assets/images/package-bg-2.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 @media only screen and (max-width: 1280px) {
   .package__banner {
@@ -13877,6 +13878,7 @@ footer .mo {
   padding: 240px 0;
   background-image: url("../assets/images/package-bg-2.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 @media only screen and (max-width: 1280px) {
   .package__banner {
